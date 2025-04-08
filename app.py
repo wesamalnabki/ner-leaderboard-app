@@ -43,24 +43,11 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# --- Retrieve Previous Submissions ---
-def get_existing_submissions(dataset_name):
-    existing_submissions = session.query(Submission).filter_by(dataset_name=dataset_name).order_by(
+# --- Retrieve Submissions as ORM List ---
+def get_existing_submissions_with_ids(dataset_name):
+    submissions = session.query(Submission).filter_by(dataset_name=dataset_name).order_by(
         Submission.submission_date.desc()).all()
-
-    submissions_list = [{
-        "Submission Name": sub.submission_name,
-        "Model Link": sub.model_link,
-        "Person Name": sub.person_name,
-        "Precision": sub.precision,
-        "Recall": sub.recall,
-        "F1": sub.f1,
-        "Submission Date": sub.submission_date.strftime("%Y-%m-%d %H:%M:%S")
-    } for sub in existing_submissions]
-
-    return pd.DataFrame(submissions_list) if submissions_list else pd.DataFrame(columns=[
-        "Submission Name", "Model Link", "Person Name", "Precision", "Recall", "F1", "Submission Date"
-    ])
+    return submissions
 
 # --- Main App ---
 def main():
@@ -77,7 +64,26 @@ def main():
     dataset_name = st.selectbox("Select Dataset", dataset_names)
 
     st.subheader("Leaderboard")
-    st.dataframe(get_existing_submissions(dataset_name), use_container_width=True)
+
+    submissions = get_existing_submissions_with_ids(dataset_name)
+
+    if not submissions:
+        st.info("No submissions yet.")
+    else:
+        for sub in submissions:
+            cols = st.columns([2, 2, 2, 1, 1, 1, 2, 1])
+            cols[0].markdown(f"**{sub.submission_name}**")
+            cols[1].markdown(sub.model_link)
+            cols[2].markdown(sub.person_name)
+            cols[3].markdown(f"{sub.precision:.2f}")
+            cols[4].markdown(f"{sub.recall:.2f}")
+            cols[5].markdown(f"{sub.f1:.2f}")
+            cols[6].markdown(sub.submission_date.strftime("%Y-%m-%d %H:%M:%S"))
+            if cols[7].button("🗑️", key=f"delete_{sub.id}"):
+                session.delete(sub)
+                session.commit()
+                st.success(f"Deleted submission: {sub.submission_name}")
+                st.rerun()
 
     st.subheader("Submit Your Model Prediction")
 
@@ -118,15 +124,20 @@ def main():
                         session.add(new_submission)
                         session.commit()
 
-                    st.success("Submission evaluated and saved!")
-                    st.json(metrics)
+                        # Store metrics in session state to show after rerun
+                        st.session_state["last_metrics"] = metrics
 
-                    # Refresh leaderboard
-                    st.subheader("Updated Leaderboard")
-                    st.dataframe(get_existing_submissions(dataset_name), use_container_width=True)
+                    st.success("Submission evaluated and saved!")
+                    st.rerun()
 
                 except Exception as e:
                     st.error(f"Error processing submission: {e}")
+
+    # Display last metrics after rerun
+    if "last_metrics" in st.session_state:
+        st.subheader("Last Evaluation Results")
+        st.json(st.session_state["last_metrics"])
+        del st.session_state["last_metrics"]
 
 if __name__ == "__main__":
     main()
