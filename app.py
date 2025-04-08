@@ -70,6 +70,17 @@ def main():
     if not submissions:
         st.info("No submissions yet.")
     else:
+        # Define column names for the leaderboard
+        cols = st.columns([2, 2, 2, 1, 1, 1, 2, 1])
+        cols[0].markdown("**Submission Name**")
+        cols[1].markdown("**Model Link**")
+        cols[2].markdown("**Person Name**")
+        cols[3].markdown("**Precision**")
+        cols[4].markdown("**Recall**")
+        cols[5].markdown("**F1 Score**")
+        cols[6].markdown("**Submission Date**")
+        cols[7].markdown("**Actions**")
+
         for sub in submissions:
             cols = st.columns([2, 2, 2, 1, 1, 1, 2, 1])
             cols[0].markdown(f"**{sub.submission_name}**")
