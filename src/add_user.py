@@ -2,7 +2,7 @@ import streamlit_authenticator as stauth
 
 # User details
 new_username = "wesam.alnabki"
-new_password = "icand0it9o"  # This is the password you want to hash
+new_password = "leaderboard_-_p@@ssword"  # This is the password you want to hash
 new_name = "Wesam Al Nabki"
 new_email = "wesam.alnabki@gmail.com"
 
@@ -15,8 +15,9 @@ import yaml
 import os
 
 # --- Load Config for Authentication ---
-with open(os.getenv('USER_CONFIG_PATH', './users_config.yaml')) as file:
-    config = yaml.load(file, Loader == yaml.SafeLoader)
+config_path = os.getenv("USER_CONFIG_PATH", "../DATA/users_config.yaml")
+with open(config_path) as file:
+    config = yaml.load(file, Loader=yaml.SafeLoader)
 
 if config['credentials']['usernames'] is None:
     config['credentials']['usernames'] = dict()
@@ -30,7 +31,7 @@ config['credentials']['usernames'][new_username] = {
 }
 
 # Save updated config back to YAML file
-with open('./users_config.yaml', 'w') as file:
+with open(config_path, 'w') as file:
     yaml.dump(config, file)
 
 # Print success message (or show it in Streamlit)
