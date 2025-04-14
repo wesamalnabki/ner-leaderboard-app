@@ -6,14 +6,17 @@ from yaml.loader import SafeLoader
 from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import datetime
-import pandas as pd
 from evaluation_ner import parse_tsv_file, calculate_metrics
+from dotenv import find_dotenv, load_dotenv
+
+print(load_dotenv(find_dotenv()))
 
 # --- Set Page Config (must be first Streamlit call) ---
 st.set_page_config(page_title="NER Benchmarking Leaderboard", layout="wide")
 
 # --- Load Config for Authentication ---
-with open(os.getenv('USER_CONFIG_PATH', './users_config.yaml')) as file:
+config_path = os.getenv("USER_CONFIG_PATH", "/mounted/users_config.yaml")
+with open(config_path) as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 # --- Initialize Authenticator ---

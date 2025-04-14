@@ -9,13 +9,34 @@ services:
     ports:
       - "8501:8501"
     volumes:
-      - E:/Projects/ner-leaderboard/testsets:/mounted/testsets
-      - E:/Projects/ner-leaderboard/submissions.db:/mounted/submissions.db
-      - E:/Projects/ner-leaderboard/config.yaml:/mounted/users_config.yaml
-      - E:/Projects/ner-leaderboard/saved_submissions:/mounted/saved_submissions
+      - type: bind
+        source: DATA/testsets
+        target: /mounted/testsets
+      - type: bind
+        source: DATA/submissions.db
+        target: /mounted/submissions.db
+      - type: bind
+        source: DATA/users_config.yaml
+        target: /mounted/users_config.yaml
+      - type: bind
+        source: DATA/saved_submissions
+        target: /mounted/saved_submissions
 
     environment:
-      - TESTSETS_PATH=/mounted/testsets
-      - DB_PATH=/mounted/submissions.db
-      - USER_CONFIG_PATH=/mounted/users_config.yaml
-      - SUBMISSION_SAVE_PATH=/mounted/saved_submissions
+      TESTSETS_PATH: /mounted/testsets
+      DB_PATH: /mounted/submissions.db
+      USER_CONFIG_PATH: /mounted/users_config.yaml
+      SUBMISSION_SAVE_PATH: /mounted/saved_submissions
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+
+    labels:
+      maintainer: "wesam.alnabki@gmail.com"
+      service: "NER Leaderboard"

@@ -13,12 +13,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy project files into the container
-COPY . .
+# Copy requirements first for better cache use
+COPY requirements.txt .
 
 # Install required Python packages
 RUN pip install --upgrade pip
-RUN pip install streamlit pandas sqlalchemy
+RUN pip install -r requirements.txt
+
+# Copy the rest of the project files into the container
+COPY ./src .
 
 # Expose Streamlit's default port
 EXPOSE 8501
