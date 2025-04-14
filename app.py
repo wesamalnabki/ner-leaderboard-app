@@ -7,21 +7,10 @@ import pandas as pd
 from evaluation_ner import parse_tsv_file, calculate_metrics
 
 # --- Config ---
-testsets_root_path = "./testsets/"
-db_path = "sqlite:///submissions.db"
-
-# --- Load NER Testsets ---
-@st.cache_data
-def load_testsets(testsets_root_path: str) -> dict:
-    datasets_dict = {}
-    for ds in os.listdir(testsets_root_path):
-        if ds.endswith(".tsv"):
-            tsv_path = os.path.join(testsets_root_path, ds)
-            df = parse_tsv_file(tsv_path, entities_to_evaluate=[])
-            df = df.drop(columns=[col for col in ['note', 'mark', 'ann_id'] if col in df.columns], errors='ignore')
-            df.reset_index(inplace=True, drop=True)
-            datasets_dict[ds.replace(".tsv", "")] = df
-    return datasets_dict
+testsets_root_path = os.getenv("TESTSETS_PATH", "./testsets/")
+db_path = f"sqlite:///{os.getenv('DB_PATH', 'submissions.db')}"
+submission_save_path = os.getenv("SUBMISSION_SAVE_PATH", "./saved_submissions/")
+os.makedirs(submission_save_path, exist_ok=True)
 
 # --- Database Setup ---
 Base = declarative_base()
@@ -43,13 +32,45 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# --- Retrieve Submissions as ORM List ---
-def get_existing_submissions_with_ids(dataset_name):
-    submissions = session.query(Submission).filter_by(dataset_name=dataset_name).order_by(
-        Submission.submission_date.desc()).all()
-    return submissions
+# --- Load NER Testsets ---
+def load_testsets(testsets_root_path: str) -> dict:
+    datasets_dict = {}
+    for ds in os.listdir(testsets_root_path):
+        if ds.endswith(".tsv"):
+            tsv_path = os.path.join(testsets_root_path, ds)
+            df = parse_tsv_file(tsv_path, entities_to_evaluate=[])
+            df = df.drop(columns=[col for col in ['note', 'mark', 'ann_id'] if col in df.columns], errors='ignore')
+            df.reset_index(inplace=True, drop=True)
+            datasets_dict[ds.replace(".tsv", "")] = df
+    return datasets_dict
 
-# --- Main App ---
+# --- Retrieve Submissions ---
+def get_existing_submissions_with_ids(dataset_name):
+    return session.query(Submission).filter_by(dataset_name=dataset_name).order_by(
+        Submission.submission_date.desc()).all()
+
+def exe_new_eval(df_gs: pd.DataFrame, pred: pd.DataFrame):
+    print("🧪 Re-evaluating submission...")
+    metrics = {}
+    tags = df_gs.label.unique().tolist()
+    for tag in tags:
+        _, P, _, R, _, F1 = calculate_metrics(gs=df_gs[df_gs.label == tag],
+                                              pred=pred[pred.label == tag])
+        metrics[tag] = {
+            "Precision": P,
+            "Recall": R,
+            "F1": F1
+        }
+    _, P, _, R, _, F1 = calculate_metrics(gs=df_gs, pred=pred)
+    metrics['Total'] = {
+        "Precision": P,
+        "Recall": R,
+        "F1": F1
+    }
+    return metrics
+
+
+# --- Streamlit App ---
 def main():
     st.set_page_config(page_title="NER Benchmarking Leaderboard", layout="wide")
     st.title("📊 Benchmarking Leaderboard for NER")
@@ -70,7 +91,7 @@ def main():
     if not submissions:
         st.info("No submissions yet.")
     else:
-        # Define column names for the leaderboard
+        # Table headers
         cols = st.columns([2, 2, 2, 1, 1, 1, 2, 1])
         cols[0].markdown("**Submission Name**")
         cols[1].markdown("**Model Link**")
@@ -90,11 +111,33 @@ def main():
             cols[4].markdown(f"{sub.recall:.2f}")
             cols[5].markdown(f"{sub.f1:.2f}")
             cols[6].markdown(sub.submission_date.strftime("%Y-%m-%d %H:%M:%S"))
-            if cols[7].button("🗑️", key=f"delete_{sub.id}"):
+
+            # Split the Actions column into two columns
+            action_col1, action_col2 = cols[7].columns([1, 1])
+
+            if action_col1.button("🗑️", key=f"delete_{sub.id}"):
                 session.delete(sub)
                 session.commit()
                 st.success(f"Deleted submission: {sub.submission_name}")
                 st.rerun()
+
+            if action_col2.button("🔁", key=f"reeval_{sub.id}"):
+                try:
+                    file_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.tsv")
+                    if not os.path.exists(file_path):
+                        st.error("Saved submission file not found.")
+                    else:
+                        gs = dataset_dict.get(sub.dataset_name)
+                        pred = parse_tsv_file(file_path, [])
+                        eval_result = exe_new_eval(gs, pred)
+
+                        # Show re-evaluation results
+                        st.subheader("Re-evaluation Results")
+                        st.json(eval_result)
+
+                        st.success("Re-evaluation triggered.")
+                except Exception as e:
+                    st.error(f"Re-evaluation failed: {e}")
 
     st.subheader("Submit Your Model Prediction")
 
@@ -115,36 +158,60 @@ def main():
                         st.error("Dataset not found.")
                         return
 
-                    # Parse uploaded prediction TSV
+                    # Save uploaded file
+                    save_filename = f"{dataset_name}__{submission_name}.tsv"
+                    save_path = os.path.join(submission_save_path, save_filename)
+                    with open(save_path, "wb") as f:
+                        f.write(submission_file.getbuffer())
+
+                    submission_file.seek(0)
                     submission_df = parse_tsv_file(submission_file, [])
 
-                    # Calculate metrics
+                    tags = df_gs.label.unique().tolist()
+                    metrics = {}
+                    for tag in tags:
+                        _, P, _, R, _, F1 = calculate_metrics(gs=df_gs[df_gs.label == tag],
+                                                              pred=submission_df[submission_df.label == tag])
+                        metrics[tag] = {
+                            "Precision": P,
+                            "Recall": R,
+                            "F1": F1
+                        }
                     _, P, _, R, _, F1 = calculate_metrics(gs=df_gs, pred=submission_df)
-                    metrics = {'Precision': P, 'Recall': R, 'F1': F1}
+                    metrics['Total']  = {
+                            "Precision": P,
+                            "Recall": R,
+                            "F1": F1
+                        }
 
-                    if F1 is not None:
-                        new_submission = Submission(
-                            dataset_name=dataset_name,
-                            submission_name=submission_name,
-                            model_link=model_link,
-                            person_name=person_name,
-                            precision=P,
-                            recall=R,
-                            f1=F1
-                        )
-                        session.add(new_submission)
+                    # Remove previous submission with same name
+                    existing = session.query(Submission).filter_by(
+                        dataset_name=dataset_name,
+                        submission_name=submission_name
+                    ).first()
+                    if existing:
+                        session.delete(existing)
                         session.commit()
 
-                        # Store metrics in session state to show after rerun
-                        st.session_state["last_metrics"] = metrics
+                    new_submission = Submission(
+                        dataset_name=dataset_name,
+                        submission_name=submission_name,
+                        model_link=model_link,
+                        person_name=person_name,
+                        precision=P,
+                        recall=R,
+                        f1=F1
+                    )
+                    session.add(new_submission)
+                    session.commit()
 
+                    st.session_state["last_metrics"] = metrics
                     st.success("Submission evaluated and saved!")
                     st.rerun()
 
                 except Exception as e:
                     st.error(f"Error processing submission: {e}")
 
-    # Display last metrics after rerun
     if "last_metrics" in st.session_state:
         st.subheader("Last Evaluation Results")
         st.json(st.session_state["last_metrics"])
