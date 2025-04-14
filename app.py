@@ -112,15 +112,17 @@ def main():
             cols[5].markdown(f"{sub.f1:.2f}")
             cols[6].markdown(sub.submission_date.strftime("%Y-%m-%d %H:%M:%S"))
 
-            # Split the Actions column into two columns
-            action_col1, action_col2 = cols[7].columns([1, 1])
+            # Split the Actions column into three columns
+            action_col1, action_col2, action_col3 = cols[7].columns([1, 1, 1])
 
+            # Delete button
             if action_col1.button("🗑️", key=f"delete_{sub.id}"):
                 session.delete(sub)
                 session.commit()
                 st.success(f"Deleted submission: {sub.submission_name}")
                 st.rerun()
 
+            # Re-evaluate button
             if action_col2.button("🔁", key=f"reeval_{sub.id}"):
                 try:
                     file_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.tsv")
@@ -138,6 +140,19 @@ def main():
                         st.success("Re-evaluation triggered.")
                 except Exception as e:
                     st.error(f"Re-evaluation failed: {e}")
+
+            # Download button
+            download_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.tsv")
+            if os.path.exists(download_path):
+                with open(download_path, "rb") as f:
+                    data = f.read()
+                    action_col3.download_button(
+                        label="🧾",
+                        data=data,
+                        file_name=f"{sub.submission_name}.tsv",
+                        mime="text/tab-separated-values",
+                        key=f"download_{sub.id}"
+                    )
 
     st.subheader("Submit Your Model Prediction")
 
