@@ -11,9 +11,11 @@ services:
     volumes:
       - E:/Projects/ner-leaderboard/testsets:/mounted/testsets
       - E:/Projects/ner-leaderboard/submissions.db:/mounted/submissions.db
+      - E:/Projects/ner-leaderboard/config.yaml:/mounted/users_config.yaml
       - E:/Projects/ner-leaderboard/saved_submissions:/mounted/saved_submissions
 
     environment:
       - TESTSETS_PATH=/mounted/testsets
       - DB_PATH=/mounted/submissions.db
+      - USER_CONFIG_PATH=/mounted/users_config.yaml
       - SUBMISSION_SAVE_PATH=/mounted/saved_submissions
