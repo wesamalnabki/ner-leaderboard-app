@@ -342,7 +342,7 @@ filename	ann_id	label	start_span	end_span	text
 19802491_augmentation_es	T1	ENFERMEDAD	353	386	Miocardiopatía crónica por Chagas
 19802491_augmentation_es	T2	ENFERMEDAD	391	429	aneurisma apical ventricular izquierdo
 19802491_augmentation_es	T3	ENFERMEDAD	1157	1195	aneurisma apical ventricular izquierdo
-19802491_augmentation_es	T4	ENFERMEDAD	1262	1303	aneurisma apical de tipo "guante de dedo"
+19802491_augmentation_es	T4	ENFERMEDAD	1262	1303	"aneurisma apical de tipo ""guante de dedo"""
 19802491_augmentation_es	T5	ENFERMEDAD	1350	1390	obstrucciones en las arterias coronarias
 19802491_augmentation_es	T6	ENFERMEDAD	1467	1487	enfermedad de Chagas
 19802491_augmentation_es	T7	ENFERMEDAD	1593	1613	enfermedad de Chagas
@@ -350,7 +350,7 @@ filename	ann_id	label	start_span	end_span	text
 19802491_augmentation_es	T9	ENFERMEDAD	1766	1786	enfermedad de Chagas
 19802491_augmentation_es	T10	ENFERMEDAD	1872	1882	aneurismas
 19802491_augmentation_es	T11	ENFERMEDAD	2009	2056	miocardiopatía crónica por enfermedad de Chagas
-19802491_augmentation_es	T12	ENFERMEDAD	2116	2157	aneurisma apical de tipo "guante de dedo"
+19802491_augmentation_es	T12	ENFERMEDAD	2116	2157	"aneurisma apical de tipo ""guante de dedo"""
 19802491_augmentation_es	T13	ENFERMEDAD	2198	2218	enfermedad de Chagas
 19802491_augmentation_es	T14	ENFERMEDAD	2288	2321	miocardiopatía crónica por Chagas
 19802491_augmentation_es	T15	ENFERMEDAD	2392	2446	aneurisma típico de la infección por Trypanosoma cruzi
@@ -2340,7 +2340,7 @@ cc_habitos_toxicos541	T39	SINTOMA	2298	2352	muestras respiratorias y hemocultivo
 cc_habitos_toxicos541	T40	SINTOMA	2427	2491	serologías (Hepatitis B y C, chagas, HIV, VDRL) fueron negativas
 cc_habitos_toxicos541	T41	SINTOMA	1876	1943	ntubación orotraqueal y conexión a asistencia respiratoria mecánica
 cc_habitos_toxicos541	T9	SINTOMA	1957	2014	ibrobroncoscopía: sin lesión endoluminal, sin secreciones
-cc_habitos_toxicos541	T35	SINTOMA	2016	2076	Lavado broncoalveolar (BAL) con aspecto de "lavado de carne"
+cc_habitos_toxicos541	T35	SINTOMA	2016	2076	"Lavado broncoalveolar (BAL) con aspecto de ""lavado de carne"""
 cc_habitos_toxicos541_augmentation_es	T1	ENFERMEDAD	203	213	tabaquismo
 cc_habitos_toxicos541_augmentation_es	T2	ENFERMEDAD	229	268	consumo habitual de marihuana y cocaína
 cc_habitos_toxicos541_augmentation_es	T3	ENFERMEDAD	1290	1307	arritmia cardíaca
@@ -2375,7 +2375,7 @@ cc_habitos_toxicos541_augmentation_es	T35	SINTOMA	2458	2510	ANA, ANCA, anticuerp
 cc_habitos_toxicos541_augmentation_es	T36	SINTOMA	2528	2575	Muestras respiratorias y hemocultivos negativos
 cc_habitos_toxicos541_augmentation_es	T38	SINTOMA	2664	2709	Hepatitis B y C, Chagas, HIV, VDRL: negativas
 cc_habitos_toxicos541_augmentation_es	T39	SINTOMA	2169	2229	Fibrobroncoscopía:** Sin lesión endoluminal, sin secreciones
-cc_habitos_toxicos541_augmentation_es	T8	SINTOMA	2235	2297	Lavado broncoalveolar (BAL):** Con aspecto de "lavado de carne
+cc_habitos_toxicos541_augmentation_es	T8	SINTOMA	2235	2297	"Lavado broncoalveolar (BAL):** Con aspecto de ""lavado de carne"
 cc_habitos_toxicos541_augmentation_es	T32	SINTOMA	2061	2129	intubación orotraqueal y conexión a asistencia respiratoria mecánica
 S0120-41572007000500002-1	T1	ENFERMEDAD	124	150	lesión supurante en cuello
 S0120-41572007000500002-1	T2	ENFERMEDAD	252	258	lesión

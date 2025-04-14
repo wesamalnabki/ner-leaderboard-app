@@ -12,12 +12,7 @@ START_SPAN_TAG = "start_span"
 END_SPAN_TAG = "end_span"
 ENTITY_NAME_TAG = "text"
 LABEL_TAG = "label"
-
-# START_SPAN_TAG = "off0"
-# END_SPAN_TAG = "off1"
-# ENTITY_NAME_TAG = "span"
-# LABEL_TAG = "label"
-
+FILE_NAME="filename"
 
 def parse_tsv_file(datapath: str, entities_to_evaluate: list) -> pd.DataFrame:
     """
@@ -40,14 +35,14 @@ def parse_tsv_file(datapath: str, entities_to_evaluate: list) -> pd.DataFrame:
         df = pd.read_csv(datapath, sep='\t', header=0, quoting=csv.QUOTE_NONE, keep_default_na=False, dtype=str)
 
         if entities_to_evaluate:
-            df = df.loc[df['label'].isin(entities_to_evaluate), :].copy()
+            df = df.loc[df[LABEL_TAG].isin(entities_to_evaluate), :].copy()
 
         # Format DataFrame
         df['offset'] = df[START_SPAN_TAG].astype(str) + ' ' + df[END_SPAN_TAG].astype(str)
 
         # Check for duplicated entries
-        if df.duplicated(subset=['filename', 'label', 'offset']).any():
-            df = df.drop_duplicates(subset=['filename', 'label', 'offset']).copy()
+        if df.duplicated(subset=[FILE_NAME, LABEL_TAG, 'offset']).any():
+            df = df.drop_duplicates(subset=[FILE_NAME, LABEL_TAG, 'offset']).copy()
             logger.warning("Duplicated entries found and removed.")
 
         return df
@@ -111,18 +106,18 @@ def calculate_positives(gs: pd.DataFrame, pred: pd.DataFrame) -> Tuple[pd.Series
         Gold Standard Positives per clinical case, Total Gold Standard Positives.
     """
     # Predicted Positives
-    Pred_Pos_per_cc = pred.drop_duplicates(subset=['filename', "offset"]).groupby("filename")["offset"].count()
-    Pred_Pos = pred.drop_duplicates(subset=['filename', "offset"]).shape[0]
+    Pred_Pos_per_cc = pred.drop_duplicates(subset=[FILE_NAME, "offset"]).groupby(FILE_NAME)["offset"].count()
+    Pred_Pos = pred.drop_duplicates(subset=[FILE_NAME, "offset"]).shape[0]
 
     # Gold Standard Positives
-    GS_Pos_per_cc = gs.drop_duplicates(subset=['filename', "offset"]).groupby("filename")["offset"].count()
-    GS_Pos = gs.drop_duplicates(subset=['filename', "offset"]).shape[0]
+    GS_Pos_per_cc = gs.drop_duplicates(subset=[FILE_NAME, "offset"]).groupby(FILE_NAME)["offset"].count()
+    GS_Pos = gs.drop_duplicates(subset=[FILE_NAME, "offset"]).shape[0]
 
     # True Positives
-    df_sel = pd.merge(pred, gs, how="right", on=["filename", "offset", "label"])
+    df_sel = pd.merge(pred, gs, how="right", on=[FILE_NAME, "offset", LABEL_TAG])
     is_valid = ~df_sel.isnull().any(axis=1)
     df_sel['is_valid'] = is_valid
-    TP_per_cc = df_sel[df_sel["is_valid"]].groupby("filename")["is_valid"].count()
+    TP_per_cc = df_sel[df_sel["is_valid"]].groupby(FILE_NAME)["is_valid"].count()
     TP = df_sel[df_sel["is_valid"]].shape[0]
 
     # Handle clinical cases not predicted or not in GS
@@ -148,20 +143,20 @@ def handle_missing_cases(TP_per_cc: pd.Series, Pred_Pos_per_cc: pd.Series, gs: p
         Predictions DataFrame.
     """
     # Add entries for clinical cases not predicted but present in GS
-    cc_not_predicted = (pred.drop_duplicates(subset=["filename"])
-                        .merge(gs.drop_duplicates(subset=["filename"]),
-                               on='filename',
+    cc_not_predicted = (pred.drop_duplicates(subset=[FILE_NAME])
+                        .merge(gs.drop_duplicates(subset=[FILE_NAME]),
+                               on=FILE_NAME,
                                how='right', indicator=True)
                         .query('_merge == "right_only"')
-                        .drop(columns=['_merge']))['filename'].to_list()
+                        .drop(columns=['_merge']))[FILE_NAME].to_list()
     for cc in cc_not_predicted:
         TP_per_cc[cc] = 0
 
     # Remove entries for clinical cases not in GS but present in predictions
-    cc_not_GS = (gs.drop_duplicates(subset=["filename"])
-                 .merge(pred.drop_duplicates(subset=["filename"]),
-                        on='filename',
+    cc_not_GS = (gs.drop_duplicates(subset=[FILE_NAME])
+                 .merge(pred.drop_duplicates(subset=[FILE_NAME]),
+                        on=FILE_NAME,
                         how='right', indicator=True)
                  .query('_merge == "right_only"')
-                 .drop(columns=['_merge']))['filename'].to_list()
+                 .drop(columns=['_merge']))[FILE_NAME].to_list()
     Pred_Pos_per_cc = Pred_Pos_per_cc.drop(cc_not_GS)

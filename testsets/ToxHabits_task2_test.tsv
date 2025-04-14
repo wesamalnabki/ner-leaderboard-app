@@ -1,0 +1,2389 @@
+filename	ann_id	label	start_span	end_span	text
+cc_habitos_toxicos773		Amount	297	313	10 - 12 cig/ día
+cc_habitos_toxicos498		Type	123	130	poppers
+cc_habitos_toxicos362		Type	440	446	pulque
+cc_habitos_toxicos362		Amount	429	436	un vaso
+cc_habitos_toxicos362		Frequency	448	471	menos de una vez al mes
+cc_habitos_toxicos756		Duration	239	262	después de un accidente
+cc_habitos_toxicos756		Frequency	584	597	habitualmente
+cc_habitos_toxicos756		Duration	637	660	aproximadamente 11 años
+cc_habitos_toxicos225		Type	167	174	cocaína
+cc_habitos_toxicos225		Type	190	198	opiáceos
+cc_habitos_toxicos225		Type	218	226	metadona
+cc_habitos_toxicos225		Type	694	701	cocaína
+cc_habitos_toxicos225		Type	703	716	cannabinoides
+cc_habitos_toxicos225		Type	736	744	metadona
+S0212-71992006000200005-1		Amount	357	375	20 cigarrillos/día
+S0212-71992006000200005-1		Duration	376	395	desde hacía 10 años
+S0212-71992006000200005-1		Type	360	371	cigarrillos
+cc_habitos_toxicos33		Type	285	294	marihuana
+cc_habitos_toxicos33		Duration	295	308	a los 15 años
+cc_habitos_toxicos33		Type	382	388	porros
+cc_habitos_toxicos33		Amount	378	388	4-5 porros
+cc_habitos_toxicos33		Frequency	368	374	diario
+cc_habitos_toxicos33		Frequency	401	417	en dos ocasiones
+cc_habitos_toxicos33		Method	469	475	social
+cc_habitos_toxicos33		Duration	523	540	desde los 17 años
+cc_habitos_toxicos33		Frequency	5033	5042	puntuales
+cc_habitos_toxicos33		Frequency	5076	5092	de fin de semana
+cc_habitos_toxicos748		Amount	110	120	importante
+cc_habitos_toxicos553		Type	226	235	heroína
+cc_habitos_toxicos553		Amount	213	222	10 bolsas
+cc_habitos_toxicos553		Method	240	255	vía intravenosa
+cc_habitos_toxicos553		Type	456	465	fentanilo
+cc_habitos_toxicos553		Type	468	485	metilnorfentanilo
+cc_habitos_toxicos553		Type	532	539	heroína
+cc_habitos_toxicos857		Type	307	314	cocaína
+cc_habitos_toxicos857		Frequency	315	334	los fines de semana
+cc_habitos_toxicos857		Frequency	293	303	esporádico
+cc_habitos_toxicos857		History	883	895	hace 5 meses
+cc_habitos_toxicos9		Type	69	72	GHB
+cc_habitos_toxicos9		Type	126	129	GHB
+cc_habitos_toxicos9		Amount	113	122	dos dosis
+cc_habitos_toxicos9		Type	394	397	GHB
+cc_habitos_toxicos9		Type	1119	1127	opiáceos
+cc_habitos_toxicos9		Type	1129	1144	benzodiazepinas
+cc_habitos_toxicos9		Type	1110	1117	cocaína
+cc_habitos_toxicos9		Type	1087	1098	Anfetaminas
+cc_habitos_toxicos9		Type	1196	1199	GHB
+cc_habitos_toxicos9		Type	1354	1357	GHB
+cc_habitos_toxicos9		Type	1393	1396	GHB
+cc_habitos_toxicos9		Amount	1398	1403	1,49g
+cc_onco1578		Duration	81	98	desde los 14 años
+cc_onco1578		Amount	102	115	1 paquete/día
+cc_habitos_toxicos431		Type	25	32	heroína
+cc_habitos_toxicos431		Type	35	45	anfetamina
+cc_habitos_toxicos431		Type	1489	1496	heroína
+cc_habitos_toxicos431		Type	1499	1509	anfetamina
+cc_onco649		Amount	214	248	índice paquete-año acumulado de 40
+caso_clinico_endocrinologia82		Duration	75	95	35 años de evolución
+caso_clinico_endocrinologia82		Amount	118	133	20 paquetes/año
+caso_clinico_endocrinologia82		Frequency	144	153	ocasional
+cc_habitos_toxicos768		Amount	98	113	10 paquetes/año
+cc_habitos_toxicos768		History	114	131	desde hace 4 años
+cc_habitos_toxicos768		Frequency	144	152	habitual
+cc_habitos_toxicos768		Frequency	144	152	habitual
+cc_habitos_toxicos768		Duration	268	278	Marzo 1996
+cc_habitos_toxicos768		Type	494	498	MDMA
+cc_habitos_toxicos768		Frequency	483	493	esporádico
+cc_habitos_toxicos768		Type	550	554	MDMA
+cc_habitos_toxicos768		Amount	556	577	180mg aproximadamente
+cc_habitos_toxicos768		Amount	534	546	2.5 tabletas
+cc_habitos_toxicos768		Duration	500	507	6/10/96
+cc_habitos_toxicos768		Type	583	590	cerveza
+cc_habitos_toxicos768		Duration	500	507	6/10/96
+caso_clinico_medicina_interna761		Amount	199	209	20 cig/día
+cc_onco1715		Amount	47	86	1.200 cigarrillos/año (60 paquetes/año)
+cc_onco1715		Duration	87	105	desde hace 40 años
+cc_onco196		Amount	95	110	12 paquetes/año
+cc_onco196		Frequency	124	133	ocasional
+cc_onco196		Frequency	124	133	ocasional
+caso_clinico_atencion_primaria13		Type	732	739	cocaína
+caso_clinico_atencion_primaria13		History	714	731	hace tres semanas
+caso_clinico_atencion_primaria13		Type	1568	1575	cocaína
+cc_habitos_toxicos12		Duration	80	98	de larga evolución
+cc_habitos_toxicos12		Type	325	340	metaanfetaminas
+cc_habitos_toxicos12		Amount	341	346	grave
+cc_habitos_toxicos12		Duration	627	650	tres meses de evolución
+casos_clinicos_habtox42		Type	209	217	metadona
+casos_clinicos_habtox42		Type	338	342	ADVP
+casos_clinicos_habtox42		Method	338	342	ADVP
+casos_clinicos_habtox42		Amount	371	388	5 cigarrillos/día
+casos_clinicos_habtox42		Duration	471	491	a la edad de 16 años
+casos_clinicos_habtox42		Type	560	565	porro
+casos_clinicos_habtox42		Amount	557	565	un porro
+casos_clinicos_habtox42		Frequency	566	577	a la semana
+casos_clinicos_habtox42		Type	602	609	heroína
+casos_clinicos_habtox42		Duration	620	633	a los 33 años
+casos_clinicos_habtox42		Type	612	619	cocaína
+casos_clinicos_habtox42		Duration	620	633	a los 33 años
+casos_clinicos_habtox42		Type	738	746	metadona
+casos_clinicos_habtox42		History	687	704	Desde el año 1996
+cc_habitos_toxicos302		Amount	329	346	5 cigarrillos/día
+cc_habitos_toxicos302		Frequency	365	392	fines de semana esporádicos
+cc_habitos_toxicos302		Type	931	935	café
+cc_habitos_toxicos302		Duration	845	867	En las últimas semanas
+cc_habitos_toxicos302		Type	983	990	taurina
+cc_habitos_toxicos302		Duration	845	867	En las últimas semanas
+cc_habitos_toxicos302		Type	941	960	bebidas energéticas
+cc_habitos_toxicos302		Duration	845	867	En las últimas semanas
+caso_clinico_medicina_interna184		Method	109	115	activa
+caso_clinico_medicina_interna184		Amount	116	131	6 paquetes/años
+cc_onco121		Duration	231	261	intermitente desde los 17 años
+cc_onco121		Amount	288	311	media de 15 cigarrillos
+cc_onco121		Frequency	312	318	al día
+cc_habitos_toxicos930		Duration	597	610	a los 17 años
+cc_habitos_toxicos930		Duration	658	675	desde los 19 años
+cc_habitos_toxicos930		Amount	709	725	10 consumiciones
+cc_habitos_toxicos930		Frequency	725	730	/ día
+cc_habitos_toxicos930		Duration	760	773	a los 17 años
+cc_habitos_toxicos930		Method	775	782	fumando
+cc_habitos_toxicos930		Amount	789	800	20 unidades
+cc_habitos_toxicos930		Frequency	801	807	al día
+cc_habitos_toxicos930		Amount	907	917	5 unidades
+cc_habitos_toxicos930		Frequency	917	921	/día
+cc_habitos_toxicos930		Duration	952	965	a los 17 años
+cc_habitos_toxicos930		Amount	995	1010	30 cigarros/día
+cc_habitos_toxicos930		Type	1012	1019	Cocaína
+cc_habitos_toxicos930		Duration	1021	1030	de los 22
+cc_habitos_toxicos930		History	1031	1048	hasta los 25 años
+cc_habitos_toxicos930		Frequency	1059	1068	puntuales
+cc_habitos_toxicos930		Method	1085	1093	esnifada
+cc_habitos_toxicos930		Method	1361	1367	activo
+cc_habitos_toxicos930		Duration	2262	2286	un mes antes del ingreso
+cc_habitos_toxicos930		Type	3376	3384	nicotina
+cc_habitos_toxicos930		Type	3425	3446	Buprenorfina/naloxona
+cc_habitos_toxicos930		Amount	3447	3452	50 mg
+cc_habitos_toxicos930		Frequency	3452	3456	/día
+cc_habitos_toxicos930		Duration	3654	3671	la primera semana
+cc_habitos_toxicos930		Duration	3654	3671	la primera semana
+cc_habitos_toxicos334		Type	417	422	faria
+cc_habitos_toxicos334		Amount	413	422	una faria
+cc_habitos_toxicos334		Type	404	410	whisky
+cc_habitos_toxicos334		Amount	392	400	una copa
+cc_habitos_toxicos334		Type	386	390	café
+cc_habitos_toxicos334		Amount	383	390	un café
+cc_habitos_toxicos334		Amount	1722	1740	20 cigarrillos/día
+cc_habitos_toxicos334		Duration	1741	1758	desde los 20 años
+cc_habitos_toxicos334		Type	1768	1774	whisky
+cc_habitos_toxicos334		Amount	1765	1774	un whisky
+cc_habitos_toxicos334		Frequency	1775	1781	al día
+cc_habitos_toxicos334		Type	1784	1788	vino
+cc_habitos_toxicos334		Frequency	1789	1803	en las comidas
+cc_habitos_toxicos334		Amount	2562	2576	20 cigarrillos
+cc_habitos_toxicos334		Frequency	2577	2583	al día
+cc_habitos_toxicos334		Type	2664	2670	whisky
+cc_habitos_toxicos334		Amount	2652	2660	una copa
+cc_habitos_toxicos334		Frequency	2671	2677	al día
+cc_habitos_toxicos334		Type	2685	2689	vino
+cc_habitos_toxicos334		Frequency	2690	2704	de las comidas
+cc_habitos_toxicos334		Amount	3735	3749	20 cigarrillos
+cc_habitos_toxicos334		Type	3751	3755	vino
+cc_habitos_toxicos334		Frequency	3756	3770	en las comidas
+cc_habitos_toxicos334		Type	3783	3787	café
+cc_habitos_toxicos334		Amount	3772	3779	4 tazas
+cc_habitos_toxicos334		Type	3792	3798	whisky
+cc_habitos_toxicos334		Amount	3790	3798	1 whisky
+cc_habitos_toxicos334		Frequency	3799	3805	al día
+caso_clinico_urologia379		History	227	239	hace 10 años
+cc_habitos_toxicos476		Frequency	228	238	esporádico
+cc_habitos_toxicos476		Type	765	774	ayahuasca
+cc_habitos_toxicos476		Type	3631	3640	ayahuasca
+caso_clinico_urologia262		Amount	432	447	50 años-paquete
+S1130-01082017000200016-2		Amount	166	178	10-15 porros
+S1130-01082017000200016-2		Type	172	178	porros
+S1130-01082017000200016-2		Frequency	179	185	al día
+S1130-01082017000200016-2		Duration	136	143	crónico
+S1130-01082017000200016-2		Method	156	164	inhalado
+casos_clinicos_habtox31		Type	146	153	heroína
+casos_clinicos_habtox31		Type	333	348	benzodiacepinas
+casos_clinicos_habtox31		Duration	281	289	reciente
+casos_clinicos_habtox31		Type	314	321	heroína
+casos_clinicos_habtox31		Duration	281	289	reciente
+casos_clinicos_habtox31		Type	323	330	cocaína
+casos_clinicos_habtox31		Duration	281	289	reciente
+casos_clinicos_habtox31		Type	1204	1227	derivados anfetamínicos
+casos_clinicos_habtox31		Duration	1106	1113	14 años
+casos_clinicos_habtox31		Frequency	1239	1255	de fin de semana
+casos_clinicos_habtox31		Type	1230	1237	cocaína
+casos_clinicos_habtox31		Frequency	1239	1255	de fin de semana
+casos_clinicos_habtox31		Duration	1106	1113	14 años
+casos_clinicos_habtox31		Duration	1106	1113	14 años
+casos_clinicos_habtox31		Frequency	1338	1347	episódica
+casos_clinicos_habtox31		Duration	1106	1113	14 años
+casos_clinicos_habtox31		Frequency	1338	1347	episódica
+casos_clinicos_habtox31		Duration	1106	1113	14 años
+casos_clinicos_habtox31		Frequency	1338	1347	episódica
+casos_clinicos_habtox31		Type	1751	1758	cocaína
+casos_clinicos_habtox31		Frequency	1737	1747	episódicos
+casos_clinicos_habtox31		Duration	1703	1718	De 18 a 34 años
+casos_clinicos_habtox31		Type	1760	1783	derivados anfetamínicos
+casos_clinicos_habtox31		Frequency	1737	1747	episódicos
+casos_clinicos_habtox31		Duration	1703	1718	De 18 a 34 años
+casos_clinicos_habtox31		Type	1786	1799	cannabinoides
+casos_clinicos_habtox31		Frequency	1737	1747	episódicos
+casos_clinicos_habtox31		Duration	1703	1718	De 18 a 34 años
+casos_clinicos_habtox31		Type	2001	2008	heroína
+casos_clinicos_habtox31		Duration	1940	1953	A los 34 años
+casos_clinicos_habtox31		Method	2019	2025	fumada
+casos_clinicos_habtox31		Type	2029	2035	chinos
+casos_clinicos_habtox31		Amount	2037	2040	1 g
+casos_clinicos_habtox31		Frequency	2047	2055	/24horas
+casos_clinicos_habtox31		Type	2011	2018	cocaína
+casos_clinicos_habtox31		Duration	1940	1953	A los 34 años
+casos_clinicos_habtox31		Method	2019	2025	fumada
+casos_clinicos_habtox31		Type	2029	2035	chinos
+casos_clinicos_habtox31		Amount	2043	2046	1 g
+casos_clinicos_habtox31		Frequency	2047	2055	/24horas
+casos_clinicos_habtox31		Type	2127	2142	benzodiacepinas
+casos_clinicos_habtox31		Method	2117	2123	orales
+casos_clinicos_habtox31		Frequency	2078	2089	esporádicos
+casos_clinicos_habtox31		Duration	2144	2155	Con 35 años
+casos_clinicos_habtox31		Type	2483	2490	heroína
+casos_clinicos_habtox31		Type	2492	2499	cocaína
+casos_clinicos_habtox31		Type	2502	2517	benzodiacepinas
+casos_clinicos_habtox31		Type	2548	2555	heroína
+casos_clinicos_habtox31		Method	2564	2570	fumada
+casos_clinicos_habtox31		Type	2575	2581	chinos
+casos_clinicos_habtox31		Amount	2584	2587	1 g
+casos_clinicos_habtox31		Frequency	2591	2599	/24horas
+casos_clinicos_habtox31		Type	2556	2563	cocaína
+casos_clinicos_habtox31		Method	2564	2570	fumada
+casos_clinicos_habtox31		Type	2575	2581	chinos
+casos_clinicos_habtox31		Amount	2588	2591	1 g
+casos_clinicos_habtox31		Frequency	2591	2599	/24horas
+casos_clinicos_habtox31		Type	2637	2652	benzodiacepinas
+casos_clinicos_habtox31		Frequency	2622	2633	esporádicos
+casos_clinicos_habtox31		Type	2668	2678	alprazolam
+casos_clinicos_habtox31		Amount	2679	2683	8 mg
+casos_clinicos_habtox31		Frequency	2683	2692	/24 horas
+casos_clinicos_habtox31		Type	2712	2721	speedball
+casos_clinicos_habtox31		Method	2696	2708	intravenosos
+casos_clinicos_habtox31		Frequency	2622	2633	esporádicos
+casos_clinicos_habtox31		Type	2104	2113	speedball
+casos_clinicos_habtox31		Method	2090	2102	intravenosos
+casos_clinicos_habtox31		Frequency	2078	2089	esporádicos
+casos_clinicos_habtox31		Type	2001	2008	heroína
+casos_clinicos_habtox31		Type	2011	2018	cocaína
+cc_habitos_toxicos37		Type	69	75	hachís
+cc_habitos_toxicos37		Amount	57	65	un trozo
+cc_habitos_toxicos34		Frequency	131	140	ocasional
+cc_habitos_toxicos534		Type	45	52	heroína
+cc_habitos_toxicos534		Type	55	64	marihuana
+cc_habitos_toxicos534		Type	265	273	Metadona
+cc_habitos_toxicos534		Type	330	333	SPA
+cc_habitos_toxicos534		History	334	358	desde hace más de un mes
+cc_habitos_toxicos536		Type	48	51	SPA
+cc_habitos_toxicos536		Type	303	310	heroína
+cc_habitos_toxicos536		Duration	311	318	crónico
+cc_habitos_toxicos536		Type	668	676	metadona
+cc_habitos_toxicos536		Type	1427	1434	heroína
+cc_habitos_toxicos536		Type	1516	1519	SPA
+cc_habitos_toxicos204		Frequency	201	207	diario
+cc_habitos_toxicos204		Method	443	459	vía respiratoria
+cc_habitos_toxicos204		History	400	414	tras dos horas
+cc_habitos_toxicos369		Type	554	561	cocaína
+cc_habitos_toxicos369		Frequency	541	550	ocasional
+cc_habitos_toxicos369		Type	2379	2386	cocaína
+cc_habitos_toxicos267		Type	729	752	sustancias psicoactivas
+cc_habitos_toxicos267		Type	1931	1963	cocaína adulterada con levamisol
+casos_clinicos_habtox66		Type	395	403	Metadona
+casos_clinicos_habtox66		Duration	342	361	durante veinte años
+casos_clinicos_habtox66		Type	477	485	Metadona
+casos_clinicos_habtox66		Duration	486	505	durante veinte años
+casos_clinicos_habtox66		Type	555	562	Heroína
+casos_clinicos_habtox66		Frequency	572	592	dos veces por semana
+casos_clinicos_habtox66		Method	597	611	vía endovenosa
+casos_clinicos_habtox66		Duration	507	531	los últimos quince meses
+casos_clinicos_habtox66		Type	563	570	cocaína
+casos_clinicos_habtox66		Frequency	572	592	dos veces por semana
+casos_clinicos_habtox66		Method	597	611	vía endovenosa
+casos_clinicos_habtox66		Duration	507	531	los últimos quince meses
+casos_clinicos_habtox66		Amount	623	633	dos porros
+casos_clinicos_habtox66		Type	627	633	porros
+casos_clinicos_habtox66		Frequency	634	640	al día
+casos_clinicos_habtox66		Amount	651	672	cinco o seis unidades
+casos_clinicos_habtox66		Frequency	673	679	al día
+casos_clinicos_habtox66		Amount	689	708	treinta cigarrillos
+casos_clinicos_habtox66		Frequency	709	716	diarios
+casos_clinicos_habtox66		Type	885	892	heroína
+casos_clinicos_habtox66		Type	893	900	cocaína
+casos_clinicos_habtox66		Type	931	938	Heroína
+casos_clinicos_habtox66		Amount	948	953	1/2 g
+casos_clinicos_habtox66		Frequency	968	974	al mes
+casos_clinicos_habtox66		Type	939	946	cocaína
+casos_clinicos_habtox66		Amount	948	953	1/2 g
+casos_clinicos_habtox66		Frequency	968	974	al mes
+casos_clinicos_habtox66		Amount	986	996	2-3 porros
+casos_clinicos_habtox66		Type	990	996	porros
+casos_clinicos_habtox66		Frequency	996	1000	/día
+casos_clinicos_habtox66		Amount	1011	1023	2-3 unidades
+casos_clinicos_habtox66		Frequency	1023	1027	/día
+casos_clinicos_habtox66		Amount	1037	1051	20 cigarrillos
+casos_clinicos_habtox66		Frequency	1051	1055	/día
+casos_clinicos_habtox66		Type	787	808	buprenorfina/naloxona
+casos_clinicos_habtox66		Duration	728	760	Desde principios de mayo de 2013
+casos_clinicos_habtox66		Amount	820	824	8 mg
+casos_clinicos_habtox66		Frequency	824	828	/día
+casos_clinicos_habtox66		Type	1092	1113	buprenorfina/naloxona
+casos_clinicos_habtox114		Frequency	253	271	una vez por semana
+casos_clinicos_habtox114		Amount	272	300	en cantidades significativas
+casos_clinicos_habtox114		Type	628	637	ayahuasca
+casos_clinicos_habtox114		Type	2053	2062	ayahuasca
+S1130-05582010000100007-1		Duration	101	118	desde los 12 años
+S1130-05582010000100007-1		Amount	120	134	20 cigarrillos
+S1130-05582010000100007-1		Type	123	134	cigarrillos
+S1130-05582010000100007-1		Frequency	135	142	diarios
+cc_habitos_toxicos178		Type	60	67	cocaína
+cc_habitos_toxicos178		Type	88	95	cocaína
+cc_habitos_toxicos178		Method	104	112	inhalada
+cc_habitos_toxicos178		Type	679	686	Cocaína
+cc_habitos_toxicos361		Type	72	80	cervezas
+cc_habitos_toxicos361		Amount	70	80	2 cervezas
+cc_habitos_toxicos361		Frequency	95	102	diarios
+cc_habitos_toxicos361		Type	86	94	pacharán
+cc_habitos_toxicos361		Amount	83	94	un pacharán
+cc_habitos_toxicos361		Frequency	95	102	diarios
+cc_habitos_toxicos660		Type	309	321	clorfenamina
+cc_habitos_toxicos660		Amount	322	326	4 mg
+cc_habitos_toxicos660		Amount	245	258	cuatro sobres
+cc_habitos_toxicos660		Duration	194	213	01 de junio de 2014
+cc_habitos_toxicos660		Type	329	343	pseudoefredina
+cc_habitos_toxicos660		Amount	344	358	60 mg cada uno
+cc_habitos_toxicos660		Amount	245	258	cuatro sobres
+cc_habitos_toxicos660		Duration	194	213	01 de junio de 2014
+cc_habitos_toxicos660		Type	406	421	otro antigripal
+cc_habitos_toxicos660		Amount	387	402	dos comprimidos
+cc_habitos_toxicos660		Type	524	534	antigripal
+cc_habitos_toxicos660		Duration	458	474	Al día siguiente
+cc_habitos_toxicos660		Amount	507	520	cuatro sobres
+cc_habitos_toxicos660		Type	628	633	vodka
+cc_habitos_toxicos660		Duration	580	596	durante la noche
+cc_habitos_toxicos660		Type	3918	3937	varios antigripales
+cc_habitos_toxicos660		Duration	4007	4046	durante los días de uso del medicamento
+cc_habitos_toxicos232		Type	69	78	fentanilo
+cc_habitos_toxicos232		Type	200	209	fentanilo
+cc_habitos_toxicos232		Type	739	748	Fentanilo
+cc_habitos_toxicos232		Duration	749	756	en 2001
+cc_habitos_toxicos232		Duration	861	868	en 2009
+cc_habitos_toxicos232		Amount	895	904	21000 mcg
+cc_habitos_toxicos232		Frequency	905	911	al mes
+cc_habitos_toxicos232		Method	915	926	comprimidos
+cc_habitos_toxicos232		Frequency	927	956	tomándolos cada 15-30 minutos
+cc_habitos_toxicos232		Type	967	988	Bupremorfina/naloxona
+cc_habitos_toxicos232		Duration	958	965	Al alta
+cc_habitos_toxicos232		Amount	989	994	12 mg
+cc_habitos_toxicos232		Frequency	994	998	/día
+cc_habitos_toxicos232		Type	1235	1244	fentanilo
+cc_habitos_toxicos232		Type	1697	1705	opiáceos
+cc_habitos_toxicos232		Type	2115	2123	suboxone
+cc_habitos_toxicos231		Type	786	794	opiáceos
+cc_habitos_toxicos231		Duration	795	825	de más de 10 años de evolución
+cc_habitos_toxicos231		Type	875	883	metadona
+cc_habitos_toxicos231		Duration	863	870	en 2006
+cc_habitos_toxicos231		Type	998	1006	Tramadol
+cc_habitos_toxicos231		Method	983	994	comprimidos
+cc_habitos_toxicos231		Frequency	1007	1018	diariamente
+cc_habitos_toxicos231		Frequency	1021	1034	días alternos
+cc_habitos_toxicos231		Type	1064	1071	heroína
+cc_habitos_toxicos231		Method	1072	1078	fumada
+cc_habitos_toxicos231		Type	1240	1248	Tramadol
+cc_habitos_toxicos231		Method	1249	1253	oral
+cc_habitos_toxicos231		Amount	1272	1285	3 cp de 50 mg
+cc_habitos_toxicos231		Frequency	1286	1298	cada 6 horas
+cc_habitos_toxicos231		Type	1327	1334	heroína
+cc_habitos_toxicos231		Duration	1300	1315	Hace una semana
+cc_habitos_toxicos231		Method	1335	1341	fumada
+cc_habitos_toxicos231		Type	1676	1684	Tramadol
+cc_habitos_toxicos231		Amount	1656	1661	100mg
+cc_habitos_toxicos231		Frequency	1662	1672	cada 6 hrs
+cc_habitos_toxicos231		Type	1839	1860	Buprenorfina/Naloxona
+cc_habitos_toxicos231		Duration	1812	1834	Tras los primeros días
+cc_habitos_toxicos231		Amount	1863	1867	4 mg
+cc_habitos_toxicos231		Frequency	1867	1871	/día
+cc_habitos_toxicos231		Type	2005	2026	Buprenorfina/Naloxona
+cc_habitos_toxicos231		Frequency	1997	2001	/día
+cc_habitos_toxicos231		Amount	1993	1997	8 mg
+cc_habitos_toxicos231		Type	2419	2440	Buprenorfina/Naloxona
+cc_habitos_toxicos231		Type	2845	2866	Buprenorfina/Naloxona
+caso_clinico_urgencias100		Amount	211	226	6-8 cigarrillos
+caso_clinico_urgencias100		Frequency	227	233	al día
+caso_clinico_urgencias100		History	234	251	hasta hace 8 años
+caso_clinico_urgencias100		Type	267	274	heroína
+caso_clinico_urgencias100		Method	285	293	inhalada
+caso_clinico_urgencias100		Type	277	284	cocaína
+caso_clinico_urgencias100		Method	285	293	inhalada
+caso_clinico_urgencias100		Type	310	318	metadona
+caso_clinico_urgencias100		History	346	363	desde hace 5 años
+caso_clinico_psiquiatria310		Type	268	283	benzodiacepinas
+caso_clinico_psiquiatria310		Type	286	297	analgésicos
+caso_clinico_psiquiatria310		Type	4862	4877	benzodiacepinas
+caso_clinico_psiquiatria310		Duration	4908	4924	a los 44-45 años
+caso_clinico_psiquiatria310		Type	5063	5073	alprazolam
+caso_clinico_psiquiatria310		Amount	5031	5055	dosis máxima fue de 8 mg
+caso_clinico_psiquiatria310		Frequency	5056	5059	día
+caso_clinico_psiquiatria310		Frequency	5104	5115	ocasionales
+caso_clinico_psiquiatria310		Duration	5318	5336	de larga evolución
+caso_clinico_psiquiatria310		Type	5400	5411	paracetamol
+caso_clinico_psiquiatria310		Frequency	5392	5396	/día
+caso_clinico_psiquiatria310		Amount	5378	5392	hasta 2.500 mg
+caso_clinico_psiquiatria310		Type	5414	5424	ibuprofeno
+caso_clinico_psiquiatria310		Amount	5425	5431	600 mg
+caso_clinico_psiquiatria310		Frequency	5431	5435	/día
+caso_clinico_psiquiatria310		Type	5479	5488	triptanes
+caso_clinico_psiquiatria310		Amount	5491	5523	dosis superiores a las indicadas
+caso_clinico_psiquiatria310		Type	5578	5589	analgésicos
+caso_clinico_psiquiatria310		Type	6056	6078	clorazepato dipotásico
+caso_clinico_psiquiatria310		Amount	6041	6052	hasta 40 mg
+caso_clinico_psiquiatria310		Frequency	6078	6082	/día
+caso_clinico_psiquiatria310		Frequency	6143	6154	diariamente
+caso_clinico_psiquiatria310		Amount	6174	6182	2.500 mg
+caso_clinico_psiquiatria310		Type	6186	6197	paracetamol
+caso_clinico_psiquiatria310		Frequency	6197	6201	/día
+caso_clinico_psiquiatria310		Type	6204	6214	ibuprofeno
+caso_clinico_psiquiatria310		Frequency	6215	6229	ocasionalmente
+caso_clinico_psiquiatria310		Type	7283	7295	ansiolíticos
+caso_clinico_psiquiatria310		Type	7731	7746	benzodiacepinas
+caso_clinico_psiquiatria310		Type	6293	6303	alprazolam
+caso_clinico_psiquiatria472		Type	898	905	cocaína
+caso_clinico_psiquiatria472		Frequency	881	896	esporádicamente
+S0212-16112014000200031-1		Duration	60	77	desde los 15 años
+cc_habitos_toxicos495		Type	183	196	metanfetamina
+cc_habitos_toxicos613		Type	1123	1135	barbitúricos
+cc_habitos_toxicos613		Type	1095	1110	benzodiacepinas
+cc_habitos_toxicos613		Type	2309	2319	olanzapina
+cc_habitos_toxicos613		Duration	2269	2289	previa a la admisión
+cc_habitos_toxicos613		Amount	2293	2305	54 pastillas
+cc_habitos_toxicos613		Amount	2327	2333	540 mg
+cc_habitos_toxicos613		Type	2321	2324	OLZ
+cc_habitos_toxicos613		Duration	2269	2289	previa a la admisión
+cc_habitos_toxicos613		Amount	2293	2305	54 pastillas
+cc_habitos_toxicos613		Amount	2327	2333	540 mg
+cc_habitos_toxicos580		History	52	70	desde hace 20 años
+cc_habitos_toxicos580		Amount	74	83	1 paquete
+cc_habitos_toxicos580		Frequency	84	90	al día
+cc_habitos_toxicos580		Amount	113	128	30 años-paquete
+cc_onco797		Amount	283	291	IPA = 80
+cc_onco797		History	292	311	hasta hacía 12 años
+cc_onco797		History	325	344	hasta hacía 12 años
+cc_habitos_toxicos480		Type	467	478	clembuterol
+cc_otorrinolaringologia408		Type	410	417	cocaína
+cc_otorrinolaringologia408		Method	418	426	inhalada
+cc_otorrinolaringologia408		History	470	488	hace más de un año
+cc_otorrinolaringologia408		Type	679	686	cocaína
+cc_otorrinolaringologia408		Duration	173	190	años de evolución
+cc_otorrinolaringologia408		Method	229	234	nasal
+caso_clinico_radiologia916		Amount	234	238	5 py
+cc_habitos_toxicos507		Method	2071	2077	fumado
+cc_habitos_toxicos507		Type	2078	2094	crack de cocaína
+cc_habitos_toxicos507		Duration	2095	2134	un día antes del inicio de los síntomas
+cc_habitos_toxicos507		Amount	2157	2176	aproximadamente 4 g
+cc_habitos_toxicos507		Method	2252	2258	fumada
+cc_habitos_toxicos507		Type	2368	2375	cocaína
+cc_habitos_toxicos507		Frequency	2353	2364	infrecuente
+cc_habitos_toxicos507		Frequency	2389	2405	2-3 veces al año
+cc_habitos_toxicos507		History	2442	2459	hace varios meses
+cc_habitos_toxicos507		Type	2499	2506	heroína
+cc_habitos_toxicos507		Method	2507	2520	por vía nasal
+cc_habitos_toxicos507		Frequency	2525	2540	poca frecuencia
+cc_habitos_toxicos507		Type	2604	2614	esteroides
+cc_habitos_toxicos507		Type	2615	2628	anabolizantes
+cc_habitos_toxicos507		Type	2578	2592	otra sustancia
+cc_habitos_toxicos507		Method	2654	2669	vía intravenosa
+cc_habitos_toxicos507		Method	2672	2676	oral
+cc_habitos_toxicos507		Type	3071	3078	cocaína
+cc_habitos_toxicos507		Type	3118	3122	MDMA
+cc_habitos_toxicos507		Type	3105	3116	anfetaminas
+cc_habitos_toxicos507		Type	3095	3103	metadona
+cc_habitos_toxicos507		Type	6191	6198	cocaína
+casos_clinicos_habtox95		Type	178	191	anabolizantes
+casos_clinicos_habtox95		Duration	220	236	desde hace meses
+casos_clinicos_habtox95		Type	406	416	esteroides
+casos_clinicos_habtox27		History	1419	1438	durante el embarazo
+casos_clinicos_habtox27		Type	1547	1554	cocaína
+caso_clinico_medicina_interna685		Amount	27	45	10 cigarrillos/día
+caso_clinico_medicina_interna685		Type	30	41	cigarrillos
+caso_clinico_medicina_interna685		Amount	57	60	2-4
+caso_clinico_medicina_interna685		Method	16	23	Fumador
+caso_clinico_medicina_interna685		Frequency	60	64	/día
+caso_clinico_medicina_interna685		Type	90	95	speed
+caso_clinico_medicina_interna685		Frequency	77	86	ocasional
+caso_clinico_medicina_interna685		Type	98	102	MDMA
+caso_clinico_medicina_interna685		Frequency	77	86	ocasional
+caso_clinico_medicina_interna381		History	177	193	desde hace 1 año
+caso_clinico_medicina_interna381		History	177	193	desde hace 1 año
+cc_habitos_toxicos921		Type	31	38	Heroína
+cc_habitos_toxicos921		Duration	40	57	desde los 17 años
+cc_habitos_toxicos921		Method	67	76	inyectada
+cc_habitos_toxicos921		History	406	416	desde 2007
+cc_habitos_toxicos921		Type	107	114	cocaína
+cc_habitos_toxicos921		Type	200	208	naloxona
+cc_habitos_toxicos921		Type	210	218	metadona
+cc_habitos_toxicos921		Type	236	257	buprenorfina/naloxone
+cc_habitos_toxicos921		Type	384	392	metadona
+cc_habitos_toxicos921		Type	557	564	cocaína
+cc_habitos_toxicos921		Amount	611	626	22 cigarros/día
+cc_habitos_toxicos921		Type	628	642	tabaco de liar
+cc_habitos_toxicos921		Duration	645	662	Desde los 15 años
+cc_habitos_toxicos921		Amount	674	698	hasta 40-60 cigarros/día
+cc_habitos_toxicos921		Duration	745	763	Inicio con 12 años
+cc_habitos_toxicos921		History	722	743	desde hace cinco años
+cc_habitos_toxicos921		Frequency	773	788	fines de semana
+cc_habitos_toxicos921		Frequency	942	965	antes de consumir otras
+cc_habitos_toxicos921		Type	969	980	Anfetaminas
+cc_habitos_toxicos921		Duration	982	1000	inicio con 16 años
+cc_habitos_toxicos921		History	1002	1014	hasta los 21
+cc_habitos_toxicos921		Frequency	1026	1035	ocasional
+cc_habitos_toxicos921		Type	1039	1046	Cocaína
+cc_habitos_toxicos921		Duration	1048	1066	inicio con 17 años
+cc_habitos_toxicos921		Method	1081	1089	esnifada
+cc_habitos_toxicos921		History	1178	1195	diciembre de 2007
+cc_habitos_toxicos921		Type	1152	1159	heroína
+cc_habitos_toxicos921		Type	1116	1126	pasta base
+cc_habitos_toxicos921		Method	1097	1103	fumada
+cc_habitos_toxicos921		Method	1129	1138	inyectada
+cc_habitos_toxicos921		Duration	1280	1298	inicio con 15 años
+cc_habitos_toxicos921		History	1299	1311	hasta los 22
+cc_habitos_toxicos921		Frequency	1321	1327	diario
+cc_habitos_toxicos921		Amount	1329	1339	hasta 10 g
+cc_habitos_toxicos921		Frequency	1339	1341	/d
+cc_habitos_toxicos921		Method	1685	1694	inyección
+cc_habitos_toxicos921		Amount	1726	1743	0,5 g de cada una
+cc_habitos_toxicos921		Type	1866	1873	heroína
+cc_habitos_toxicos921		Type	2069	2090	buprenorfina/naloxona
+cc_habitos_toxicos921		Amount	2091	2095	8 mg
+cc_habitos_toxicos921		Frequency	2095	2099	/día
+cc_habitos_toxicos921		Type	2588	2596	opiaceos
+cc_habitos_toxicos921		Type	2637	2645	metadona
+cc_habitos_toxicos921		Duration	2598	2605	En 2005
+cc_habitos_toxicos921		Type	2737	2744	cocaína
+cc_habitos_toxicos921		Type	2747	2754	heroína
+cc_onco54		History	70	84	últimos 8 años
+cc_onco54		Frequency	114	141	1 paquete/día (38 paq./año)
+cc_onco54		History	70	84	últimos 8 años
+cc_habitos_toxicos454		Type	105	112	heroína
+caso_clinico_urologia266		Amount	121	135	2 paquetes/año
+cc_habitos_toxicos782		Amount	151	165	10 cigarrillos
+cc_habitos_toxicos782		Frequency	166	173	diarios
+cc_habitos_toxicos782		Amount	204	219	40 paquetes/año
+cc_habitos_toxicos782		Type	250	258	nicotina
+cc_habitos_toxicos782		Duration	737	765	Al finalizar la intervención
+cc_habitos_toxicos782		History	854	868	a los 10 meses
+cc_habitos_toxicos782		Type	1131	1139	nicotina
+cc_habitos_toxicos647		Type	2316	2323	cocaína
+cc_habitos_toxicos647		Type	2656	2663	cocaína
+cc_habitos_toxicos647		Duration	2694	2713	desde hacía 30 años
+cc_habitos_toxicos871		Type	200	204	EAAs
+cc_habitos_toxicos871		Duration	206	249	de manera más intensa en los últimos 7 años
+cc_habitos_toxicos871		Type	284	296	metandienona
+cc_habitos_toxicos871		Frequency	353	418	en ciclos de 3 a 4 meses, en promedio durante 9 meses de cada año
+cc_habitos_toxicos871		Type	298	310	testosterona
+cc_habitos_toxicos871		Frequency	353	418	en ciclos de 3 a 4 meses, en promedio durante 9 meses de cada año
+cc_habitos_toxicos871		Type	313	325	ofnandrolone
+cc_habitos_toxicos871		Frequency	353	418	en ciclos de 3 a 4 meses, en promedio durante 9 meses de cada año
+cc_habitos_toxicos397		Type	36	43	cocaína
+cc_habitos_toxicos642		Type	71	80	marihuana
+cc_habitos_toxicos642		Frequency	58	67	ocasional
+cc_habitos_toxicos642		Type	239	246	cocaína
+cc_habitos_toxicos642		Duration	247	256	esa noche
+cc_habitos_toxicos642		Type	1688	1695	cocaína
+cc_habitos_toxicos201		Amount	124	142	15 cigarrillos/día
+casos_clinicos_habtox4		Type	1369	1378	marihuana
+casos_clinicos_habtox4		Type	1803	1809	litros
+casos_clinicos_habtox4		Type	2140	2149	marihuana
+casos_clinicos_habtox4		Type	2221	2236	benzodiacepinas
+casos_clinicos_habtox4		Frequency	2208	2215	a veces
+casos_clinicos_habtox4		Type	1562	1579	algún ansiolítico
+casos_clinicos_habtox4		Frequency	3274	3297	un día en fin de semana
+casos_clinicos_habtox4		Amount	3329	3348	una caña de cerveza
+casos_clinicos_habtox4		Type	3341	3348	cerveza
+caso_clinico_medicina_interna106		History	53	68	últimos 5 meses
+cc_habitos_toxicos439		Type	423	432	marihuana
+cc_habitos_toxicos439		Frequency	380	394	Ocasionalmente
+cc_habitos_toxicos439		Type	404	420	dextroanfetamina
+cc_habitos_toxicos439		Frequency	380	394	Ocasionalmente
+cc_habitos_toxicos439		Type	1731	1741	anfetamina
+cc_habitos_toxicos439		Type	1816	1829	cannabinoides
+cc_habitos_toxicos439		Type	2738	2744	kratom
+cc_habitos_toxicos439		Type	2803	2819	dextroanfetamina
+cc_habitos_toxicos439		Amount	2783	2799	seis comprimidos
+cc_habitos_toxicos340		History	166	192	desde hace bastante tiempo
+cc_habitos_toxicos340		Type	3293	3297	vino
+cc_habitos_toxicos340		Type	3361	3365	vino
+cc_habitos_toxicos340		Amount	3349	3357	una copa
+cc_habitos_toxicos340		Type	3419	3429	vino tinto
+cc_habitos_toxicos340		Amount	3406	3415	2-3 copas
+cc_habitos_toxicos340		Frequency	3430	3452	al día (comida y cena)
+cc_habitos_toxicos340		Type	4368	4375	Nescafé
+cc_habitos_toxicos340		Amount	4353	4364	1 c. sopera
+cc_habitos_toxicos340		Frequency	4310	4317	siempre
+cc_habitos_toxicos340		Type	5091	5095	café
+cc_habitos_toxicos340		Amount	5089	5095	1 café
+cc_habitos_toxicos340		Type	5108	5118	vino tinto
+cc_habitos_toxicos340		Amount	5096	5104	1-2 copa
+cc_habitos_toxicos340		Type	5570	5580	vino tinto
+cc_habitos_toxicos340		Amount	5557	5566	1-2 copas
+cc_habitos_toxicos825		Amount	353	368	10 paquetes-año
+cc_habitos_toxicos825		Type	241	250	mefedrona
+cc_habitos_toxicos825		Frequency	251	262	diariamente
+cc_habitos_toxicos825		Method	295	304	vía nasal
+cc_habitos_toxicos825		Amount	319	337	entre 1 y 2 gramos
+cc_habitos_toxicos825		Type	461	468	cocaína
+cc_habitos_toxicos825		Frequency	448	457	ocasional
+cc_habitos_toxicos392		Type	180	185	crack
+cc_habitos_toxicos713		Method	24	30	activo
+cc_habitos_toxicos713		Amount	32	42	40 cig/día
+cc_habitos_toxicos713		Amount	57	62	2-3 L
+cc_habitos_toxicos713		Frequency	62	66	/día
+cc_habitos_toxicos73		Type	1397	1443	éxtasis (MDMA: 3,4-metilendioxi-metanfetamina)
+cc_habitos_toxicos73		Duration	1357	1383	12 horas antes del ingreso
+cc_habitos_toxicos721		Amount	98	108	10 cig/día
+cc_habitos_toxicos300		Type	229	236	cocaína
+cc_habitos_toxicos300		Duration	247	261	en la juventud
+cc_habitos_toxicos300		Duration	247	261	en la juventud
+cc_habitos_toxicos300		Duration	269	286	desde hace 2 años
+cc_habitos_toxicos300		Type	295	315	bebidas energizantes
+cc_habitos_toxicos300		Amount	346	356	2 botellas
+cc_habitos_toxicos300		Frequency	357	363	al día
+cc_habitos_toxicos300		Type	365	371	Volt
+cc_habitos_toxicos300		Amount	373	399	600 ml/día = 192 mg/100 ml
+cc_habitos_toxicos300		Type	2288	2308	bebidas energizantes
+cc_habitos_toxicos300		Type	659	665	Volt
+cc_habitos_toxicos300		Amount	667	687	1200 ml/día = 384 mg
+cc_habitos_toxicos300		Frequency	651	657	al día
+cc_habitos_toxicos300		Amount	613	650	hasta 4 (en ocasiones a más) botellas
+cc_habitos_toxicos300		Duration	501	549	Desde 2 meses antes de atenderlo por primera vez
+cc_habitos_toxicos300		Frequency	690	725	tanto en la mañana como en la noche
+cc_habitos_toxicos91		Type	79	86	heroína
+cc_habitos_toxicos91		Duration	87	104	desde los 17 años
+cc_habitos_toxicos91		Duration	142	163	desde 1987 hasta 1996
+cc_habitos_toxicos91		History	153	163	hasta 1996
+cc_habitos_toxicos91		Type	208	216	metadona
+cc_habitos_toxicos91		Frequency	262	272	esporádico
+cc_habitos_toxicos91		Type	276	293	psicoestimulantes
+cc_habitos_toxicos91		Type	887	894	cocaína
+cc_habitos_toxicos91		Type	896	905	marihuana
+cc_habitos_toxicos91		Type	908	912	vino
+cc_habitos_toxicos391		Duration	186	204	desde hace 30 años
+cc_habitos_toxicos391		Type	273	287	coca con lejía
+cc_habitos_toxicos391		Amount	231	245	2 a 3 paquetes
+cc_habitos_toxicos391		Frequency	246	249	día
+cc_habitos_toxicos391		Amount	501	510	abundante
+cc_habitos_toxicos391		Type	532	539	cocaína
+cc_habitos_toxicos236		Amount	82	92	importante
+cc_habitos_toxicos236		Amount	115	130	76 paquetes-año
+cc_habitos_toxicos388		Frequency	874	881	semanal
+cc_habitos_toxicos388		Frequency	929	938	ocasional
+cc_habitos_toxicos388		Amount	952	965	tres cigarros
+cc_habitos_toxicos388		Frequency	966	973	por día
+cc_habitos_toxicos388		Type	1032	1039	cocaína
+cc_habitos_toxicos388		Duration	1040	1088	antes y durante el primer trimestre del embarazo
+cc_habitos_toxicos388		Frequency	1148	1155	semanal
+cc_habitos_toxicos388		Amount	1194	1209	cuatro cigarros
+cc_habitos_toxicos388		Frequency	1210	1217	diarios
+cc_habitos_toxicos388		Type	1277	1284	cocaína
+cc_habitos_toxicos388		Frequency	1171	1180	ocasional
+cc_habitos_toxicos863		History	287	297	3 o 4 años
+cc_habitos_toxicos863		Duration	763	770	crónico
+cc_habitos_toxicos863		Type	820	828	metadona
+cc_habitos_toxicos863		Type	1001	1008	cocaina
+cc_habitos_toxicos863		Duration	981	988	crónico
+cc_habitos_toxicos863		Duration	1045	1062	desde los 16 años
+cc_habitos_toxicos863		Type	1010	1017	heroina
+cc_habitos_toxicos863		Duration	981	988	crónico
+cc_habitos_toxicos863		Duration	1045	1062	desde los 16 años
+cc_habitos_toxicos863		Type	1019	1024	speed
+cc_habitos_toxicos863		Duration	981	988	crónico
+cc_habitos_toxicos863		Duration	1045	1062	desde los 16 años
+cc_habitos_toxicos863		Duration	981	988	crónico
+cc_habitos_toxicos863		Duration	1045	1062	desde los 16 años
+cc_habitos_toxicos863		Duration	981	988	crónico
+cc_habitos_toxicos863		Duration	1045	1062	desde los 16 años
+cc_habitos_toxicos863		Type	1159	1166	cocaina
+cc_habitos_toxicos863		Type	3435	3443	metadona
+cc_onco628		Method	67	73	activo
+cc_onco628		Amount	78	103	índice paquetes-año de 35
+cc_onco628		Amount	139	142	1 l
+cc_onco628		Type	146	153	cerveza
+cc_onco628		Frequency	154	160	diario
+cc_habitos_toxicos441		Duration	182	189	14 años
+cc_habitos_toxicos441		Type	229	240	anfetaminas
+cc_habitos_toxicos441		Duration	182	189	14 años
+cc_habitos_toxicos441		Type	3245	3255	anfetamina
+cc_habitos_toxicos441		Method	3256	3270	como inhalante
+cc_habitos_toxicos441		Duration	3169	3227	durante el fin de semana, 24 h antes de su hospitalización
+cc_habitos_toxicos460		Method	106	120	vía parenteral
+cc_habitos_toxicos460		Duration	121	140	desde hacía 20 años
+cc_habitos_toxicos460		Type	203	211	opiáceos
+cc_habitos_toxicos460		Duration	142	159	en los últi­mos 4
+cc_habitos_toxicos460		Frequency	174	184	esporádica
+cc_habitos_toxicos460		Type	213	228	benzodiacepinas
+cc_habitos_toxicos460		Duration	142	159	en los últi­mos 4
+cc_habitos_toxicos460		Frequency	174	184	esporádica
+cc_habitos_toxicos460		Type	231	238	cocaína
+cc_habitos_toxicos460		Duration	142	159	en los últi­mos 4
+cc_habitos_toxicos460		Frequency	174	184	esporádica
+cc_habitos_toxicos460		Type	1829	1836	cocaína
+cc_habitos_toxicos460		Type	1838	1853	benzodiacepinas
+cc_habitos_toxicos460		Type	1855	1869	metoclopramida
+cc_habitos_toxicos460		Type	1872	1889	posibles opiáceos
+cc_habitos_toxicos460		Type	6119	6126	cocaína
+cc_habitos_toxicos450		Type	373	384	anfetaminas
+caso_clinico_radiologia573		Amount	97	104	excesiv
+cc_habitos_toxicos940		Type	298	305	heroína
+cc_habitos_toxicos940		Method	306	312	fumada
+cc_habitos_toxicos940		Amount	340	350	1/4-1/2 gr
+cc_habitos_toxicos940		Frequency	350	355	/ día
+cc_habitos_toxicos940		Type	399	414	cocaína en base
+cc_habitos_toxicos940		Type	417	420	THC
+cc_habitos_toxicos940		Type	470	477	heroína
+cc_habitos_toxicos940		Frequency	446	452	diario
+cc_habitos_toxicos940		Frequency	446	452	diario
+cc_habitos_toxicos940		Type	489	492	THC
+cc_habitos_toxicos940		Frequency	446	452	diario
+cc_habitos_toxicos940		Type	530	537	cocaína
+cc_habitos_toxicos940		Frequency	499	512	fin de semana
+cc_habitos_toxicos940		Amount	577	606	en torno a los 10-15 pitillos
+cc_habitos_toxicos940		Frequency	607	614	diarios
+cc_habitos_toxicos940		Amount	619	634	incrementa a 30
+cc_habitos_toxicos940		Type	650	657	cocaína
+cc_habitos_toxicos940		Duration	1469	1482	A los 14 años
+cc_habitos_toxicos940		Type	1518	1524	hachís
+cc_habitos_toxicos940		Duration	1469	1482	A los 14 años
+cc_habitos_toxicos940		Duration	1469	1482	A los 14 años
+cc_habitos_toxicos940		Type	1707	1714	heroína
+cc_habitos_toxicos940		Type	1717	1724	cocaína
+cc_habitos_toxicos940		Type	1820	1826	hachís
+cc_habitos_toxicos940		Type	2077	2084	heroína
+cc_habitos_toxicos940		Frequency	2234	2249	a días alternos
+cc_habitos_toxicos940		Type	2651	2659	opiáceos
+cc_habitos_toxicos940		Type	3306	3313	heroína
+cc_habitos_toxicos940		Frequency	3295	3302	regular
+cc_habitos_toxicos940		Type	3459	3467	Metadona
+cc_habitos_toxicos940		Type	3469	3472	PMM
+cc_habitos_toxicos940		Type	3959	3967	metadona
+cc_habitos_toxicos940		Amount	3998	4003	25 mg
+cc_habitos_toxicos940		Type	5195	5203	metadona
+cc_habitos_toxicos940		Type	5314	5322	metadona
+cc_habitos_toxicos940		Amount	5301	5306	10 mg
+cc_habitos_toxicos940		Frequency	5306	5310	/día
+cc_habitos_toxicos940		Type	5470	5491	buprenorfina/naloxona
+cc_habitos_toxicos940		Frequency	5451	5457	diaria
+cc_habitos_toxicos940		Amount	5461	5466	12 mg
+cc_onco1710		History	46	68	desde hace cuatro años
+cc_habitos_toxicos464		Type	823	847	desomorfina o krokodil
+cc_habitos_toxicos464		Frequency	626	634	habitual
+cc_habitos_toxicos464		Duration	2254	2278	desde que llego a España
+cc_habitos_toxicos464		Frequency	2314	2333	varias veces al día
+cc_habitos_toxicos464		Frequency	2852	2862	continuado
+cc_onco464		Amount	102	120	10 cigarrillos-día
+cc_onco464		Type	105	116	cigarrillos
+cc_habitos_toxicos415		Method	540	555	vía intravenosa
+cc_habitos_toxicos415		Duration	556	583	durante los últimos 10 años
+cc_habitos_toxicos415		Type	649	656	cocaína
+cc_habitos_toxicos415		Type	658	667	marihuana
+cc_habitos_toxicos415		Type	670	678	opiáceos
+cc_habitos_toxicos415		Type	712	726	metanfetaminas
+cc_habitos_toxicos415		Frequency	699	708	frecuente
+cc_habitos_toxicos415		Method	727	733	orales
+cc_habitos_toxicos415		Method	736	748	intravenosas
+cc_habitos_toxicos415		Duration	749	776	durante los últimos 2 meses
+caso_clinico_psiquiatria307		Duration	1303	1316	a los 17 años
+caso_clinico_psiquiatria307		Amount	1436	1441	200 g
+caso_clinico_psiquiatria307		Amount	1454	1487	20 UBE [unidad de bebida estándar
+caso_clinico_psiquiatria307		Type	1496	1504	cervezas
+caso_clinico_psiquiatria307		Type	1507	1511	vino
+caso_clinico_psiquiatria307		Frequency	1414	1422	a diario
+caso_clinico_psiquiatria307		Type	1962	1970	nicotina
+caso_clinico_psiquiatria307		Duration	1971	1981	desde 2007
+caso_clinico_psiquiatria307		History	2046	2054	11 meses
+caso_clinico_psiquiatria307		Amount	2106	2117	1,5 paq/día
+caso_clinico_psiquiatria307		Type	2182	2205	derivados cannabinoides
+caso_clinico_psiquiatria307		Duration	2206	2220	en la juventud
+caso_clinico_psiquiatria307		Type	2248	2253	porro
+caso_clinico_psiquiatria307		Amount	2245	2254	"1 ""porro"""
+caso_clinico_psiquiatria307		Frequency	2255	2261	al mes
+caso_clinico_psiquiatria307		Method	2240	2244	fuma
+caso_clinico_psiquiatria307		Type	2282	2289	cocaína
+caso_clinico_psiquiatria307		Method	2294	2308	vía intranasal
+caso_clinico_psiquiatria307		Duration	2309	2318	hace años
+caso_clinico_psiquiatria307		Frequency	2271	2278	puntual
+caso_clinico_psiquiatria307		History	2906	2922	durante 11 meses
+caso_clinico_psiquiatria307		Duration	2996	3021	A partir de mayo del 2008
+caso_clinico_psiquiatria307		Frequency	3039	3051	intermitente
+caso_clinico_psiquiatria307		History	1884	1892	11 meses
+caso_clinico_psiquiatria307		Type	1962	1970	nicotina
+caso_clinico_psiquiatria307		History	2046	2054	11 meses
+cc_onco1052		Type	112	119	heroína
+cc_onco1052		Method	103	110	ex-ADVP
+cc_onco1052		Type	122	129	cocaína
+cc_onco1052		Method	103	110	ex-ADVP
+cc_onco1052		Type	166	174	metadona
+cc_onco1052		Amount	244	259	25 paquetes-año
+cc_habitos_toxicos228		Type	224	231	cocaína
+cc_habitos_toxicos228		Method	208	220	intravenosos
+cc_habitos_toxicos228		Method	288	300	intravenosos
+cc_habitos_toxicos228		Type	1098	1105	cocaína
+cc_habitos_toxicos228		Frequency	1083	1094	ocasionales
+cc_habitos_toxicos228		Duration	1106	1123	desde hace 5 años
+cc_habitos_toxicos228		Method	1132	1139	inyecta
+cc_habitos_toxicos472		Type	2033	2048	benzodiacepinas
+cc_habitos_toxicos472		Duration	2481	2494	a los 14 años
+cc_habitos_toxicos472		Duration	2481	2494	a los 14 años
+cc_habitos_toxicos472		Type	2514	2521	heroína
+cc_habitos_toxicos472		Duration	2532	2545	a los 16 años
+cc_habitos_toxicos472		Type	2524	2531	cocaína
+cc_habitos_toxicos472		Duration	2532	2545	a los 16 años
+cc_habitos_toxicos472		Duration	2547	2573	Entre los 16 y los 20 años
+cc_habitos_toxicos472		Frequency	2609	2616	diarias
+cc_habitos_toxicos472		Amount	2620	2632	1,5 paquetes
+cc_habitos_toxicos472		Amount	2644	2648	24 g
+cc_habitos_toxicos472		Duration	2547	2573	Entre los 16 y los 20 años
+cc_habitos_toxicos472		Frequency	2609	2616	diarias
+cc_habitos_toxicos472		Type	2670	2677	heroína
+cc_habitos_toxicos472		Method	2682	2696	vía parenteral
+cc_habitos_toxicos472		Amount	2661	2666	1-2 g
+cc_habitos_toxicos472		Frequency	2609	2616	diarias
+cc_habitos_toxicos472		Duration	2547	2573	Entre los 16 y los 20 años
+cc_habitos_toxicos472		Type	2707	2714	cocaína
+cc_habitos_toxicos472		Method	2715	2723	esnifada
+cc_habitos_toxicos472		Amount	2700	2703	1,5
+cc_habitos_toxicos472		Frequency	2609	2616	diarias
+cc_habitos_toxicos472		Duration	2547	2573	Entre los 16 y los 20 años
+cc_habitos_toxicos472		Frequency	2748	2754	diaria
+cc_habitos_toxicos472		Type	3496	3507	ansiolítica
+cc_habitos_toxicos472		Type	3510	3519	hipnótica
+cc_habitos_toxicos472		Type	3982	4010	pastillas de tranquilizantes
+cc_habitos_toxicos472		Amount	3968	3978	importante
+cc_habitos_toxicos644		Duration	399	419	23 años de evolución
+cc_habitos_toxicos644		Type	436	443	cocaína
+cc_habitos_toxicos644		Method	422	432	inhalación
+cc_habitos_toxicos644		Duration	444	455	por 20 años
+cc_habitos_toxicos644		Type	505	512	cocaína
+cc_habitos_toxicos644		Method	513	542	directamente sobre el paladar
+cc_habitos_toxicos644		Type	876	883	cocaína
+cc_habitos_toxicos195		Type	269	272	THC
+cc_habitos_toxicos195		Type	377	380	THC
+cc_habitos_toxicos195		Frequency	365	373	habitual
+cc_habitos_toxicos195		Frequency	365	373	habitual
+cc_habitos_toxicos195		Duration	903	919	últimas 72 horas
+casos_clinicos_habtox56		Type	472	480	Metadona
+casos_clinicos_habtox56		Type	766	774	Metadona
+casos_clinicos_habtox56		History	834	848	agosto de 2010
+casos_clinicos_habtox56		History	878	884	un año
+casos_clinicos_habtox56		Duration	850	870	En noviembre de 2011
+casos_clinicos_habtox56		Type	1092	1099	Heroína
+casos_clinicos_habtox56		Duration	1119	1132	a los 23 años
+casos_clinicos_habtox56		Method	1172	1178	fumada
+casos_clinicos_habtox56		Method	1225	1235	parenteral
+casos_clinicos_habtox56		Type	1237	1244	Cocaina
+casos_clinicos_habtox56		Duration	1264	1277	a los 14 años
+casos_clinicos_habtox56		Method	1303	1309	fumada
+casos_clinicos_habtox56		Type	1311	1314	THC
+casos_clinicos_habtox56		Duration	1324	1355	desde los 14 años a los 19 años
+casos_clinicos_habtox56		History	1357	1382	Abstinente desde entonces
+casos_clinicos_habtox56		Type	1384	1396	Alucinogenos
+casos_clinicos_habtox56		Duration	1406	1423	desde los 16 años
+casos_clinicos_habtox56		Duration	1433	1450	desde los 13 años
+cc_habitos_toxicos311		Duration	565	585	a la edad de 15 años
+cc_habitos_toxicos311		Frequency	586	605	los fines de semana
+cc_habitos_toxicos311		Type	618	625	Cerveza
+cc_habitos_toxicos311		Type	628	634	Whisky
+cc_habitos_toxicos311		Duration	662	672	23-24 años
+cc_habitos_toxicos311		Amount	856	866	2 botellas
+cc_habitos_toxicos311		Type	870	873	J.B
+cc_habitos_toxicos311		Amount	875	883	2 litros
+cc_habitos_toxicos311		Type	887	894	Cerveza
+cc_habitos_toxicos311		Duration	899	932	Desde los 31 años tras separación
+cc_habitos_toxicos311		History	1117	1129	Lleva 3 días
+cc_habitos_toxicos311		Type	1041	1048	cerveza
+cc_habitos_toxicos311		Amount	1026	1037	30-40 latas
+cc_habitos_toxicos311		Frequency	1014	1025	diariamente
+cc_habitos_toxicos311		Type	1065	1071	Whisky
+cc_habitos_toxicos311		Amount	1050	1061	10-15 vasos
+cc_habitos_toxicos311		Frequency	1014	1025	diariamente
+cc_onco1895		Amount	603	621	20 cigarrillos/día
+cc_onco1895		Duration	622	648	desde los 18 a los 51 años
+cc_onco1895		Amount	658	675	5 cigarrillos/día
+cc_onco1895		Duration	676	693	hasta los 71 años
+casos_clinicos_habtox20		Duration	444	462	en la adolescencia
+casos_clinicos_habtox20		Amount	482	490	excesivo
+casos_clinicos_habtox20		Frequency	512	531	los fines de semana
+casos_clinicos_habtox20		Frequency	567	577	esporádica
+casos_clinicos_habtox20		Duration	579	592	Por esa época
+casos_clinicos_habtox20		Frequency	646	656	esporádica
+casos_clinicos_habtox20		Duration	658	671	A los 22 años
+casos_clinicos_habtox20		Frequency	701	707	diario
+casos_clinicos_habtox20		Frequency	733	745	más habitual
+casos_clinicos_habtox20		Amount	953	962	340 g/día
+casos_clinicos_habtox20		Frequency	963	982	los fines de semana
+casos_clinicos_habtox20		Duration	869	885	En el último año
+casos_clinicos_habtox20		Duration	869	885	En el último año
+casos_clinicos_habtox20		Amount	915	924	310 g/día
+casos_clinicos_habtox20		Duration	869	885	En el último año
+casos_clinicos_habtox20		Amount	993	1007	2 o 3 «porros»
+casos_clinicos_habtox20		Type	1000	1006	porros
+casos_clinicos_habtox20		Frequency	1008	1015	diarios
+casos_clinicos_habtox20		Duration	869	885	En el último año
+casos_clinicos_habtox20		Amount	1018	1028	alguno más
+casos_clinicos_habtox20		Frequency	1032	1045	fin de semana
+casos_clinicos_habtox20		Type	1140	1147	cocaína
+casos_clinicos_habtox20		Duration	1049	1072	desde hace algunos años
+casos_clinicos_habtox20		Amount	1125	1136	alguna raya
+casos_clinicos_habtox20		Frequency	1149	1182	últimamente de forma más habitual
+casos_clinicos_habtox20		Amount	1216	1225	excesivos
+casos_clinicos_habtox20		Frequency	1305	1324	algún fin de semana
+casos_clinicos_habtox20		Duration	1238	1260	Desde hace varios años
+casos_clinicos_habtox20		Frequency	1291	1302	diariamente
+casos_clinicos_habtox20		History	1644	1659	desde hace 24 h
+casos_clinicos_habtox20		Type	2750	2761	aguardiente
+casos_clinicos_habtox20		Amount	2763	2797	4 UBE [unidad de bebida estándar])
+casos_clinicos_habtox20		Amount	2734	2746	2 «chupitos»
+casos_clinicos_habtox20		Frequency	2699	2715	En día laborable
+casos_clinicos_habtox20		Type	2854	2858	vino
+casos_clinicos_habtox20		Amount	2839	2850	medio litro
+casos_clinicos_habtox20		Amount	2877	2882	5 UBE
+casos_clinicos_habtox20		Frequency	2699	2715	En día laborable
+casos_clinicos_habtox20		Type	2904	2909	cañas
+casos_clinicos_habtox20		Amount	2900	2917	2-3 cañas (3 UBE)
+casos_clinicos_habtox20		Frequency	2699	2715	En día laborable
+casos_clinicos_habtox20		Type	2950	2954	vino
+casos_clinicos_habtox20		Amount	2935	2946	medio litro
+casos_clinicos_habtox20		Amount	2956	2961	5 UBE
+casos_clinicos_habtox20		Frequency	2699	2715	En día laborable
+casos_clinicos_habtox20		Type	2992	2997	coñac
+casos_clinicos_habtox20		Amount	2981	2988	2 copas
+casos_clinicos_habtox20		Amount	3011	3016	4 UBE
+casos_clinicos_habtox20		Frequency	2699	2715	En día laborable
+casos_clinicos_habtox20		Type	3044	3060	cañas o cervezas
+casos_clinicos_habtox20		Amount	3040	3068	4-5 cañas o cervezas (5 UBE)
+casos_clinicos_habtox20		Frequency	2699	2715	En día laborable
+casos_clinicos_habtox20		Type	3103	3107	vino
+casos_clinicos_habtox20		Amount	3109	3114	5 UBE
+casos_clinicos_habtox20		Amount	3088	3099	medio litro
+casos_clinicos_habtox20		Frequency	2699	2715	En día laborable
+casos_clinicos_habtox20		Amount	3136	3164	31 UBE (310 g/día de etanol)
+casos_clinicos_habtox20		Frequency	3166	3185	los fines de semana
+casos_clinicos_habtox20		Amount	3305	3314	340 g/día
+casos_clinicos_habtox20		Frequency	3316	3342	cada día del fin de semana
+casos_clinicos_habtox20		Amount	3360	3365	mucho
+casos_clinicos_habtox20		Amount	3503	3513	importante
+casos_clinicos_habtox20		Amount	3679	3691	coma etílico
+casos_clinicos_habtox20		Duration	3714	3732	en la adolescencia
+casos_clinicos_habtox20		Amount	6051	6064	excesivamente
+casos_clinicos_habtox20		Type	6081	6088	cocaína
+casos_clinicos_habtox20		Type	6467	6474	cocaína
+casos_clinicos_habtox20		Type	6991	6998	cocaína
+casos_clinicos_habtox20		Frequency	7043	7058	esporádicamente
+casos_clinicos_habtox20		Amount	7090	7099	excesivos
+casos_clinicos_habtox20		Frequency	6791	6795	/día
+casos_clinicos_habtox20		Amount	6770	6791	1 comprimido de 50 mg
+cc_habitos_toxicos564		Method	446	452	pasivo
+casos_clinicos_cardiologia117		Amount	355	366	50 paquetes
+casos_clinicos_cardiologia117		Frequency	367	370	año
+caso_clinico_medicina_interna281		Amount	74	82	moderado
+caso_clinico_medicina_interna281		Method	56	63	fumador
+caso_clinico_medicina_interna281		Amount	104	112	moderado
+caso_clinico_medicina_interna281		Type	114	121	cocaína
+caso_clinico_medicina_interna281		Method	132	134	ev
+caso_clinico_medicina_interna281		Type	124	131	heroína
+caso_clinico_medicina_interna281		Method	132	134	ev
+cc_habitos_toxicos770		Type	182	185	PBC
+cc_habitos_toxicos770		Type	534	537	PBC
+cc_habitos_toxicos770		Type	3006	3021	benzoilecgonina
+cc_habitos_toxicos770		Type	3160	3175	benzodiacepinas
+cc_habitos_toxicos770		Type	3372	3379	cocaína
+cc_habitos_toxicos770		Type	5940	5947	cocaína
+cc_habitos_toxicos770		Type	6100	6107	cocaína
+cc_habitos_toxicos881		Duration	180	197	desde los 13 años
+cc_habitos_toxicos881		Type	226	247	inhalables bencénicos
+cc_habitos_toxicos881		Method	226	236	inhalables
+cc_habitos_toxicos881		Frequency	368	374	al día
+cc_habitos_toxicos881		Amount	336	355	media de 3 cigarros
+cc_habitos_toxicos881		Duration	276	301	En los últimos doce meses
+cc_habitos_toxicos881		Type	411	421	inhalables
+cc_habitos_toxicos881		Method	411	421	inhalables
+cc_habitos_toxicos881		Frequency	422	443	dos veces a la semana
+cc_habitos_toxicos881		Amount	386	407	por lo menos una lata
+cc_habitos_toxicos881		Amount	629	635	severo
+cc_habitos_toxicos881		Frequency	704	714	esporádica
+cc_habitos_toxicos881		Amount	838	846	moderado
+cc_habitos_toxicos881		Type	715	722	cocaína
+cc_habitos_toxicos881		Frequency	704	714	esporádica
+cc_habitos_toxicos881		Amount	838	846	moderado
+cc_habitos_toxicos881		Type	723	728	crack
+cc_habitos_toxicos881		Frequency	704	714	esporádica
+cc_habitos_toxicos881		Amount	838	846	moderado
+cc_habitos_toxicos881		Type	739	745	hachis
+cc_habitos_toxicos881		Frequency	704	714	esporádica
+cc_habitos_toxicos881		Amount	838	846	moderado
+cc_habitos_toxicos881		Type	747	762	benzodiacepinas
+cc_habitos_toxicos881		Frequency	704	714	esporádica
+cc_habitos_toxicos881		Amount	838	846	moderado
+cc_habitos_toxicos881		Type	765	777	alucinógenos
+cc_habitos_toxicos881		Frequency	704	714	esporádica
+cc_habitos_toxicos881		Amount	838	846	moderado
+cc_habitos_toxicos881		Type	2046	2051	licor
+cc_habitos_toxicos881		Type	2119	2126	cocaína
+cc_habitos_toxicos881		Type	2826	2836	quetiapina
+cc_habitos_toxicos881		Method	2948	2985	agregándola al cigarrillo de cannabis
+cc_habitos_toxicos881		Type	2963	2973	cigarrillo
+cc_habitos_toxicos881		Type	3406	3416	quetiapina
+cc_habitos_toxicos881		Type	3429	3436	cocaína
+cc_habitos_toxicos881		Type	3437	3442	crack
+cc_habitos_toxicos325		History	1825	1835	desde 2001
+cc_habitos_toxicos325		Type	1851	1858	cocaína
+cc_habitos_toxicos325		History	1904	1914	desde 1995
+cc_habitos_toxicos325		Type	1860	1883	derivados anfetamínicos
+cc_habitos_toxicos325		History	1904	1914	desde 1995
+cc_habitos_toxicos325		Type	1885	1892	heroína
+cc_habitos_toxicos325		History	1904	1914	desde 1995
+cc_habitos_toxicos325		History	1966	1983	hace unos 20 años
+cc_habitos_toxicos325		Duration	1966	1983	hace unos 20 años
+cc_habitos_toxicos325		Amount	2059	2074	cerca de 300 gr
+cc_habitos_toxicos325		Frequency	2074	2078	/día
+cc_habitos_toxicos325		Type	2105	2110	sidra
+cc_habitos_toxicos325		Frequency	2110	2114	/día
+cc_habitos_toxicos325		Amount	2091	2101	2-4 litros
+cc_habitos_toxicos325		Type	2125	2133	cervezas
+cc_habitos_toxicos325		Amount	2117	2133	> de 20 cervezas
+cc_habitos_toxicos325		Frequency	2133	2137	/día
+cc_onco493		Method	160	166	pasiva
+cc_habitos_toxicos422		Type	193	208	sales de baño Q
+cc_habitos_toxicos422		Type	596	603	cocaína
+cc_habitos_toxicos422		Type	583	587	MDPV
+casos_clinicos_habtox124		Type	1777	1783	porros
+casos_clinicos_habtox124		Method	1772	1776	Fuma
+casos_clinicos_habtox124		Duration	1784	1801	desde los 12 años
+casos_clinicos_habtox124		Amount	1909	1919	7-8 porros
+casos_clinicos_habtox124		Frequency	1920	1925	/ día
+casos_clinicos_habtox124		Type	2107	2113	porros
+casos_clinicos_habtox124		Type	2344	2353	marihuana
+casos_clinicos_habtox124		Method	2339	2343	fuma
+cc_habitos_toxicos237		Method	65	71	activo
+cc_habitos_toxicos237		Amount	75	95	5-10 cigarrillos/día
+cc_habitos_toxicos625		Type	66	73	heroína
+cc_habitos_toxicos625		History	75	92	hasta hace un año
+cc_habitos_toxicos625		Method	53	57	UDVP
+cc_habitos_toxicos625		Method	60	64	UDVI
+cc_habitos_toxicos625		Amount	126	135	10cig/día
+cc_habitos_toxicos625		Frequency	145	155	esporádico
+cc_habitos_toxicos478		Frequency	2866	2882	varias ocasiones
+cc_habitos_toxicos478		Type	2740	2743	LSD
+cc_habitos_toxicos478		Frequency	2727	2739	puntualmente
+cc_habitos_toxicos478		Duration	2744	2760	hace unos 3 años
+cc_habitos_toxicos478		Type	2740	2743	LSD
+cc_habitos_toxicos478		Duration	2823	2839	dos años después
+cc_habitos_toxicos478		Type	2740	2743	LSD
+cc_habitos_toxicos478		Type	2989	2992	LSD
+caso_clinico_radiologia877		Amount	56	64	moderado
+cc_onco1120		Duration	126	141	durante 10 años
+cc_onco1120		Amount	110	125	10 paquetes-año
+cc_onco1120		Amount	68	81	1 paquete/día
+cc_onco1120		Frequency	159	165	diario
+cc_onco1120		Amount	169	179	2 cervezas
+cc_onco1120		Type	171	179	cervezas
+caso_clinico_urologia332		History	153	172	hace más de 15 años
+cc_habitos_toxicos950		Amount	720	734	20 cigarrillos
+cc_habitos_toxicos950		Frequency	735	742	diarios
+cc_habitos_toxicos950		Duration	743	764	desde la adolescencia
+cc_habitos_toxicos950		Frequency	785	794	puntuales
+cc_habitos_toxicos950		Duration	795	812	desde los 15 años
+cc_habitos_toxicos950		Type	814	821	Cocaína
+cc_habitos_toxicos950		Duration	823	843	inicio a los 17 años
+cc_habitos_toxicos950		Type	845	852	Heroína
+cc_habitos_toxicos950		Duration	854	871	desde los 25 años
+cc_habitos_toxicos950		Amount	872	885	1-2 papelinas
+cc_habitos_toxicos950		Frequency	885	889	/día
+cc_habitos_toxicos950		Type	891	906	Benzodiacepinas
+cc_habitos_toxicos950		Frequency	908	922	con frecuencia
+cc_habitos_toxicos950		Duration	923	940	desde los 25 años
+cc_habitos_toxicos950		Type	994	1002	opiáceos
+cc_habitos_toxicos950		Type	1023	1032	agonistas
+cc_habitos_toxicos950		Type	1062	1069	cocaína
+cc_habitos_toxicos950		Type	1101	1109	nicotina
+cc_habitos_toxicos950		Type	1246	1254	metadona
+cc_habitos_toxicos950		Type	1273	1281	opiáceos
+cc_habitos_toxicos950		Duration	1282	1298	en enero de 2008
+cc_habitos_toxicos950		Type	1481	1488	heroína
+cc_habitos_toxicos950		Type	1497	1504	cocaína
+cc_habitos_toxicos950		Type	1539	1546	heroína
+cc_habitos_toxicos950		Type	1706	1713	heroína
+cc_habitos_toxicos950		Duration	1766	1784	septiembre de 2009
+cc_habitos_toxicos950		Type	1951	1958	heroína
+cc_habitos_toxicos950		Duration	1914	1929	febrero de 2010
+cc_habitos_toxicos950		Type	2039	2060	buprenorfina/naloxona
+cc_habitos_toxicos950		Amount	2072	2076	8 mg
+cc_habitos_toxicos950		Frequency	2076	2080	/día
+cc_habitos_toxicos950		Type	2183	2190	cocaína
+cc_habitos_toxicos950		Frequency	2170	2179	puntuales
+cc_habitos_toxicos950		Type	2211	2218	heroína
+cc_habitos_toxicos950		Frequency	2193	2207	en una ocasión
+cc_habitos_toxicos950		Type	2263	2284	buprenorfina/naloxona
+cc_habitos_toxicos950		Type	2657	2678	buprenorfina/naloxona
+cc_habitos_toxicos950		Duration	2524	2540	En abril de 2013
+cc_onco1211		Amount	320	326	IPA 30
+cc_onco1211		Frequency	338	346	habitual
+cc_onco1211		Method	372	386	vía parenteral
+cc_onco1211		Type	388	395	heroína
+casos_clinicos_infecciosas148		Amount	119	134	15 paquetes/año
+casos_clinicos_infecciosas148		Frequency	144	154	esporádico
+caso_clinico_psiquiatria318		Type	269	277	ketamina
+caso_clinico_psiquiatria318		Duration	301	318	desde el año 1999
+caso_clinico_psiquiatria318		Type	370	377	cocaína
+caso_clinico_psiquiatria318		Frequency	487	498	casi diario
+caso_clinico_psiquiatria318		Type	1166	1174	ketamina
+caso_clinico_psiquiatria318		Type	1309	1317	ketamina
+caso_clinico_psiquiatria318		History	1318	1340	tras el último ingreso
+caso_clinico_psiquiatria318		Type	1399	1407	ketamina
+caso_clinico_psiquiatria318		Duration	1436	1454	hacía unas semanas
+caso_clinico_psiquiatria318		Type	1573	1584	anfetaminas
+caso_clinico_psiquiatria318		Type	1587	1594	hachish
+cc_habitos_toxicos273		Amount	41	55	15 cigarrillos
+cc_habitos_toxicos273		Frequency	56	62	al día
+cc_habitos_toxicos273		Type	638	643	speed
+cc_habitos_toxicos273		Method	648	657	vía nasal
+cc_habitos_toxicos273		Duration	536	561	las dos noches anteriores
+cc_habitos_toxicos273		Type	1227	1237	anfetamina
+cc_habitos_toxicos96		Duration	39	46	crónico
+cc_habitos_toxicos96		Type	62	69	cocaína
+cc_habitos_toxicos96		Type	987	1002	benzodiacepinas
+caso_clinico_urologia64		Amount	410	420	un paquete
+caso_clinico_urologia64		Frequency	431	437	diario
+caso_clinico_urologia64		Duration	438	455	desde los 14 años
+cc_habitos_toxicos281		Type	364	371	cocaína
+cc_habitos_toxicos281		Method	372	380	aspirada
+cc_habitos_toxicos281		Amount	409	412	1 g
+cc_habitos_toxicos281		Frequency	412	419	/semana
+cc_habitos_toxicos281		Frequency	351	360	ocasional
+cc_habitos_toxicos281		Duration	309	334	desde los 25 años de edad
+cc_habitos_toxicos281		Duration	465	476	El año 2010
+cc_habitos_toxicos281		Duration	782	834	Cinco meses posteriores a la intervención quirúrgica
+cc_habitos_toxicos281		Type	1013	1020	cocaína
+cc_habitos_toxicos281		Duration	782	834	Cinco meses posteriores a la intervención quirúrgica
+cc_habitos_toxicos281		Type	1117	1124	cocaína
+cc_habitos_toxicos281		Duration	1083	1102	Previo a la cirugía
+cc_habitos_toxicos281		Type	1198	1205	cocaína
+cc_habitos_toxicos281		Amount	1181	1194	total de 10 g
+cc_habitos_toxicos281		Frequency	1206	1216	por semana
+cc_habitos_toxicos281		Amount	1219	1236	hasta 48 unidades
+cc_habitos_toxicos281		Frequency	1237	1246	semanales
+cc_habitos_toxicos281		Amount	1219	1236	hasta 48 unidades
+cc_habitos_toxicos281		Frequency	1237	1246	semanales
+cc_habitos_toxicos281		Type	1411	1418	cocaína
+cc_habitos_toxicos281		Type	1882	1889	Cocaína
+cc_habitos_toxicos281		History	2007	2030	10 meses de tratamiento
+cc_habitos_toxicos690		Amount	144	150	severo
+cc_habitos_toxicos690		Method	160	166	activo
+cc_habitos_toxicos690		Amount	170	185	43 paquetes/año
+cc_habitos_toxicos365		Type	290	298	cervezas
+cc_habitos_toxicos365		Amount	288	298	2 cervezas
+cc_habitos_toxicos365		Type	320	327	cocaína
+cc_habitos_toxicos365		Type	320	327	cocaína
+cc_habitos_toxicos365		Amount	929	948	unos 10 cigarrillos
+cc_habitos_toxicos365		Frequency	949	956	diarios
+cc_habitos_toxicos365		Type	973	981	cervezas
+cc_habitos_toxicos365		Amount	969	981	1-2 cervezas
+cc_habitos_toxicos365		Frequency	982	989	diarias
+cc_habitos_toxicos365		Frequency	1000	1010	esporádica
+cc_habitos_toxicos365		Type	1046	1053	cocaína
+cc_habitos_toxicos365		Method	1039	1045	esnifa
+cc_habitos_toxicos365		Frequency	1063	1072	ocasional
+cc_habitos_toxicos365		Frequency	1074	1092	1 o 2 veces al mes
+cc_habitos_toxicos832		Type	134	143	ayahuasca
+cc_habitos_toxicos832		Frequency	373	383	esporádico
+cc_habitos_toxicos832		Method	431	437	activo
+cc_habitos_toxicos832		Type	911	920	ayahuasca
+cc_habitos_toxicos832		Duration	721	737	una semana atrás
+cc_habitos_toxicos832		Type	3768	3777	ayahuasca
+cc_onco1828		Amount	96	104	IPA de 3
+casos_clinicos_habtox15		Type	1181	1188	cocaína
+casos_clinicos_habtox15		Type	1464	1473	marihuana
+casos_clinicos_habtox15		Frequency	1474	1486	semanalmente
+casos_clinicos_habtox15		Duration	1442	1459	desde los 18 años
+casos_clinicos_habtox15		Type	1489	1498	mescalina
+casos_clinicos_habtox15		Frequency	1499	1517	en 2 oportunidades
+casos_clinicos_habtox15		Duration	1519	1553	en un período de tiempo de 3 meses
+casos_clinicos_habtox15		Type	2215	2224	marihuana
+casos_clinicos_habtox15		Type	2227	2234	cocaina
+casos_clinicos_habtox15		Duration	2541	2559	en su adolescencia
+casos_clinicos_habtox15		Type	2864	2871	cocaina
+casos_clinicos_habtox15		Type	2874	2881	heroína
+casos_clinicos_habtox13		Frequency	261	275	frecuentemente
+casos_clinicos_habtox13		Duration	276	293	desde los 14 años
+casos_clinicos_habtox13		Duration	295	320	Desde los 18 hasta los 25
+casos_clinicos_habtox13		Frequency	346	352	diario
+casos_clinicos_habtox13		Type	391	398	cocaína
+casos_clinicos_habtox13		Frequency	365	379	frecuentemente
+casos_clinicos_habtox13		Type	412	417	Speed
+casos_clinicos_habtox13		Frequency	401	408	a veces
+casos_clinicos_habtox13		Type	420	427	éxtasis
+casos_clinicos_habtox13		Frequency	401	408	a veces
+casos_clinicos_habtox13		Type	437	443	hachís
+casos_clinicos_habtox13		Duration	444	461	desde los 16 años
+casos_clinicos_habtox13		Duration	861	876	Este último año
+casos_clinicos_habtox13		Type	490	496	porros
+casos_clinicos_habtox13		Frequency	473	479	diaria
+casos_clinicos_habtox13		Amount	481	496	más de 4 porros
+casos_clinicos_habtox13		Frequency	496	500	/día
+casos_clinicos_habtox13		Duration	502	519	desde hace 4 años
+cc_habitos_toxicos299		Type	177	189	energizantes
+cc_habitos_toxicos299		Frequency	190	210	en época de exámenes
+cc_habitos_toxicos299		Frequency	165	173	habitual
+cc_habitos_toxicos299		Type	483	510	energi-zantes tipo red bull
+cc_habitos_toxicos299		Amount	511	512	6
+cc_habitos_toxicos299		Frequency	513	520	por día
+cc_habitos_toxicos299		Duration	521	543	en los últimos 10 días
+cc_habitos_toxicos299		Type	559	569	neurovimin
+cc_habitos_toxicos299		Amount	570	578	1 frasco
+cc_habitos_toxicos299		Frequency	579	586	por día
+cc_habitos_toxicos299		Type	2287	2299	energizantes
+cc_habitos_toxicos299		Type	2468	2480	Energizantes
+cc_habitos_toxicos753		Type	481	488	licor
+cc_habitos_toxicos753		Type	1731	1740	Marihuana
+cc_habitos_toxicos753		Type	1742	1749	Cocaína
+cc_habitos_toxicos753		Type	1751	1759	Opiáceos
+cc_habitos_toxicos753		Type	1761	1772	Anfetaminas
+cc_habitos_toxicos753		Type	1774	1788	Metanfetaminas
+cc_habitos_toxicos753		Type	1790	1805	Benzodiacepinas
+cc_habitos_toxicos753		Type	1896	1904	cervezas
+cc_habitos_toxicos753		Amount	1891	1904	tres cervezas
+cc_habitos_toxicos753		Duration	1905	1928	antes de la media noche
+cc_habitos_toxicos753		Type	2000	2018	bebida energizante
+cc_habitos_toxicos753		Amount	2050	2081	aproximadamente diez (10) latas
+cc_habitos_toxicos753		Duration	2104	2134	transcurso de dos o tres horas
+cc_habitos_toxicos753		Type	2027	2037	Red Bull
+cc_habitos_toxicos753		Duration	2104	2134	transcurso de dos o tres horas
+cc_habitos_toxicos753		Amount	2050	2081	aproximadamente diez (10) latas
+cc_habitos_toxicos753		Type	2468	2475	cafeína
+cc_habitos_toxicos771		Type	818	823	licor
+cc_habitos_toxicos771		Duration	824	841	desde los 13 años
+cc_habitos_toxicos771		Frequency	871	886	fines de semana
+cc_habitos_toxicos771		History	923	941	desde hace 40 años
+cc_habitos_toxicos771		Amount	1235	1247	dos paquetes
+cc_habitos_toxicos771		Frequency	1248	1255	diarios
+cc_habitos_toxicos771		History	1266	1277	hace 7 años
+cc_habitos_toxicos771		Duration	1405	1433	hace aproximadamente 30 años
+cc_habitos_toxicos771		Duration	3788	3795	crónico
+cc_onco322		Amount	117	132	35 años/paquete
+cc_onco322		Type	152	162	combinados
+cc_onco322		Amount	150	162	3 combinados
+cc_onco322		Frequency	163	170	diarios
+cc_habitos_toxicos203		Type	90	96	hachís
+cc_habitos_toxicos203		History	76	88	hace 4 horas
+cc_habitos_toxicos203		Method	100	108	infusión
+cc_habitos_toxicos203		Amount	110	129	aproximadamente 5 g
+cc_habitos_toxicos486		Type	296	311	benzodiazepinas
+cc_habitos_toxicos486		Type	324	348	refrescos de cola y café
+cc_habitos_toxicos486		Frequency	410	418	habitual
+cc_habitos_toxicos486		Duration	521	527	2 años
+cc_habitos_toxicos486		Type	620	629	coca-cola
+cc_habitos_toxicos486		Frequency	629	633	/día
+cc_habitos_toxicos486		Amount	607	616	10 litros
+cc_habitos_toxicos486		Frequency	668	672	/día
+cc_habitos_toxicos486		Type	664	668	vino
+cc_habitos_toxicos486		Amount	653	660	1 litro
+cc_habitos_toxicos486		Type	639	647	cervezas
+cc_habitos_toxicos486		Amount	635	647	7-8 cervezas
+cc_habitos_toxicos486		Frequency	647	651	/día
+cc_habitos_toxicos486		Type	800	815	benzodiacepinas
+cc_habitos_toxicos486		Type	1114	1122	xantinas
+cc_habitos_toxicos486		Type	1125	1140	benzodiazepinas
+cc_habitos_toxicos486		Type	2155	2170	benzodiacepinas
+cc_habitos_toxicos486		Type	2127	2139	estimulantes
+cc_habitos_toxicos486		Duration	2421	2448	mientras trabajaba en Ibiza
+cc_habitos_toxicos486		Type	2482	2485	LSD
+cc_habitos_toxicos486		Duration	2421	2448	mientras trabajaba en Ibiza
+cc_habitos_toxicos486		Type	2795	2810	benzodiacepinas
+cc_habitos_toxicos486		Duration	2958	2975	hasta hace 2 años
+cc_habitos_toxicos486		Duration	3390	3407	desde los 18 años
+cc_habitos_toxicos486		Type	4532	4547	benzodiacepinas
+cc_habitos_toxicos486		Type	5441	5448	cafeína
+cc_habitos_toxicos486		Type	5451	5466	benzodiacepinas
+cc_habitos_toxicos486		Type	5595	5610	benzodiacepinas
+cc_habitos_toxicos486		Type	5613	5621	xantinas
+cc_habitos_toxicos486		Type	7232	7247	benzodiacepinas
+cc_habitos_toxicos486		Type	7250	7258	xantinas
+cc_habitos_toxicos486		Type	7433	7440	cafeína
+cc_habitos_toxicos486		Type	7461	7476	benzodiacepinas
+cc_habitos_toxicos695		Amount	52	74	más de 40 años/paquete
+cc_habitos_toxicos772		Type	3508	3515	redbull
+cc_habitos_toxicos333		Type	431	435	vino
+cc_habitos_toxicos333		Type	437	447	licor café
+cc_habitos_toxicos333		Type	431	435	vino
+cc_habitos_toxicos333		Type	437	447	licor café
+cc_habitos_toxicos333		Type	1071	1086	benzodiacepinas
+cc_habitos_toxicos333		Type	1140	1147	absenta
+casos_clinicos_habtox11		Duration	777	799	Al cumplir los 14 años
+casos_clinicos_habtox11		Duration	1035	1066	Después de la ruptura de pareja
+casos_clinicos_habtox11		Amount	1610	1634	aproximadamente 8 litros
+casos_clinicos_habtox11		Frequency	1635	1642	diarios
+casos_clinicos_habtox11		Type	1650	1654	vino
+casos_clinicos_habtox11		Type	1661	1711	“mal destilados” (mezcla de residuos de alcoholes)
+cc_habitos_toxicos411		Type	46	50	khat
+cc_habitos_toxicos411		Method	34	42	mascador
+cc_habitos_toxicos411		Type	328	332	khat
+cc_habitos_toxicos411		Method	319	327	masticar
+cc_habitos_toxicos411		Duration	333	356	durante más de una hora
+cc_habitos_toxicos542		Type	491	501	pasta base
+cc_habitos_toxicos542		Duration	513	555	los días previos al inicio de los síntomas
+cc_habitos_toxicos854		Duration	1207	1228	en los primeros meses
+cc_habitos_toxicos854		History	1254	1279	tercer mes de tratamiento
+cc_habitos_toxicos854		History	1281	1293	Tras 9 meses
+cc_habitos_toxicos926		Type	473	481	Metadona
+cc_habitos_toxicos926		Type	767	775	Metadona
+cc_habitos_toxicos926		Type	1036	1044	Metadona
+cc_habitos_toxicos926		Type	1096	1103	Heroína
+cc_habitos_toxicos926		Duration	1123	1136	a los 23 años
+cc_habitos_toxicos926		Method	1176	1182	fumada
+cc_habitos_toxicos926		Method	1229	1239	parenteral
+cc_habitos_toxicos926		Type	1241	1248	Cocaina
+cc_habitos_toxicos926		Duration	1268	1281	a los 14 años
+cc_habitos_toxicos926		Method	1307	1313	fumada
+cc_habitos_toxicos926		Type	1315	1318	THC
+cc_habitos_toxicos926		Duration	1328	1345	desde los 14 años
+cc_habitos_toxicos926		History	1346	1359	a los 19 años
+cc_habitos_toxicos926		Type	1388	1400	Alucinogenos
+cc_habitos_toxicos926		Duration	1410	1427	desde los 16 años
+cc_habitos_toxicos926		Duration	1437	1454	desde los 13 años
+cc_habitos_toxicos926		Type	1493	1501	opiáceos
+cc_habitos_toxicos926		Type	1522	1531	agonistas
+cc_habitos_toxicos926		Type	1554	1561	cocaína
+cc_habitos_toxicos926		Type	1593	1601	nicotina
+cc_habitos_toxicos926		Type	1749	1756	heroína
+cc_habitos_toxicos926		Type	2347	2368	buprenorfina/naloxona
+cc_habitos_toxicos926		Amount	2339	2343	4 mg
+cc_habitos_toxicos926		Type	3208	3229	buprenorfina/naloxona
+cc_habitos_toxicos926		Amount	3196	3200	8 mg
+cc_habitos_toxicos926		Frequency	3200	3204	/día
+cc_habitos_toxicos926		Frequency	3444	3454	esporádico
+cc_habitos_toxicos926		Duration	3455	3468	a los 2 meses
+cc_habitos_toxicos926		Type	3993	4014	buprenorfina/naloxona
+cc_habitos_toxicos926		Type	4054	4062	opiáceos
+casos_clinicos_habtox94		Duration	172	189	desde los 17 años
+casos_clinicos_habtox94		Amount	199	213	15 cigarrillos
+casos_clinicos_habtox94		Frequency	214	221	por día
+casos_clinicos_habtox94		Type	248	257	marihuana
+casos_clinicos_habtox94		Frequency	241	247	diaria
+casos_clinicos_habtox94		Type	295	300	Crack
+casos_clinicos_habtox94		Type	309	316	cocaína
+casos_clinicos_habtox94		Method	302	308	inhala
+casos_clinicos_habtox94		Frequency	326	339	muy ocasional
+casos_clinicos_habtox94		History	372	402	penúltima vez hace año y medio
+casos_clinicos_habtox94		Type	440	447	cocaína
+casos_clinicos_habtox94		Method	431	439	inhalado
+casos_clinicos_habtox94		Duration	404	421	Dos horas después
+cc_habitos_toxicos180		Type	138	146	diacepam
+cc_habitos_toxicos180		Amount	129	134	80 mg
+cc_habitos_toxicos180		Type	158	168	flurazepam
+cc_habitos_toxicos180		Amount	148	154	240 mg
+cc_habitos_toxicos180		Type	216	227	mirtazapina
+cc_habitos_toxicos180		Amount	192	212	dosis no precisables
+cc_habitos_toxicos527		Method	251	260	tipo slam
+cc_habitos_toxicos527		Type	476	483	cocaína
+cc_habitos_toxicos527		Type	486	489	GHB
+cc_habitos_toxicos527		Type	512	527	benzodiacepinas
+cc_habitos_toxicos527		Type	619	627	ketamina
+cc_habitos_toxicos527		Method	572	584	por esnifado
+cc_habitos_toxicos527		Method	587	606	por vía intravenosa
+cc_habitos_toxicos527		Type	629	649	catinonas sintéticas
+cc_habitos_toxicos527		Method	572	584	por esnifado
+cc_habitos_toxicos527		Method	587	606	por vía intravenosa
+cc_habitos_toxicos527		Type	651	654	GHB
+cc_habitos_toxicos527		Method	572	584	por esnifado
+cc_habitos_toxicos527		Method	587	606	por vía intravenosa
+cc_habitos_toxicos527		Type	656	670	metanfetaminas
+cc_habitos_toxicos527		Method	572	584	por esnifado
+cc_habitos_toxicos527		Method	587	606	por vía intravenosa
+cc_habitos_toxicos527		Type	676	681	speed
+cc_habitos_toxicos527		Method	572	584	por esnifado
+cc_habitos_toxicos527		Method	587	606	por vía intravenosa
+cc_habitos_toxicos527		Type	789	809	catinonas sintéticas
+cc_habitos_toxicos527		Method	810	842	"por vía intravenosa (""slamming"")"
+cc_habitos_toxicos527		Type	2962	2967	3-MMC
+caso_clinico_radiologia924		History	305	316	hace 5 años
+caso_clinico_radiologia924		Duration	323	338	durante 60 años
+caso_clinico_radiologia924		Amount	342	365	promedio 15 cigarrillos
+caso_clinico_radiologia924		Frequency	366	373	por día
+caso_clinico_radiologia924		Amount	375	381	80 p/y
+cc_habitos_toxicos205		Type	96	103	heroína
+cc_habitos_toxicos205		Duration	104	113	hace años
+cc_habitos_toxicos430		Amount	156	164	excesivo
+cc_habitos_toxicos430		Type	178	192	metanfetaminas
+cc_habitos_toxicos430		Type	1648	1657	marihuana
+cc_habitos_toxicos430		Type	1660	1671	anfetaminas
+cc_habitos_toxicos765		Type	172	179	cocaína
+cc_habitos_toxicos765		Type	191	206	benzodiacepinas
+cc_habitos_toxicos765		Type	247	255	nicotina
+cc_habitos_toxicos765		Type	304	312	opiáceos
+cc_habitos_toxicos765		Type	346	354	metadona
+cc_habitos_toxicos765		Amount	412	417	25 mg
+cc_habitos_toxicos765		Frequency	417	421	/día
+cc_habitos_toxicos765		Amount	438	453	35 paquetes/año
+cc_habitos_toxicos765		History	470	485	hace siete años
+cc_habitos_toxicos500		Type	339	351	Tylenol nº 3
+cc_habitos_toxicos500		Amount	389	408	20 y 40 comprimidos
+cc_habitos_toxicos500		Frequency	409	415	al día
+cc_habitos_toxicos500		Method	577	589	intravenosas
+cc_habitos_toxicos500		Type	637	645	opiáceos
+cc_habitos_toxicos500		Type	723	744	buprenorfina-naloxona
+cc_habitos_toxicos500		Type	1184	1191	opiácea
+cc_habitos_toxicos500		Type	1343	1364	buprenorfina-naloxona
+cc_habitos_toxicos500		Amount	1335	1339	4 mg
+cc_habitos_toxicos500		Type	2934	2955	buprenorfina-naloxona
+cc_habitos_toxicos500		Duration	2848	2868	Más de 1 año después
+cc_habitos_toxicos500		Amount	2917	2922	16 mg
+cc_habitos_toxicos500		Frequency	2923	2930	diarios
+cc_habitos_toxicos905		Type	115	122	heroína
+cc_habitos_toxicos905		Type	480	487	heroína
+cc_habitos_toxicos905		Method	488	494	fumada
+cc_habitos_toxicos905		Amount	511	533	en torno a ¼-1/2 gramo
+cc_habitos_toxicos905		Frequency	533	537	/día
+cc_habitos_toxicos905		Type	548	560	Lormetazepam
+cc_habitos_toxicos905		Amount	561	565	2 mg
+cc_habitos_toxicos905		Frequency	565	581	/día para dormir
+cc_habitos_toxicos905		Type	613	621	metadona
+cc_habitos_toxicos905		Duration	1192	1215	a partir de los 30 años
+cc_habitos_toxicos905		Type	1293	1300	cocaína
+cc_habitos_toxicos905		Duration	1192	1215	a partir de los 30 años
+cc_habitos_toxicos905		Type	1314	1321	heroína
+cc_habitos_toxicos905		Duration	1322	1370	con 40 años que ha mantenido hasta la actualidad
+cc_habitos_toxicos905		Type	1561	1569	metadona
+cc_habitos_toxicos905		Duration	1723	1742	desde los doce años
+cc_habitos_toxicos905		Type	1835	1842	heroína
+cc_habitos_toxicos905		Duration	1790	1807	los cuarenta años
+cc_habitos_toxicos905		Method	1843	1858	fumada en plata
+cc_habitos_toxicos905		Type	3839	3847	Opiáceos
+cc_habitos_toxicos905		Type	4159	4180	buprenorfina/naloxona
+cc_habitos_toxicos905		Amount	4192	4196	4 mg
+cc_habitos_toxicos905		Frequency	4196	4200	/día
+cc_habitos_toxicos905		Amount	4233	4237	8 mg
+cc_habitos_toxicos905		Frequency	4237	4241	/día
+cc_habitos_toxicos905		Amount	4341	4346	12 mg
+cc_habitos_toxicos905		Frequency	4346	4350	/día
+cc_habitos_toxicos905		Type	4676	4697	buprenorfina/naloxona
+cc_habitos_toxicos905		Type	5520	5535	benzodiacepinas
+cc_habitos_toxicos905		Type	5553	5561	metadona
+cc_habitos_toxicos905		Type	5830	5851	buprenorfina/naloxona
+cc_habitos_toxicos905		Amount	5854	5859	10 mg
+cc_habitos_toxicos905		Frequency	5859	5863	/día
+cc_habitos_toxicos922		Type	96	103	heroína
+cc_habitos_toxicos922		Duration	104	121	desde los 20 años
+cc_habitos_toxicos922		Type	127	135	metadona
+cc_habitos_toxicos922		Duration	136	149	desde hacía 8
+cc_habitos_toxicos922		Duration	253	268	octubre de 2011
+cc_habitos_toxicos922		Type	641	662	buprenorfina-naloxona
+cc_habitos_toxicos922		Duration	1437	1450	a los 14 años
+cc_habitos_toxicos922		Amount	1480	1491	40 cigarros
+cc_habitos_toxicos922		Frequency	1492	1498	al día
+cc_habitos_toxicos922		Amount	1500	1514	ahora fuma 4-5
+cc_habitos_toxicos922		Duration	1537	1550	a los 15 años
+cc_habitos_toxicos922		Method	1561	1568	fumando
+cc_habitos_toxicos922		Amount	1569	1583	2 ó 3 cigarros
+cc_habitos_toxicos922		Frequency	1584	1602	por la tarde-noche
+cc_habitos_toxicos922		Duration	1648	1659	Con 17 años
+cc_habitos_toxicos922		Type	1776	1802	bebidas de alta graduación
+cc_habitos_toxicos922		Type	2001	2005	vino
+cc_habitos_toxicos922		Duration	1944	1965	Desde hace 2 ó 3 años
+cc_habitos_toxicos922		Frequency	2006	2021	con las comidas
+cc_habitos_toxicos922		Type	2231	2236	speed
+cc_habitos_toxicos922		Type	2381	2388	cocaína
+cc_habitos_toxicos922		Type	2478	2485	heroína
+cc_habitos_toxicos922		Duration	2455	2468	A los 20 años
+cc_habitos_toxicos922		Duration	2784	2823	Durante el primer tiempo de convivencia
+cc_habitos_toxicos922		Type	2922	2927	porro
+cc_habitos_toxicos922		Method	2910	2915	fumar
+cc_habitos_toxicos922		Type	3157	3164	heroína
+cc_habitos_toxicos922		Method	3165	3171	fumada
+cc_habitos_toxicos922		Type	3190	3197	cocaína
+cc_habitos_toxicos922		Type	3200	3205	speed
+cc_habitos_toxicos922		Type	3207	3213	peyote
+cc_habitos_toxicos922		Type	3215	3220	setas
+cc_habitos_toxicos922		Type	3222	3228	porros
+cc_habitos_toxicos922		Type	3242	3245	LSD
+cc_habitos_toxicos922		Type	3398	3413	benzodiacepinas
+cc_habitos_toxicos922		Duration	3431	3448	desde los 20 años
+cc_habitos_toxicos922		Type	3582	3590	metadona
+cc_habitos_toxicos922		Duration	3551	3568	Desde los 38 años
+cc_habitos_toxicos922		Type	3684	3699	benzodiacepinas
+cc_habitos_toxicos922		Type	6137	6145	opiáceos
+cc_habitos_toxicos922		Type	6148	6155	cocaína
+cc_habitos_toxicos922		Type	6170	6182	buprenorfina
+cc_habitos_toxicos922		Type	6660	6668	opiáceos
+cc_habitos_toxicos922		Type	6688	6709	buprenorfina-naloxona
+cc_habitos_toxicos922		Type	7484	7505	buprenorfina-naloxona
+cc_habitos_toxicos922		Amount	7656	7661	14 mg
+cc_habitos_toxicos922		Type	8209	8230	Buprenorfina/naloxona
+cc_habitos_toxicos922		Amount	8231	8236	12 mg
+cc_habitos_toxicos922		Frequency	8236	8240	/día
+cc_habitos_toxicos922		Type	8480	8501	buprenorfina-naloxona
+cc_habitos_toxicos922		Amount	8507	8512	16 mg
+cc_habitos_toxicos922		Frequency	8512	8516	/día
+cc_habitos_toxicos922		Type	9318	9330	buprenorfina
+cc_habitos_toxicos922		Amount	9333	9338	12 mg
+cc_habitos_toxicos494		Type	221	245	metanfetamina cristalina
+cc_habitos_toxicos555		Type	167	182	éxtasis líquido
+cc_habitos_toxicos555		Type	273	305	otras sustancias estupefacientes
+cc_habitos_toxicos555		Type	923	936	metanfetamina
+cc_habitos_toxicos555		Type	972	975	GHB
+cc_habitos_toxicos555		Type	977	992	éxtasis líquido
+casos_clinicos_habtox44		Type	138	146	opioides
+casos_clinicos_habtox44		Type	472	480	metadona
+casos_clinicos_habtox44		Type	450	457	heroína
+casos_clinicos_habtox44		Method	444	449	fumar
+casos_clinicos_habtox44		Duration	1899	1916	Desde los 20 años
+casos_clinicos_habtox44		Amount	1922	1941	unos 10 cigarrillos
+casos_clinicos_habtox44		Frequency	1942	1948	al día
+casos_clinicos_habtox44		Type	2034	2037	LSD
+casos_clinicos_habtox44		Duration	1967	1984	Desde los 15 años
+casos_clinicos_habtox44		Type	2017	2022	speed
+casos_clinicos_habtox44		Duration	1967	1984	Desde los 15 años
+casos_clinicos_habtox44		Type	2039	2043	MDMA
+casos_clinicos_habtox44		Duration	1967	1984	Desde los 15 años
+casos_clinicos_habtox44		Type	2045	2050	crack
+casos_clinicos_habtox44		Duration	1967	1984	Desde los 15 años
+casos_clinicos_habtox44		Type	2052	2060	ketamina
+casos_clinicos_habtox44		Duration	1967	1984	Desde los 15 años
+casos_clinicos_habtox44		Type	2062	2069	monguis
+casos_clinicos_habtox44		Duration	1967	1984	Desde los 15 años
+casos_clinicos_habtox44		Type	2071	2078	Heroína
+casos_clinicos_habtox44		Method	2079	2085	fumada
+casos_clinicos_habtox44		Duration	2086	2108	desde hace cuatro años
+casos_clinicos_habtox44		Frequency	2110	2118	a diario
+casos_clinicos_habtox44		Type	2758	2767	marihuana
+casos_clinicos_habtox44		Frequency	2768	2776	a diario
+casos_clinicos_habtox44		Method	2753	2757	Fuma
+casos_clinicos_habtox44		Type	3612	3619	heroína
+casos_clinicos_habtox44		Duration	3688	3741	durante períodos de tiempo no superiores a una semana
+casos_clinicos_habtox44		Type	3977	3984	heroína
+casos_clinicos_habtox44		Frequency	3985	3996	diariamente
+casos_clinicos_habtox44		Duration	3924	3944	En los últimos meses
+casos_clinicos_habtox44		Type	4106	4114	metadona
+casos_clinicos_habtox44		Type	4414	4422	metadona
+casos_clinicos_habtox44		Type	4500	4508	metadona
+casos_clinicos_habtox44		Type	2120	2124	Café
+casos_clinicos_habtox44		Amount	2126	2139	3-4 con leche
+casos_clinicos_habtox44		Frequency	2139	2143	/día
+casos_clinicos_habtox44		Type	4697	4718	buprenorfina/naloxona
+cc_habitos_toxicos890		Amount	299	307	moderado
+cc_habitos_toxicos890		Method	1556	1570	vía parenteral
+cc_habitos_toxicos890		History	1571	1589	hasta hace 10 años
+cc_habitos_toxicos890		Type	1649	1655	hachís
+cc_habitos_toxicos360		Duration	261	275	de hace 3 días
+cc_habitos_toxicos360		Amount	1170	1183	3 cigarrillos
+cc_habitos_toxicos360		Frequency	1184	1195	a la semana
+cc_habitos_toxicos360		Frequency	1206	1220	Todos los días
+cc_habitos_toxicos360		Duration	1241	1278	desde hace 5 años hasta la actualidad
+cc_habitos_toxicos11		Frequency	148	152	/día
+cc_habitos_toxicos11		Amount	136	148	2-3 cervezas
+cc_habitos_toxicos11		Type	140	148	cervezas
+cc_habitos_toxicos11		Type	1363	1366	GHB
+cc_habitos_toxicos11		Type	1448	1451	GHB
+cc_habitos_toxicos11		Frequency	1453	1471	> 1 vez por semana
+cc_habitos_toxicos11		Type	1432	1445	metanfetamina
+cc_habitos_toxicos11		Frequency	1453	1471	> 1 vez por semana
+cc_habitos_toxicos11		Method	1509	1517	slamming
+cc_habitos_toxicos11		Frequency	1494	1508	Ocasionalmente
+cc_habitos_toxicos544		Type	618	627	lorazepam
+cc_habitos_toxicos544		Duration	629	656	desde hace casi año y medio
+cc_habitos_toxicos544		Frequency	545	567	prácticamente a diario
+cc_habitos_toxicos544		Type	1736	1745	lorazepam
+cc_habitos_toxicos544		Frequency	1746	1752	diario
+cc_habitos_toxicos901		Duration	1965	1981	a los 12-13 años
+cc_habitos_toxicos901		Frequency	2003	2018	fines de semana
+cc_habitos_toxicos901		Duration	1965	1981	a los 12-13 años
+cc_habitos_toxicos901		Type	2022	2027	speed
+cc_habitos_toxicos901		Duration	1965	1981	a los 12-13 años
+cc_habitos_toxicos901		Type	2110	2118	ketamina
+cc_habitos_toxicos901		Duration	2029	2042	A los 15 años
+cc_habitos_toxicos901		Amount	2119	2136	hasta los 15-20 g
+cc_habitos_toxicos901		Frequency	2137	2152	fines de semana
+cc_habitos_toxicos901		Type	2183	2191	opiáceos
+cc_habitos_toxicos901		Frequency	2195	2210	forma episódica
+cc_habitos_toxicos901		Duration	2154	2171	Desde hace un año
+cc_habitos_toxicos901		Type	2223	2230	heroína
+cc_habitos_toxicos901		Method	2231	2246	inhalada/fumada
+cc_habitos_toxicos901		Type	2252	2260	metadona
+cc_habitos_toxicos901		Type	2371	2378	heroína
+cc_habitos_toxicos901		Duration	2280	2300	En los últimos meses
+cc_habitos_toxicos901		Frequency	4350	4359	ocasional
+cc_habitos_toxicos901		Type	4365	4372	cerveza
+cc_habitos_toxicos901		Frequency	4373	4379	diario
+cc_habitos_toxicos901		Amount	4383	4409	forma moderada (1-2 latas)
+cc_habitos_toxicos901		Type	4562	4570	ketamina
+cc_habitos_toxicos901		History	4543	4558	hace una semana
+cc_habitos_toxicos901		Amount	4572	4579	1 gramo
+cc_habitos_toxicos901		Type	4602	4609	heroína
+cc_habitos_toxicos901		Method	4610	4616	fumada
+cc_habitos_toxicos901		History	4617	4628	hace un mes
+cc_habitos_toxicos901		Type	4682	4690	metadona
+cc_habitos_toxicos901		Frequency	4663	4677	ocasionalmente
+cc_habitos_toxicos901		Type	4714	4735	buprenorfina/naloxona
+cc_habitos_toxicos901		Amount	4754	4758	8 mg
+cc_habitos_toxicos901		Type	7312	7320	opioides
+cc_habitos_toxicos901		Type	8234	8255	buprenorfina/naloxona
+cc_habitos_toxicos901		Amount	8308	8313	12 mg
+cc_habitos_toxicos901		Frequency	8313	8317	/día
+cc_habitos_toxicos901		Type	9162	9169	heroína
+cc_habitos_toxicos901		Duration	9568	9590	En el momento del alta
+cc_habitos_toxicos901		Type	10072	10093	BUPRENORFINA/NALOXONA
+cc_habitos_toxicos901		Amount	10094	10108	8/2 mg 7 comp.
+cc_habitos_toxicos901		Method	10109	10121	sublinguales
+cc_habitos_toxicos901		Frequency	10123	10128	1-0-0
+cc_habitos_toxicos80		Type	730	733	BZD
+cc_habitos_toxicos80		Type	737	745	opiáceos
+cc_habitos_toxicos80		Type	749	761	barbitúricos
+cc_habitos_toxicos80		Type	765	775	anfetamina
+cc_habitos_toxicos80		Type	779	792	cannabinoides
+cc_habitos_toxicos80		Type	796	803	cocaína
+cc_habitos_toxicos80		Type	1427	1434	COCAÍNA
+cc_habitos_toxicos80		Type	1437	1448	ANFETAMINAS
+cc_habitos_toxicos78		Type	270	277	cocaína
+cc_habitos_toxicos78		Method	278	286	inhalada
+cc_habitos_toxicos78		Frequency	257	266	ocasional
+cc_habitos_toxicos78		Type	2152	2159	cocaína
+cc_habitos_toxicos78		Method	2160	2168	inhalada
+cc_habitos_toxicos914		Type	372	379	heroína
+cc_habitos_toxicos914		Duration	1002	1025	De los 16 a los 18 años
+cc_habitos_toxicos914		Duration	1857	1875	22-25 años de edad
+cc_habitos_toxicos914		History	1860	1875	25 años de edad
+cc_habitos_toxicos914		Type	2114	2121	heroína
+cc_habitos_toxicos914		Duration	2123	2133	26-29 años
+cc_habitos_toxicos914		Type	2936	2949	no destilados
+cc_habitos_toxicos914		Amount	2922	2931	10-12 UBE
+cc_habitos_toxicos914		Frequency	2931	2935	/día
+cc_habitos_toxicos914		Duration	2900	2917	desde los 14 años
+cc_habitos_toxicos914		Type	2974	2984	destilados
+cc_habitos_toxicos914		Frequency	2960	2970	esporádico
+cc_habitos_toxicos914		Duration	3004	3035	de los 17 a los 19 años de edad
+cc_habitos_toxicos914		Duration	3163	3176	a los 25 años
+cc_habitos_toxicos914		Duration	3047	3060	a los 22 años
+cc_habitos_toxicos914		Amount	3065	3074	12-15 UBE
+cc_habitos_toxicos914		Frequency	3074	3078	/día
+cc_habitos_toxicos914		Duration	3092	3106	durante 3 años
+cc_habitos_toxicos914		Type	3251	3258	heroína
+cc_habitos_toxicos914		Duration	3259	3272	a los 18 años
+cc_habitos_toxicos914		Amount	3274	3277	½ g
+cc_habitos_toxicos914		Frequency	3277	3281	/día
+cc_habitos_toxicos914		Method	3286	3296	vía fumada
+cc_habitos_toxicos914		Frequency	3308	3318	esporádica
+cc_habitos_toxicos914		Frequency	3327	3331	/día
+cc_habitos_toxicos914		Amount	3325	3327	1g
+cc_habitos_toxicos914		Method	3336	3351	vía intravenosa
+cc_habitos_toxicos914		Duration	3352	3365	durante 1 año
+cc_habitos_toxicos914		Type	3251	3258	heroína
+cc_habitos_toxicos914		Duration	3382	3403	a los 19 años de edad
+cc_habitos_toxicos914		Duration	3457	3478	a los 25 años de edad
+cc_habitos_toxicos914		Amount	3480	3482	1g
+cc_habitos_toxicos914		Frequency	3482	3486	/día
+cc_habitos_toxicos914		Method	3487	3498	intravenosa
+cc_habitos_toxicos914		Duration	3500	3514	durante 4 años
+cc_habitos_toxicos914		History	3515	3525	hasta 2012
+cc_habitos_toxicos914		Type	3565	3573	Nicotina
+cc_habitos_toxicos914		Duration	3582	3595	a los 16 años
+cc_habitos_toxicos914		Amount	3637	3652	25 cigarros/día
+cc_habitos_toxicos914		History	3653	3670	hasta los 25 años
+cc_habitos_toxicos914		Type	3672	3679	Cocaína
+cc_habitos_toxicos914		Duration	3688	3701	a los 18 años
+cc_habitos_toxicos914		History	3736	3761	hasta los 20 años de edad
+cc_habitos_toxicos914		Method	3763	3775	vía esnifada
+cc_habitos_toxicos914		Duration	3794	3807	a los 18 años
+cc_habitos_toxicos914		Duration	3842	3856	durante 2 años
+cc_habitos_toxicos914		Type	3858	3870	Alucinógenos
+cc_habitos_toxicos914		Duration	3879	3892	a los 18 años
+cc_habitos_toxicos914		Frequency	3926	3945	los fines de semana
+cc_habitos_toxicos914		Type	4930	4937	cocaína
+cc_habitos_toxicos914		Type	4939	4954	benzodiacepinas
+cc_habitos_toxicos914		Type	4957	4965	metadona
+cc_habitos_toxicos914		Type	4978	4986	opiáceos
+cc_habitos_toxicos914		Type	5974	5982	opiáceos
+cc_habitos_toxicos914		Type	6035	6056	buprenorfina/naloxona
+cc_habitos_toxicos914		Type	6529	6550	buprenorfina/naloxona
+cc_habitos_toxicos914		Frequency	6556	6563	diarios
+cc_habitos_toxicos914		Amount	6551	6555	8 mg
+cc_habitos_toxicos914		Method	6513	6525	sublinguales
+cc_habitos_toxicos309		History	209	228	desde hace dos años
+cc_habitos_toxicos482		Type	1309	1318	marihuana
+cc_habitos_toxicos482		Type	1320	1328	opiaceos
+cc_habitos_toxicos482		Type	1330	1343	neurolépticos
+cc_habitos_toxicos482		History	1572	1589	Desde hacía 1 mes
+cc_habitos_toxicos482		Type	1549	1556	danazol
+cc_habitos_toxicos482		Method	1532	1545	ciclos orales
+cc_habitos_toxicos482		Type	1559	1570	mesterolona
+cc_habitos_toxicos482		Method	1532	1545	ciclos orales
+cc_habitos_toxicos482		Type	1493	1504	estanazolol
+cc_habitos_toxicos482		Duration	1440	1458	desde hacía un año
+cc_habitos_toxicos482		Method	1462	1489	inyecciones intramusculares
+cc_habitos_toxicos482		Type	1506	1516	nandrolona
+cc_habitos_toxicos482		Duration	1440	1458	desde hacía un año
+cc_habitos_toxicos482		Method	1462	1489	inyecciones intramusculares
+cc_habitos_toxicos76		Amount	29	38	20cig/día
+casos_clinicos_habtox14		Frequency	127	135	habitual
+casos_clinicos_habtox14		Type	563	569	hachís
+casos_clinicos_habtox14		Method	555	562	fumando
+casos_clinicos_habtox14		Duration	477	488	Con 14 años
+casos_clinicos_habtox14		Frequency	648	662	frecuentemente
+casos_clinicos_habtox14		Duration	571	588	Desde los 15 años
+casos_clinicos_habtox14		Type	663	670	cocaína
+casos_clinicos_habtox14		Frequency	648	662	frecuentemente
+casos_clinicos_habtox14		Duration	571	588	Desde los 15 años
+casos_clinicos_habtox14		History	1023	1034	cinco meses
+cc_habitos_toxicos831		Duration	653	667	20 horas antes
+cc_habitos_toxicos831		Type	609	621	nuez moscada
+cc_habitos_toxicos831		Duration	653	667	20 horas antes
+cc_habitos_toxicos831		Amount	600	605	50 gr
+cc_habitos_toxicos831		Type	623	641	Myristica fragrans
+cc_habitos_toxicos831		Duration	653	667	20 horas antes
+cc_habitos_toxicos831		Amount	600	605	50 gr
+cc_habitos_toxicos240		Amount	46	55	1 paquete
+cc_habitos_toxicos240		Frequency	66	72	al día
+cc_habitos_toxicos240		Type	91	98	cerveza
+cc_habitos_toxicos240		Amount	85	87	3L
+cc_habitos_toxicos240		Frequency	99	106	diarios
+cc_habitos_toxicos240		Method	132	146	vía parenteral
+cc_habitos_toxicos240		Type	1053	1061	metadona
+cc_habitos_toxicos240		Frequency	1042	1049	diarios
+cc_habitos_toxicos240		Amount	1037	1041	50mg
+caso_clinico_psiquiatria152		Amount	2056	2073	cantidad excesiva
+caso_clinico_psiquiatria152		Amount	4519	4533	10 cigarrillos
+caso_clinico_psiquiatria152		Type	4522	4533	cigarrillos
+caso_clinico_psiquiatria152		Frequency	4534	4540	al día
+caso_clinico_psiquiatria152		History	4618	4641	durante la adolescencia
+caso_clinico_psiquiatria152		Frequency	4679	4686	puntual
+caso_clinico_psiquiatria152		Type	4554	4559	copas
+caso_clinico_psiquiatria152		Amount	4550	4559	2–3 copas
+caso_clinico_psiquiatria152		Frequency	4572	4591	los fines de semana
+cc_habitos_toxicos754		Duration	220	272	desde lo 37 años de edad (por un período de 13 años)
+cc_habitos_toxicos671		History	30	42	hace 15 años
+cc_habitos_toxicos671		Type	51	60	carajillo
+cc_habitos_toxicos671		Amount	49	60	1 carajillo
+cc_habitos_toxicos671		Frequency	60	64	/día
+caso_clinico_radiologia908		Amount	199	205	25 p/y
+casos_clinicos_infecciosas4		Amount	254	275	40-60 cigarrillos/día
+casos_clinicos_infecciosas4		Type	260	271	cigarrillos
+casos_clinicos_infecciosas4		Method	304	312	inhalada
+casos_clinicos_infecciosas4		History	313	331	hasta hace 3 meses
+cc_habitos_toxicos54		Type	35	41	popper
+cc_habitos_toxicos54		Duration	42	54	durante años
+cc_habitos_toxicos884		Duration	1967	1982	hace siete años
+cc_habitos_toxicos884		Frequency	2000	2013	casi a diario
+cc_habitos_toxicos884		Frequency	2049	2064	esporádicamente
+cc_habitos_toxicos884		Amount	2020	2039	unos 10 cigarrillos
+cc_habitos_toxicos884		Frequency	2040	2046	al día
+cc_habitos_toxicos884		Type	2124	2133	trippis
+cc_habitos_toxicos884		Type	2135	2142	éxtasis
+cc_onco1666		Amount	88	94	escaso
+cc_onco1666		Type	238	251	anabolizantes
+cc_onco1666		Type	254	273	bebidas energéticas
+casos_clinicos_infecciosas73		Type	573	584	cigarrillos
+casos_clinicos_infecciosas73		Amount	569	584	1-2 cigarrillos
+casos_clinicos_infecciosas73		Method	551	557	Fumado
+casos_clinicos_infecciosas73		Method	559	565	activo
+casos_clinicos_infecciosas73		Amount	514	548	una unidad de bebida estándar (UBE
+casos_clinicos_infecciosas73		Frequency	501	510	ocasional
+cc_habitos_toxicos224		Type	84	91	cocaína
+cc_habitos_toxicos224		Frequency	70	80	esporádico
+cc_habitos_toxicos224		Type	94	105	anfetaminas
+cc_habitos_toxicos224		Frequency	70	80	esporádico
+cc_habitos_toxicos224		Type	313	320	cocaína
+cc_habitos_toxicos224		Type	323	334	anfetaminas
+cc_habitos_toxicos224		Type	967	978	anfetaminas
+cc_habitos_toxicos224		Type	981	988	cocaína
+cc_habitos_toxicos224		Type	1359	1366	cocaína
+cc_habitos_toxicos224		Type	1369	1380	anfetaminas
+cc_habitos_toxicos8		Type	116	123	poppers
+cc_habitos_toxicos8		Method	108	115	inhalar
+cc_habitos_toxicos8		Type	471	478	poppers
+cc_habitos_toxicos354		Duration	248	265	desde los 19 años
+cc_habitos_toxicos354		Amount	279	286	abusivo
+cc_habitos_toxicos354		Duration	287	306	los últimos 3 meses
+cc_habitos_toxicos354		Type	340	345	vodka
+cc_habitos_toxicos354		Frequency	346	352	al día
+cc_habitos_toxicos354		Amount	327	336	1 botella
+cc_habitos_toxicos354		Duration	1132	1149	desde los 19 años
+cc_habitos_toxicos354		Type	1205	1210	vodka
+cc_habitos_toxicos354		Frequency	1211	1217	al día
+cc_habitos_toxicos354		Amount	1192	1201	1 botella
+cc_habitos_toxicos354		Duration	1171	1190	los últimos 3 meses
+cc_habitos_toxicos354		Amount	1163	1170	abusivo
+cc_habitos_toxicos384		Type	766	773	cocaína
+cc_habitos_toxicos384		Duration	786	801	el día anterior
+cc_habitos_toxicos384		Duration	786	801	el día anterior
+cc_habitos_toxicos384		Type	2122	2129	cocaína
+cc_habitos_toxicos384		Type	2709	2716	cocaína
+cc_habitos_toxicos235		Duration	104	126	durante más de 20 años
+cc_habitos_toxicos235		Frequency	153	159	diario
+cc_habitos_toxicos235		Duration	104	126	durante más de 20 años
+cc_habitos_toxicos235		Frequency	153	159	diario
+cc_habitos_toxicos235		History	160	170	hasta 2006
+cc_habitos_toxicos235		Duration	104	126	durante más de 20 años
+cc_habitos_toxicos235		Frequency	153	159	diario
+cc_habitos_toxicos235		Type	86	93	cocaína
+cc_habitos_toxicos235		Duration	104	126	durante más de 20 años
+cc_habitos_toxicos235		Frequency	153	159	diario
+cc_habitos_toxicos235		History	160	170	hasta 2006
+cc_habitos_toxicos235		Type	95	102	heroína
+cc_habitos_toxicos235		Duration	104	126	durante más de 20 años
+cc_habitos_toxicos235		Frequency	153	159	diario
+cc_habitos_toxicos235		History	160	170	hasta 2006
+cc_habitos_toxicos235		Type	419	427	metadona
+cc_habitos_toxicos235		Amount	428	432	60mg
+cc_habitos_toxicos235		Frequency	432	436	/día
+cc_habitos_toxicos235		Type	530	537	cocaína
+cc_habitos_toxicos235		History	548	563	durante 10 años
+cc_habitos_toxicos235		Type	540	547	heroína
+cc_habitos_toxicos235		History	548	563	durante 10 años
+cc_habitos_toxicos235		History	548	563	durante 10 años
+cc_habitos_toxicos235		Method	577	583	activo
+cc_habitos_toxicos235		Method	577	583	activo
+cc_habitos_toxicos235		Amount	1106	1111	6UBEs
+cc_habitos_toxicos235		Frequency	1111	1115	/día
+cc_habitos_toxicos235		Duration	1031	1056	en los seis meses previos
+cc_habitos_toxicos235		Type	1118	1125	cocaína
+cc_habitos_toxicos235		Method	1136	1148	vía pulmonar
+cc_habitos_toxicos235		Duration	1031	1056	en los seis meses previos
+cc_habitos_toxicos235		Type	1128	1135	heroína
+cc_habitos_toxicos235		Method	1136	1148	vía pulmonar
+cc_habitos_toxicos235		Duration	1031	1056	en los seis meses previos
+cc_habitos_toxicos235		Type	1307	1315	metadona
+cc_habitos_toxicos235		Amount	1319	1323	40mg
+cc_habitos_toxicos235		Frequency	1323	1327	/día
+cc_habitos_toxicos235		Type	1210	1218	metadona
+cc_habitos_toxicos235		Type	1642	1650	metadona
+cc_habitos_toxicos235		Amount	1675	1679	85mg
+cc_habitos_toxicos235		Frequency	1679	1683	/día
+cc_habitos_toxicos235		Type	1993	2000	cocaína
+cc_habitos_toxicos235		Type	2114	2122	metadona
+cc_habitos_toxicos235		Frequency	2104	2110	diaria
+cc_habitos_toxicos60		Frequency	292	306	ocasionalmente
+cc_habitos_toxicos60		Type	384	391	cerveza
+cc_habitos_toxicos60		Type	394	408	vino espumante
+cc_habitos_toxicos60		Type	463	467	MDMA
+cc_habitos_toxicos60		Amount	443	459	medio comprimido
+cc_habitos_toxicos60		Type	2678	2687	marihuana
+cc_habitos_toxicos60		Type	2690	2699	co- caína
+cc_habitos_toxicos60		Type	2634	2644	anfetamina
+cc_habitos_toxicos60		Type	2647	2661	éxtasis – MDMA
+cc_habitos_toxicos60		Type	4131	4143	éxtasis MDMA
+cc_habitos_toxicos942		Type	104	111	cocaína
+cc_habitos_toxicos942		Duration	72	88	en junio de 2000
+cc_habitos_toxicos942		Duration	72	88	en junio de 2000
+cc_habitos_toxicos942		Frequency	1452	1462	esporádica
+cc_habitos_toxicos942		Duration	1396	1409	A los 14 años
+cc_habitos_toxicos942		Frequency	1452	1462	esporádica
+cc_habitos_toxicos942		Duration	1396	1409	A los 14 años
+cc_habitos_toxicos942		Duration	1509	1522	A los 15 años
+cc_habitos_toxicos942		Frequency	1559	1569	esporádica
+cc_habitos_toxicos942		Method	1621	1627	fumado
+cc_habitos_toxicos942		Type	1584	1591	cocaína
+cc_habitos_toxicos942		Method	1621	1627	fumado
+cc_habitos_toxicos942		Frequency	1559	1569	esporádica
+cc_habitos_toxicos942		Duration	1509	1522	A los 15 años
+cc_habitos_toxicos942		Type	1594	1601	heroína
+cc_habitos_toxicos942		Method	1621	1627	fumado
+cc_habitos_toxicos942		Frequency	1559	1569	esporádica
+cc_habitos_toxicos942		Duration	1509	1522	A los 15 años
+cc_habitos_toxicos942		Type	1954	1961	heroína
+cc_habitos_toxicos942		Method	1962	1968	fumada
+cc_habitos_toxicos942		Frequency	1899	1950	tres veces por semana (viernes, sábados y domingos)
+cc_habitos_toxicos942		Type	2012	2018	porros
+cc_habitos_toxicos942		Type	2046	2058	alucinógenos
+cc_habitos_toxicos942		Frequency	2032	2045	muy ocasional
+cc_habitos_toxicos942		Frequency	2032	2045	muy ocasional
+cc_habitos_toxicos942		Type	2060	2071	anfetaminas
+cc_habitos_toxicos942		Type	2074	2089	benzodiacepinas
+cc_habitos_toxicos942		Frequency	2032	2045	muy ocasional
+cc_habitos_toxicos942		Type	2319	2326	heroína
+cc_habitos_toxicos942		Frequency	2286	2292	diaria
+cc_habitos_toxicos942		Amount	2293	2301	unos 2 g
+cc_habitos_toxicos942		Frequency	2302	2315	cada dos días
+cc_habitos_toxicos942		Type	2331	2338	cocaína
+cc_habitos_toxicos942		Frequency	2286	2292	diaria
+cc_habitos_toxicos942		Amount	2293	2301	unos 2 g
+cc_habitos_toxicos942		Frequency	2302	2315	cada dos días
+cc_habitos_toxicos942		Frequency	2286	2292	diaria
+cc_habitos_toxicos942		Amount	2293	2301	unos 2 g
+cc_habitos_toxicos942		Frequency	2302	2315	cada dos días
+cc_habitos_toxicos942		Frequency	2286	2292	diaria
+cc_habitos_toxicos942		Amount	2293	2301	unos 2 g
+cc_habitos_toxicos942		Frequency	2302	2315	cada dos días
+cc_habitos_toxicos942		Type	2487	2494	cocaína
+cc_habitos_toxicos942		Type	2652	2659	heroína
+cc_habitos_toxicos942		Duration	2599	2609	En el 2000
+cc_habitos_toxicos942		Type	2695	2702	cocaína
+cc_habitos_toxicos942		Duration	2599	2609	En el 2000
+cc_habitos_toxicos942		Type	2793	2800	cocaína
+cc_habitos_toxicos942		Duration	2704	2714	En el 2004
+cc_habitos_toxicos942		Duration	2704	2714	En el 2004
+cc_habitos_toxicos942		History	2704	2714	En el 2004
+cc_habitos_toxicos942		Type	2857	2864	cocaína
+cc_habitos_toxicos942		History	2704	2714	En el 2004
+cc_habitos_toxicos942		Type	2888	2895	heroína
+cc_habitos_toxicos942		Type	2992	2999	cocaína
+cc_habitos_toxicos942		Duration	2938	2951	hasta el 2006
+cc_habitos_toxicos942		Type	3002	3009	heroína
+cc_habitos_toxicos942		Duration	2938	2951	hasta el 2006
+cc_habitos_toxicos942		Type	5033	5041	Opiáceos
+cc_habitos_toxicos942		Duration	4899	4913	En el año 2000
+cc_habitos_toxicos942		Type	5052	5059	cocaína
+cc_habitos_toxicos942		Duration	4899	4913	En el año 2000
+cc_habitos_toxicos942		Type	5071	5079	nicotina
+cc_habitos_toxicos942		Duration	4899	4913	En el año 2000
+cc_habitos_toxicos942		Duration	4899	4913	En el año 2000
+cc_habitos_toxicos942		Type	5427	5434	heroína
+cc_habitos_toxicos942		Frequency	5406	5412	diario
+cc_habitos_toxicos942		Amount	5416	5423	½ gramo
+cc_habitos_toxicos942		Type	5439	5446	cocaína
+cc_habitos_toxicos942		Amount	5416	5423	½ gramo
+cc_habitos_toxicos942		Frequency	5406	5412	diario
+cc_habitos_toxicos942		Type	5854	5862	metadona
+cc_habitos_toxicos942		Frequency	5991	6002	esporádicos
+cc_habitos_toxicos942		Type	6549	6557	metadona
+cc_habitos_toxicos942		Duration	6503	6513	En el 2011
+cc_habitos_toxicos942		Type	6696	6717	buprenorfina/naloxona
+cc_habitos_toxicos942		Amount	6807	6811	8 mg
+cc_habitos_toxicos942		Type	7244	7265	buprenorfina/naloxona
+cc_habitos_toxicos942		Amount	7266	7275	8 mg/2 mg
+casos_clinicos_habtox32		History	161	184	desde hace varios meses
+casos_clinicos_habtox32		Duration	990	1007	desde los 12 años
+casos_clinicos_habtox32		Duration	990	1007	desde los 12 años
+casos_clinicos_habtox32		Amount	1069	1084	25 cigarros/día
+casos_clinicos_habtox32		Duration	1105	1122	desde los 14 años
+casos_clinicos_habtox32		Amount	1141	1147	15 UBE
+casos_clinicos_habtox32		Frequency	1147	1151	/día
+casos_clinicos_habtox32		Type	1167	1174	heroína
+casos_clinicos_habtox32		Method	1185	1191	fumada
+casos_clinicos_habtox32		Duration	1192	1209	desde los 16 años
+casos_clinicos_habtox32		Type	1177	1184	cocaína
+casos_clinicos_habtox32		Method	1185	1191	fumada
+casos_clinicos_habtox32		Duration	1192	1209	desde los 16 años
+casos_clinicos_habtox32		Type	1211	1219	Metadona
+casos_clinicos_habtox32		Type	1274	1284	alprazolam
+casos_clinicos_habtox32		Type	1334	1341	heroína
+casos_clinicos_habtox32		Type	1344	1351	cocaína
+casos_clinicos_habtox32		Type	1465	1473	metadona
+casos_clinicos_habtox32		Type	1964	1979	benzodiacepinas
+casos_clinicos_habtox32		Type	2333	2341	revuelto
+casos_clinicos_habtox32		Type	2371	2378	heroína
+casos_clinicos_habtox32		Amount	2358	2363	0.5 g
+casos_clinicos_habtox32		Frequency	2363	2367	/día
+casos_clinicos_habtox32		Type	2381	2388	cocaína
+casos_clinicos_habtox32		Amount	2358	2363	0.5 g
+casos_clinicos_habtox32		Frequency	2363	2367	/día
+casos_clinicos_habtox32		Type	2390	2400	alprazolam
+casos_clinicos_habtox32		Amount	2401	2405	8 mg
+casos_clinicos_habtox32		Frequency	2405	2409	/día
+casos_clinicos_habtox32		Type	2434	2441	cerveza
+casos_clinicos_habtox32		Amount	2443	2454	unas 15 UBE
+casos_clinicos_habtox32		Frequency	2454	2458	/día
+casos_clinicos_habtox32		Type	2536	2543	cocaína
+casos_clinicos_habtox32		Type	2568	2576	nicotina
+casos_clinicos_habtox32		Type	2834	2842	metadona
+casos_clinicos_habtox32		Amount	2858	2863	20 mg
+casos_clinicos_habtox32		Type	3419	3427	metadona
+casos_clinicos_habtox32		Duration	3345	3363	En octubre de 2010
+casos_clinicos_habtox32		Amount	3428	3436	40-50 mg
+casos_clinicos_habtox32		Frequency	3436	3440	/día
+casos_clinicos_habtox32		History	3040	3052	unos 35 días
+casos_clinicos_habtox32		Type	3575	3583	metadona
+casos_clinicos_habtox32		Amount	3613	3618	40 mg
+casos_clinicos_habtox32		Type	4764	4772	metadona
+casos_clinicos_habtox32		Amount	4776	4781	40 mg
+casos_clinicos_habtox32		Type	4809	4819	alprazolam
+casos_clinicos_habtox32		Frequency	4799	4805	diario
+casos_clinicos_habtox32		Amount	4823	4827	6 mg
+casos_clinicos_habtox32		Type	5233	5243	alprazolam
+casos_clinicos_habtox32		Amount	5271	5277	0.5 mg
+casos_clinicos_habtox32		Frequency	5277	5285	/ 5 días
+casos_clinicos_habtox32		Type	5420	5435	benzodiacepinas
+casos_clinicos_habtox32		Type	5406	5414	metadona
+casos_clinicos_habtox32		Type	5738	5746	metadona
+casos_clinicos_habtox32		Amount	5758	5762	5 mg
+casos_clinicos_habtox32		Frequency	5762	5770	/14 días
+casos_clinicos_habtox32		Amount	5800	5805	20 mg
+casos_clinicos_habtox32		Type	5738	5746	metadona
+casos_clinicos_habtox32		Type	6456	6464	metadona
+casos_clinicos_habtox32		History	6465	6478	hace 48 horas
+casos_clinicos_habtox32		Type	2637	2645	sedantes
+casos_clinicos_habtox32		Type	2647	2657	hipnóticos
+casos_clinicos_habtox32		Type	2660	2672	ansiolíticos
+casos_clinicos_habtox32		Duration	474	478	2007
+casos_clinicos_habtox32		Type	3843	3851	metadona
+casos_clinicos_habtox32		Duration	3784	3800	En abril de 2011
+casos_clinicos_habtox32		Amount	4017	4021	5 mg
+casos_clinicos_habtox32		Frequency	4021	4034	/ cada semana
+casos_clinicos_habtox32		Amount	4223	4229	2,5 mg
+casos_clinicos_habtox32		Frequency	4229	4236	/semana
+casos_clinicos_habtox32		Amount	4300	4306	2,5 mg
+casos_clinicos_habtox32		Frequency	4306	4316	/2 semanas
+casos_clinicos_habtox32		Amount	4061	4066	20 mg
+casos_clinicos_habtox32		Amount	4252	4257	10 mg
+casos_clinicos_habtox32		Type	4685	4693	metadona
+casos_clinicos_habtox32		Duration	4605	4623	En octubre de 2012
+casos_clinicos_habtox32		Type	4945	4953	metadona
+casos_clinicos_habtox32		Type	5507	5515	metadona
+casos_clinicos_habtox32		Amount	6579	6583	2 mg
+casos_clinicos_habtox32		Type	6587	6608	buprenorfina/naloxona
+casos_clinicos_habtox32		Duration	6622	6631	a la hora
+casos_clinicos_habtox32		Amount	6657	6671	otros 2 mg más
+casos_clinicos_habtox32		Type	6587	6608	buprenorfina/naloxona
+casos_clinicos_habtox32		Amount	6916	6937	un comprimido de 2 mg
+casos_clinicos_habtox32		Duration	6973	6989	durante la tarde
+casos_clinicos_habtox32		Type	6941	6953	buprenorfina
+casos_clinicos_habtox32		Amount	7204	7208	8 mg
+casos_clinicos_habtox32		Frequency	7208	7212	/día
+casos_clinicos_habtox32		Type	7189	7201	buprenorfina
+casos_clinicos_habtox32		Type	7508	7520	buprenorfina
+casos_clinicos_habtox32		Duration	7483	7492	dos meses
+casos_clinicos_habtox32		Type	6238	6246	metadona
+cc_habitos_toxicos836		Duration	308	325	desde los 18 años
+cc_habitos_toxicos836		History	417	432	Tras el ingreso
+cc_habitos_toxicos836		Amount	859	864	binge
+cc_habitos_toxicos836		Type	999	1021	medicación ansiolítica
+cc_onco1713		Amount	109	124	30 paquetes/año
+cc_habitos_toxicos326		Type	2115	2122	cerveza
+cc_habitos_toxicos326		Amount	2102	2111	dos vasos
+cc_habitos_toxicos326		Frequency	2123	2161	al día, uno en almuerzo y otro en cena
+cc_habitos_toxicos326		Frequency	2204	2210	al día
+cc_habitos_toxicos326		Amount	2179	2191	dos paquetes
+cc_habitos_toxicos326		History	2238	2248	lleva años
+cc_onco1021		Amount	75	90	24 paquetes-año
+cc_habitos_toxicos669		Amount	33	52	20 cigarrillos/ día
+cc_habitos_toxicos669		Method	26	32	activo
+cc_habitos_toxicos669		Amount	62	72	2 cervezas
+cc_habitos_toxicos669		Type	64	72	cervezas
+cc_habitos_toxicos669		Frequency	72	77	/ día
+caso_clinico_neurologia364		Duration	65	72	crónico
+caso_clinico_neurologia364		Amount	74	83	5-6 copas
+caso_clinico_neurologia364		Type	98	113	alta graduación
+caso_clinico_neurologia364		Duration	114	135	en los últimos 7 años
+cc_habitos_toxicos324		Type	347	354	cerveza
+cc_habitos_toxicos324		Amount	336	343	un vaso
+cc_habitos_toxicos324		Frequency	316	330	ocasionalmente
+cc_habitos_toxicos324		Type	588	595	cerveza
+cc_habitos_toxicos324		Amount	566	584	grandes cantidades
+cc_habitos_toxicos324		Duration	534	556	hacía más de tres años
+cc_habitos_toxicos89		Duration	647	664	desde la juventud
+cc_habitos_toxicos89		Duration	1656	1663	crónico
+caso_clinico_atencion_primaria34		Type	290	294	vino
+caso_clinico_medicina_interna874		Amount	94	101	5 puros
+caso_clinico_medicina_interna874		Type	96	101	puros
+caso_clinico_medicina_interna874		Frequency	102	111	semanales
+caso_clinico_medicina_interna874		Amount	127	143	más de 80 gramos
+caso_clinico_medicina_interna874		Frequency	155	162	diarios
+caso_clinico_medicina_interna874		History	163	184	desde hace tres meses
+cc_habitos_toxicos745		Method	156	162	activo
+cc_habitos_toxicos745		Frequency	209	218	ocasional
+S0211-69952010000500016-1		Type	45	52	cocaína
+S0211-69952010000500016-1		Type	1437	1444	cocaína
+casos_clinicos_habtox18		Type	107	114	cocaína
+casos_clinicos_habtox18		Type	360	367	cocaína
+casos_clinicos_habtox18		Method	368	376	en polvo
+casos_clinicos_habtox18		Amount	405	426	entre medio y 1 gramo
+casos_clinicos_habtox18		Frequency	461	482	una vez cada dos días
+casos_clinicos_habtox18		Frequency	582	610	sin haberle dado continuidad
+casos_clinicos_habtox18		Frequency	582	610	sin haberle dado continuidad
+casos_clinicos_habtox18		Type	649	656	cocaína
+casos_clinicos_habtox18		Duration	657	673	a los 15-16 años
+casos_clinicos_habtox18		Frequency	688	737	muy esporádicos, habitualmente de fines de semana
+casos_clinicos_habtox18		Duration	851	868	entre 2014 y 2015
+casos_clinicos_habtox18		Duration	906	975	desde septiembre de 2015 hasta la fecha de su ingreso en la Comunidad
+cc_habitos_toxicos750		Amount	79	89	un paquete
+cc_habitos_toxicos750		Frequency	90	96	al día
+cc_habitos_toxicos750		History	97	114	hasta hace 8 años
+cc_habitos_toxicos714		Amount	33	43	4 cigarros
+cc_habitos_toxicos714		Frequency	44	50	al día
+casos_clinicos_habtox68		Type	287	294	heroína
+casos_clinicos_habtox68		Method	295	301	fumada
+casos_clinicos_habtox68		Amount	318	339	en torno a 1/4-1/2 gr
+casos_clinicos_habtox68		Frequency	339	344	/ día
+casos_clinicos_habtox68		Type	388	403	cocaína en base
+casos_clinicos_habtox68		Type	406	409	THC
+casos_clinicos_habtox68		Type	459	466	heroína
+casos_clinicos_habtox68		Frequency	435	441	diario
+casos_clinicos_habtox68		Frequency	435	441	diario
+casos_clinicos_habtox68		Type	478	481	THC
+casos_clinicos_habtox68		Frequency	435	441	diario
+casos_clinicos_habtox68		Type	519	526	cocaína
+casos_clinicos_habtox68		Frequency	485	501	de fin de semana
+casos_clinicos_habtox68		Amount	581	595	10-15 pitillos
+casos_clinicos_habtox68		Type	587	595	pitillos
+casos_clinicos_habtox68		Frequency	596	603	diarios
+casos_clinicos_habtox68		Type	639	646	cocaína
+casos_clinicos_habtox68		Amount	621	623	30
+casos_clinicos_habtox68		Duration	1565	1572	20 años
+casos_clinicos_habtox68		Type	1507	1513	hachís
+casos_clinicos_habtox68		Duration	1458	1471	A los 14 años
+casos_clinicos_habtox68		Duration	1458	1471	A los 14 años
+casos_clinicos_habtox68		Duration	1458	1471	A los 14 años
+casos_clinicos_habtox68		Frequency	1647	1655	habitual
+casos_clinicos_habtox68		Type	1696	1703	heroína
+casos_clinicos_habtox68		Type	1706	1713	cocaína
+casos_clinicos_habtox68		Type	1809	1815	hachís
+casos_clinicos_habtox68		Type	2066	2073	heroína
+casos_clinicos_habtox34		Type	103	110	heroína
+casos_clinicos_habtox34		Type	468	475	heroína
+casos_clinicos_habtox34		Method	476	482	fumada
+casos_clinicos_habtox34		Amount	499	521	en torno a ¼-1/2 gramo
+casos_clinicos_habtox34		Frequency	521	525	/día
+casos_clinicos_habtox34		Type	601	609	metadona
+casos_clinicos_habtox34		Type	655	662	heroína
+casos_clinicos_habtox34		Duration	1180	1203	a partir de los 30 años
+casos_clinicos_habtox34		Type	1284	1291	cocaína
+casos_clinicos_habtox34		Duration	1180	1203	a partir de los 30 años
+casos_clinicos_habtox34		Type	1305	1312	heroína
+casos_clinicos_habtox34		Duration	1313	1361	con 40 años que ha mantenido hasta la actualidad
+casos_clinicos_habtox34		Type	1552	1560	metadona
+casos_clinicos_habtox34		Duration	1714	1733	desde los doce años
+casos_clinicos_habtox34		Type	1827	1834	heroína
+casos_clinicos_habtox34		Method	1835	1850	fumada en plata
+casos_clinicos_habtox34		Duration	1770	1799	a partir de los cuarenta años
+casos_clinicos_habtox34		History	2184	2201	más de seis meses
+casos_clinicos_habtox34		Type	2618	2626	metadona
+casos_clinicos_habtox34		Type	2585	2600	benzodiacepinas
+casos_clinicos_habtox34		Type	2895	2917	buprenorfina/ naloxona
+casos_clinicos_habtox34		Amount	2920	2925	10 mg
+casos_clinicos_habtox34		Frequency	2925	2929	/día
+cc_habitos_toxicos878		Amount	69	81	1 5 paq /día
+cc_habitos_toxicos878		Duration	82	99	desde los 17 años
+cc_habitos_toxicos878		Amount	112	122	10 cig/día
+cc_habitos_toxicos878		Type	139	148	marihuana
+cc_habitos_toxicos878		Type	151	157	hachís
+cc_habitos_toxicos878		Type	183	190	cerveza
+cc_habitos_toxicos878		Frequency	191	197	al día
+cc_habitos_toxicos878		Amount	179	182	3 L
+cc_habitos_toxicos878		History	240	256	desde Marzo 2017
+cc_habitos_toxicos878		Amount	168	178	importante
+cc_habitos_toxicos878		Type	200	204	anís
+cc_habitos_toxicos878		Amount	205	209	90 g
+cc_habitos_toxicos878		Frequency	209	213	/día
+cc_habitos_toxicos878		History	240	256	desde Marzo 2017
+cc_habitos_toxicos878		Amount	168	178	importante
+cc_habitos_toxicos878		Method	270	284	vía parenteral
+caso_clinico_psiquiatria518		Type	1145	1158	cannabinoides
+caso_clinico_psiquiatria518		Frequency	3260	3266	diario
+caso_clinico_urologia366		Amount	80	94	20 cigarrillos
+caso_clinico_urologia366		Type	83	94	cigarrillos
+caso_clinico_urologia366		Frequency	95	99	/día
+caso_clinico_urologia366		Method	101	107	exADVP
+caso_clinico_psiquiatria421		Frequency	1543	1557	ocasionalmente
+caso_clinico_urologia410		Amount	152	164	2-3 cervezas
+caso_clinico_urologia410		Type	156	164	cervezas
+caso_clinico_urologia410		Frequency	164	171	/semana
+casos_clinicos_infecciosas104		Amount	204	219	40 paquetes/año
+casos_clinicos_infecciosas104		Amount	238	242	60 g
+casos_clinicos_infecciosas104		Frequency	242	246	/día
+cc_habitos_toxicos539		Type	182	185	PBC
+cc_habitos_toxicos539		Type	534	537	PBC
+cc_habitos_toxicos539		Type	3013	3055	benzoilecgonina (metabolito de la cocaína)
+cc_habitos_toxicos539		Type	3167	3182	benzodiacepinas
+cc_habitos_toxicos539		Type	3381	3388	cocaína
+cc_habitos_toxicos539		Type	5959	5966	cocaína
+cc_habitos_toxicos539		Type	6119	6126	cocaína
+cc_habitos_toxicos539		Type	7646	7661	benzoilecgonina
+cc_habitos_toxicos539		Duration	7580	7622	A las 48-72 horas del ingreso hospitalario
+cc_habitos_toxicos320		Amount	77	85	moderado
+cc_habitos_toxicos320		Type	98	103	puros
+cc_habitos_toxicos295		Amount	30	43	1 paquete/día
+cc_habitos_toxicos295		Amount	64	76	más de 7 UBE
+cc_habitos_toxicos295		Frequency	76	80	/día
+cc_habitos_toxicos295		Method	572	586	vía parenteral
+cc_habitos_toxicos295		Duration	957	1001	estos últimos meses en relación a la ruptura
+cc_habitos_toxicos859		Amount	575	589	tres pastillas
+cc_habitos_toxicos604		Amount	370	387	2 cigarrillos/día
+cc_habitos_toxicos604		Type	390	399	marihuana
+cc_habitos_toxicos604		Type	401	411	pasta base
+cc_habitos_toxicos604		Type	414	421	neoprén
+cc_habitos_toxicos604		Frequency	422	431	ocasional
+cc_habitos_toxicos30		Type	180	187	heroína
+cc_habitos_toxicos30		Method	198	207	inhaladas
+cc_habitos_toxicos30		Duration	208	228	desde los 17-18 años
+cc_habitos_toxicos30		Type	190	197	cocaína
+cc_habitos_toxicos30		Method	198	207	inhaladas
+cc_habitos_toxicos30		Duration	208	228	desde los 17-18 años
+cc_habitos_toxicos30		History	282	295	tras 10 meses
+cc_habitos_toxicos30		Type	348	355	heroína
+cc_habitos_toxicos30		Frequency	375	395	1-2 veces por semana
+cc_habitos_toxicos30		Type	358	365	cocaína
+cc_habitos_toxicos30		Frequency	375	395	1-2 veces por semana
+cc_habitos_toxicos30		Method	366	374	inhalada
+cc_habitos_toxicos30		Type	405	411	porros
+cc_habitos_toxicos30		Amount	401	411	2-4 porros
+cc_habitos_toxicos30		Frequency	412	420	a diario
+cc_habitos_toxicos30		Type	461	481	buprenorina/naloxona
+cc_habitos_toxicos30		Frequency	453	457	/día
+cc_habitos_toxicos30		Amount	449	453	8 mg
+cc_habitos_toxicos30		Type	566	583	dextropropoxifeno
+cc_habitos_toxicos30		Amount	585	591	900 mg
+cc_habitos_toxicos30		Frequency	591	595	/día
+cc_habitos_toxicos30		Type	954	964	naltrexona
+cc_habitos_toxicos30		Amount	1011	1033	de 12,5 mg hasta 50 mg
+cc_habitos_toxicos30		Frequency	1033	1037	/día
+cc_habitos_toxicos667		Type	68	75	cocaína
+cc_habitos_toxicos667		Duration	1283	1296	a los 15 años
+cc_habitos_toxicos667		Duration	1283	1296	a los 15 años
+cc_habitos_toxicos667		Type	1380	1387	éxtasis
+cc_habitos_toxicos667		Duration	1396	1409	a los 18 años
+cc_habitos_toxicos667		Type	1390	1395	speed
+cc_habitos_toxicos667		Duration	1396	1409	a los 18 años
+cc_habitos_toxicos667		Duration	1546	1559	a los 22 años
+cc_habitos_toxicos667		Type	1588	1595	cocaína
+cc_habitos_toxicos667		Duration	1546	1559	a los 22 años
+cc_habitos_toxicos667		Type	1834	1841	cocaína
+cc_habitos_toxicos667		Amount	1814	1830	uno o dos gramos
+cc_habitos_toxicos667		Method	1804	1813	aspirando
+cc_habitos_toxicos667		Duration	1740	1781	2 últimos años previos a este tratamiento
+cc_habitos_toxicos667		Type	1868	1874	whisky
+cc_habitos_toxicos667		Frequency	1875	1883	a diario
+cc_habitos_toxicos667		Amount	1853	1864	una botella
+cc_habitos_toxicos667		Duration	1740	1781	2 últimos años previos a este tratamiento
+cc_habitos_toxicos667		Type	3426	3449	sustancias psicoactivas
+cc_habitos_toxicos667		History	4712	4718	3 años
+casos_clinicos_habtox98		Type	68	75	cocaína
+casos_clinicos_habtox98		Duration	76	94	por más de 20 años
+casos_clinicos_habtox98		Frequency	103	109	diario
+casos_clinicos_habtox98		Duration	134	151	desde los 16 años
+casos_clinicos_habtox98		Type	732	739	cocaína
+casos_clinicos_habtox98		Method	718	728	inhalación
+cc_habitos_toxicos924		Type	181	188	heroína
+cc_habitos_toxicos924		Type	383	391	Metadona
+cc_habitos_toxicos924		Duration	392	409	desde el año 1998
+cc_habitos_toxicos924		History	441	460	hasta enero de 2012
+cc_habitos_toxicos924		Type	735	743	metadona
+cc_habitos_toxicos924		Duration	785	796	con 13 años
+cc_habitos_toxicos924		Duration	814	825	con 13 años
+cc_habitos_toxicos924		Frequency	836	846	esporádico
+cc_habitos_toxicos924		Duration	874	885	con 14 años
+cc_habitos_toxicos924		Type	887	894	Cocaína
+cc_habitos_toxicos924		Duration	903	914	con 17 años
+cc_habitos_toxicos924		Type	916	923	Heroína
+cc_habitos_toxicos924		Duration	932	943	con 18 años
+cc_habitos_toxicos924		Type	998	1006	opiáceos
+cc_habitos_toxicos924		Type	1027	1036	agonistas
+cc_habitos_toxicos924		Type	1068	1076	nicotina
+cc_habitos_toxicos924		Type	1495	1503	Metadona
+cc_habitos_toxicos924		History	1517	1530	enero de 2012
+cc_habitos_toxicos924		Type	1534	1555	Buprenorfina/naloxona
+cc_habitos_toxicos924		Amount	1556	1560	8 mg
+cc_habitos_toxicos924		Frequency	1560	1564	/día
+cc_habitos_toxicos924		Duration	1585	1595	marzo 2012
+cc_habitos_toxicos924		Type	1738	1754	pipa de nicotina
+cc_habitos_toxicos924		Method	1729	1733	fuma
+cc_habitos_toxicos924		Type	1756	1776	cigarrillo eléctrico
+cc_habitos_toxicos924		Method	1729	1733	fuma
+cc_habitos_toxicos924		Type	1836	1857	buprenorfina/naloxona
+cc_habitos_toxicos924		Type	2261	2282	buprenorfina/naloxona
+cc_habitos_toxicos924		Amount	2283	2287	8 mg
+cc_habitos_toxicos924		Method	2288	2298	sublingual
+cc_habitos_toxicos924		Frequency	2299	2312	por la mañana
+casos_clinicos_habtox1		Duration	641	648	crónico
+casos_clinicos_habtox1		Frequency	694	719	en determinadas ocasiones
+casos_clinicos_habtox1		Duration	2936	2943	crónico
+caso_clinico_urologia41		Amount	315	337	10- 12 cigarrillos/día
+caso_clinico_urologia41		Type	352	359	cocaína
+caso_clinico_urologia41		Method	371	380	inhaladas
+caso_clinico_urologia41		Duration	381	398	desde hace 2 años
+caso_clinico_urologia41		Type	362	370	ketamina
+caso_clinico_urologia41		Method	371	380	inhaladas
+caso_clinico_urologia41		Duration	381	398	desde hace 2 años
+caso_clinico_urologia41		Type	2168	2176	ketamina
+caso_clinico_urologia41		Method	2177	2185	inhalada
+caso_clinico_urologia41		Amount	2188	2217	altas dosis (mayor de 3 g/día
+caso_clinico_urologia41		Frequency	2213	2217	/día
+caso_clinico_urologia41		Type	2303	2311	ketamina
+cc_habitos_toxicos749		Method	128	134	activo
+cc_habitos_toxicos749		Amount	163	178	24 paquetes/año
+cc_habitos_toxicos119		Type	48	55	cocaína
+cc_habitos_toxicos119		Type	58	65	heroína
+cc_habitos_toxicos119		Type	101	109	metadona
+cc_habitos_toxicos119		History	110	127	hasta hace 9 años
+caso_clinico_psiquiatria391		Type	1274	1281	cocaína
+caso_clinico_psiquiatria391		Type	1727	1734	cocaína
+caso_clinico_psiquiatria391		Type	2630	2639	marihuana
+caso_clinico_psiquiatria391		Type	2877	2886	marihuana
+cc_habitos_toxicos686		Amount	60	76	20 paquetes/ año
+cc_habitos_toxicos328		Type	118	125	cerveza
+cc_habitos_toxicos328		Frequency	126	144	una vez por semana
+cc_habitos_toxicos328		Duration	146	166	por cerca de 15 años
+cc_habitos_toxicos101		Amount	81	86	1-2 g
+cc_habitos_toxicos101		Frequency	86	90	/día
+cc_habitos_toxicos101		Method	91	99	vía oral
+cc_habitos_toxicos562		Duration	1021	1034	a los 14 años
+cc_habitos_toxicos562		History	1360	1368	dos años
+cc_habitos_toxicos562		History	1429	1443	casi dos meses
+cc_habitos_toxicos630		Method	49	63	vía parenteral
+cc_habitos_toxicos630		Type	368	375	heroína
+cc_habitos_toxicos630		Duration	386	399	a los 17 años
+cc_habitos_toxicos630		Method	405	418	vía inyectada
+cc_habitos_toxicos630		Duration	419	437	durante once años,
+cc_habitos_toxicos630		Type	378	385	cocaína
+cc_habitos_toxicos630		Duration	386	399	a los 17 años
+cc_habitos_toxicos630		Method	405	418	vía inyectada
+cc_habitos_toxicos630		Duration	419	437	durante once años,
+cc_habitos_toxicos630		Type	583	606	sustitutivo de opiáceos
+cc_habitos_toxicos630		Duration	539	551	Hace 13 años
+cc_habitos_toxicos630		Type	657	664	heroína
+cc_habitos_toxicos630		Type	731	739	metadona
+cc_habitos_toxicos630		Type	608	611	PSO
+cc_habitos_toxicos630		Type	754	761	cocaína
+cc_habitos_toxicos630		Frequency	785	799	muy esporádico
+cc_habitos_toxicos630		Amount	802	824	en pequeñas cantidades
+cc_habitos_toxicos630		Method	830	844	vía intranasal
+cc_habitos_toxicos630		History	853	866	hace dos años
+cc_habitos_toxicos630		Duration	921	928	12 años
+cc_habitos_toxicos630		Amount	1073	1084	18-20 copas
+cc_habitos_toxicos630		Type	1088	1100	sol y sombra
+cc_habitos_toxicos630		Frequency	1101	1108	diarias
+cc_habitos_toxicos630		Duration	1109	1132	durante largos periodos
+cc_habitos_toxicos630		History	973	990	hasta los 38 años
+cc_habitos_toxicos380		Type	315	322	cocaína
+cc_habitos_toxicos380		Duration	323	334	hace 5 días
+cc_habitos_toxicos380		Type	755	762	cocaína
+cc_habitos_toxicos380		Type	1185	1192	cocaína
+cc_habitos_toxicos380		Duration	1174	1181	crónico
+cc_habitos_toxicos380		Type	1824	1831	cocaína
+cc_onco652		Amount	43	50	IPA 111
+cc_onco652		Amount	67	84	1 botella de vino
+cc_onco652		Type	80	84	vino
+cc_habitos_toxicos607		Type	134	141	cocaína
+cc_habitos_toxicos607		Frequency	151	161	esporádica
+cc_habitos_toxicos607		Type	96	99	GHB
+cc_habitos_toxicos607		Frequency	85	92	regular
+cc_habitos_toxicos607		Duration	106	128	desde hace varios años
+cc_habitos_toxicos607		Type	102	105	GBL
+cc_habitos_toxicos607		Duration	106	128	desde hace varios años
+cc_habitos_toxicos607		Frequency	85	92	regular
+cc_habitos_toxicos463		Method	272	278	activo
+cc_habitos_toxicos19		Type	198	206	metadona
+cc_habitos_toxicos19		Amount	188	194	500 mg
+cc_habitos_toxicos19		Type	352	359	cerveza
+cc_habitos_toxicos19		Amount	336	348	varias latas
+cc_habitos_toxicos19		Type	586	599	cocaína, base
+cc_habitos_toxicos19		Type	1325	1333	metadona
+cc_habitos_toxicos19		Type	1429	1436	cocaína
+cc_habitos_toxicos816		Duration	79	92	a los 14 años
+cc_habitos_toxicos816		Type	858	866	nicotina
+cc_habitos_toxicos816		Type	1668	1688	una marca tipo light
+cc_habitos_toxicos816		Amount	1637	1664	media de 20 cigarrillos/día
+cc_habitos_toxicos816		Frequency	1710	1723	al levantarse
+cc_habitos_toxicos816		Amount	1905	1918	un cigarrillo
+cc_habitos_toxicos816		Frequency	1919	1956	después de comer y antes de acostarse
+cc_habitos_toxicos356		Type	307	312	vodka
+cc_habitos_toxicos356		Amount	296	303	1 litro
+cc_habitos_toxicos356		Frequency	313	335	al día, todos los días
+cc_habitos_toxicos356		Duration	383	408	desde hacía más de 2 años
+cc_habitos_toxicos356		Duration	469	488	después del trabajo
+cc_habitos_toxicos356		Duration	507	535	1 año antes de la evaluación
+cc_habitos_toxicos356		Frequency	559	620	rutinariamente por las mañanas siempre que tenía el día libre
+cc_habitos_toxicos356		Amount	721	729	una copa
+cc_habitos_toxicos356		Frequency	678	693	por las mañanas
+cc_habitos_toxicos356		Duration	1248	1263	en el instituto
+cc_habitos_toxicos356		Duration	1325	1342	En la universidad
+cc_habitos_toxicos356		Duration	1440	1460	Durante la treintena
+cc_habitos_toxicos356		Frequency	1578	1584	diaria
+cc_habitos_toxicos356		Type	1639	1646	cerveza
+cc_habitos_toxicos356		Duration	1586	1601	El año anterior
+cc_habitos_toxicos356		Type	1655	1660	vodka
+cc_habitos_toxicos356		Duration	1586	1601	El año anterior
+cc_habitos_toxicos356		Duration	1753	1778	nada más acabarla reunión
+cc_habitos_toxicos356		Type	1910	1919	marihuana
+cc_habitos_toxicos356		Method	1903	1909	fumado
+cc_habitos_toxicos356		History	1952	1969	en la universidad
+cc_habitos_toxicos356		Duration	1952	1969	en la universidad
+cc_habitos_toxicos356		Type	1931	1938	cocaína
+cc_habitos_toxicos356		Method	1922	1930	esnifado
+cc_habitos_toxicos356		History	1952	1969	en la universidad
+cc_habitos_toxicos356		Duration	1952	1969	en la universidad
+cc_habitos_toxicos356		History	2468	2488	desde la noche antes
+cc_habitos_toxicos186		Amount	624	642	30 cigarrillos/día
+cc_habitos_toxicos186		Type	627	638	cigarrillos
+cc_habitos_toxicos186		Frequency	652	661	ocasional
+cc_habitos_toxicos186		Type	681	684	THC
+cc_habitos_toxicos186		Duration	685	692	en 2007
+cc_habitos_toxicos186		Frequency	708	726	os fines de semana
+cc_habitos_toxicos186		Type	681	684	THC
+cc_habitos_toxicos186		Amount	744	756	3-4 pitillos
+cc_habitos_toxicos186		Type	748	756	pitillos
+cc_habitos_toxicos186		Frequency	756	760	/día
+caso_clinico_psiquiatria89		Frequency	258	264	al día
+caso_clinico_psiquiatria89		Amount	234	247	medio paquete
