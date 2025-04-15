@@ -4,13 +4,8 @@ cookie:
   name: ner_auth_cookie
 credentials:
   usernames:
-    nlp4bia-bsc:
-      email: ''
-      name: nlp4bia-bsc
-      password: $2b$12$OFDayv5Ynb5SNUIjmleMfOaOBHu9zCUMDGQAjZcMIwyMGQrxl.BFa
-      username: nlp4bia-bsc
-    wesam.alnabki:
-      email: wesam.alnabki@gmail.com
-      name: Wesam Al Nabki
-      password: $2b$12$jyxlM56Fe.F2QGFTMF.aI.vv/YkViYsQpQgz.wwXA5FNYP5er3C6C
-      username: wesam.alnabki
+    admin:
+      email: admin@gmail.com
+      name: admin
+      password: $2b$12$tpFtY5bCrzBAtc9IG7149OiYi2COjha8WDHWq0fkWx3HOCz9tIIUi
+      username: admin
