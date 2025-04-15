@@ -8,12 +8,19 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8501:8501"
-
     volumes:
-      - ${PWD}/DATA/testsets:/mounted/testsets
-      - ${PWD}/DATA/submissions.db:/mounted/submissions.db
-      - ${PWD}/DATA/users_config.yaml:/mounted/users_config.yaml
-      - ${PWD}/DATA/saved_submissions:/mounted/saved_submissions
+      - type: bind
+        source: DATA/testsets
+        target: /mounted/testsets
+      - type: bind
+        source: DATA/submissions.db
+        target: /mounted/submissions.db
+      - type: bind
+        source: DATA/users_config.yaml
+        target: /mounted/users_config.yaml
+      - type: bind
+        source: DATA/saved_submissions
+        target: /mounted/saved_submissions
 
     environment:
       TESTSETS_PATH: /mounted/testsets
