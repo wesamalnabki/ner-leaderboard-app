@@ -1,5 +1,6 @@
 [server]
 headless = true
 port = 8501
-enableCORS = false
+enableCORS = true
+enableXsrfProtection = false  # Disable XSRF protection if you're okay with it
 address = "0.0.0.0"
