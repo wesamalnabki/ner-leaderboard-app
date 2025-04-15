@@ -11,6 +11,7 @@ WORKDIR /app
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for better cache use
@@ -23,8 +24,12 @@ RUN pip install -r requirements.txt
 # Copy the rest of the project files into the container
 COPY ./src .
 
+# Add Streamlit config
+RUN mkdir -p /root/.streamlit
+COPY config.toml /root/.streamlit/config.toml
+
 # Expose Streamlit's default port
 EXPOSE 8501
 
 # Define default command to run the Streamlit app
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py"]
