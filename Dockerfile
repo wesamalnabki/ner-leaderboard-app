@@ -32,4 +32,4 @@ COPY config.toml /root/.streamlit/config.toml
 EXPOSE 8501
 
 # Define default command to run the Streamlit app
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0"]
