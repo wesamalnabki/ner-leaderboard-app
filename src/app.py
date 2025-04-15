@@ -15,7 +15,7 @@ print(load_dotenv(find_dotenv()))
 st.set_page_config(page_title="NER Benchmarking Leaderboard", layout="wide")
 
 # --- Load Config for Authentication ---
-config_path = os.getenv("USER_CONFIG_PATH", "/mounted/users_config.yaml")
+config_path = os.getenv("USER_CONFIG_PATH", "DATA/users_config.yaml")
 with open(config_path) as file:
     config = yaml.load(file, Loader=SafeLoader)
 
@@ -38,9 +38,9 @@ if st.session_state.get("authentication_status"):
     st.sidebar.write(f"Welcome *{st.session_state['name']}*")
 
     # --- Config ---
-    testsets_root_path = os.getenv("TESTSETS_PATH", "./testsets/")
-    db_path = f"sqlite:///{os.getenv('DB_PATH', 'submissions.db')}"
-    submission_save_path = os.getenv("SUBMISSION_SAVE_PATH", "./saved_submissions/")
+    testsets_root_path = os.getenv("TESTSETS_PATH", "DATA/testsets/")
+    db_path = f"sqlite:///{os.getenv('DB_PATH', 'DATA/submissions.db')}"
+    submission_save_path = os.getenv("SUBMISSION_SAVE_PATH", "DATA/saved_submissions/")
     os.makedirs(submission_save_path, exist_ok=True)
 
     # --- Database Setup ---
