@@ -1,50 +1,46 @@
-# 🧠 NER Benchmarking Leaderboard
+# 🧠 NER Benchmarking Leaderboard (Streamlit App)
 
-This project is a web-based leaderboard application built with **Gradio** for evaluating and comparing Named Entity Recognition (NER) model outputs against gold-standard test sets. It allows users to upload model predictions (in TSV format), computes standard metrics (Precision, Recall, F1), and stores the results in a local database with a historical view.
+This is a secure, interactive Streamlit application for benchmarking Named Entity Recognition (NER) models. Users can upload prediction files, view performance metrics, and track submissions on a leaderboard for multiple test datasets. Authentication is handled using `streamlit-authenticator`.
 
 ---
 
 ## 🚀 Features
 
-- 📁 Upload model prediction TSV files
-- 📊 Evaluate predictions against preloaded testsets
-- 🧪 Computes Precision, Recall, and F1 Score
-- 🏆 View and compare submissions on a per-dataset basis
-- 💃 Stores submissions in an SQLite database
-- ⚡ Clean, interactive interface using Gradio
+- 🔒 **User Login & Registration** (via YAML config)
+- 📊 **Leaderboard** for each dataset
+- 📂 **Upload TSV** prediction files
+- 📈 **Automatic Evaluation** with Precision, Recall, and F1 score
+- 🔁 **Re-evaluate** past submissions
+- ⬇️ **Download** submitted files
+- 🗑️ **Delete** entries
+- 🧪 **Dataset selection** for comparison
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
-🔹 evaluation_ner.py           # Functions for parsing TSV and calculating metrics
-🔹 main.py                     # Main app logic and Gradio UI
-🔹 testsets/                   # Folder containing ground truth TSV testsets
-🔹 submissions.db              # SQLite database for tracking submissions
-🔹 README.md                   # This file
+.
+├── app.py                         # Main Streamlit app
+├── evaluation_ner.py             # Evaluation logic
+├── .env                          # Environment variables
+├── testsets/                     # Ground truth datasets (TSV)
+├── saved_submissions/           # Uploaded user predictions
+├── submissions.db                # SQLite DB storing metadata
+├── users_config.yaml             # User credentials config
+├── Dockerfile                    # Docker build instructions
+└── docker-compose.yml            # Compose setup
 ```
 
 ---
 
-## 📊 Example Submission TSV Format
-
-Each submission must be in TSV format, matching the structure expected by `evaluation_ner.parse_tsv_file()`. Typically, these include columns like:
-
-- `token`
-- `label_gold`
-- `label_pred`
-- (optional columns like `note`, `mark`, `ann_id` are automatically dropped)
-
----
-
-## 🛠️ Setup Instructions
+## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/ner-benchmark-leaderboard.git
-cd ner-benchmark-leaderboard
+git clone https://github.com/nlp4bia-bsc/ner-leaderboard.git
+cd ner-leaderboard
 ```
 
 ### 2. Install Dependencies
@@ -53,49 +49,91 @@ cd ner-benchmark-leaderboard
 pip install -r requirements.txt
 ```
 
-> Required packages include: `gradio`, `sqlalchemy`, `pandas`, etc.
+<details>
+<summary>Sample <code>requirements.txt</code></summary>
 
-### 3. Add Testsets
-
-Place your gold-standard `.tsv` files in the `testsets/` directory. Each file will be automatically detected and used as a benchmark dataset.
-
-### 4. Run the App
-
-```bash
-python main.py
+```txt
+streamlit
+streamlit-authenticator
+PyYAML
+SQLAlchemy
+python-dotenv
+pandas
 ```
 
-The app will launch in your browser via Gradio.
+</details>
+
+### 3. Prepare `.env` File
+
+Create a `.env` file in the root directory with:
+
+```env
+USER_CONFIG_PATH=./users_config.yaml
+TESTSETS_PATH=./testsets/
+DB_PATH=./submissions.db
+SUBMISSION_SAVE_PATH=./saved_submissions/
+```
+
+### 4. Prepare Testsets
+
+Place your ground truth `.tsv` files in the `testsets/` folder. Each file should be in a tab-separated format and include a `label` column.
+
+### 5. User Authentication
+
+Edit `users_config.yaml` with your desired users and cookie settings. [Refer to `streamlit-authenticator` docs](https://github.com/mkhorasani/Streamlit-Authenticator) for formatting help.
 
 ---
 
-## 📈 Database
+## 📦 Running with Docker Compose
 
-All submissions are stored in a local SQLite database named `submissions.db`. This enables persistent tracking and ranking of different model runs.
+### 1. Build and Start the App
 
----
+```bash
+docker-compose up --build
+```
 
-## 🔧 Evaluation Logic
+### 2. Access the App
 
-Evaluation is handled in two steps:
-1. Ground truth and predictions are parsed using `parse_tsv_file()` from `evaluation_ner.py`
-2. Metrics (Precision, Recall, F1) are computed with `calculate_metrics()`
+Open your browser and go to: [http://localhost:8501](http://localhost:8501)
 
----
-
-## 🙋 Contributing
-
-Feel free to fork the repo, suggest improvements, or submit pull requests. All contributions are welcome!
+Make sure to mount your `.env`, `testsets/`, and `users_config.yaml` into the container if you're customizing outside the image.
 
 ---
 
-## 📁 License
+## ▶️ Running the App (Locally)
 
-MIT License. See `LICENSE` file for details.
+```bash
+streamlit run app.py
+```
 
 ---
 
-## 🙏 Acknowledgments
+## 📄 Submitting a Prediction
 
-Thanks to the Hugging Face community and open-source contributors who inspired the benchmarking and evaluation tools in this project.
+1. Select a dataset.
+2. Upload your `.tsv` file with predictions.
+3. Provide a submission name, model link, and your name.
+4. View evaluation metrics and see your score on the leaderboard.
+
+---
+
+## 📌 Notes
+
+- TSV files must match the format of the ground truth testsets.
+- Submissions with the same name will overwrite previous ones.
+- The leaderboard supports actions like delete, re-evaluate, and download.
+
+---
+
+## 🛡️ Authentication Tips
+
+- Passwords are hashed in the `users_config.yaml`.
+- Users must log in before viewing or submitting.
+- Registration logic can be extended to include user signup.
+
+---
+
+## 📬 Feedback
+
+Found a bug or have a feature request? Open an issue or reach out!
 
