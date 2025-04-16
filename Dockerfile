@@ -8,9 +8,6 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # Set working directory in the container
 WORKDIR /app
 
-# Set PWD environment variable inside the container
-ENV PWD=/app
-
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
