@@ -11,8 +11,8 @@ services:
 
     volumes:
       - ${PWD}/${TESTSETS_PATH}:/mounted/testsets
-      - ${PWD}/${DB_PATH}:/mounted/submissions.db
-      - ${PWD}/${USER_CONFIG_PATH}:/mounted/users_config.yaml
+      - ${PWD}/${DB_PATH}/submissions.db:/mounted/submissions.db
+      - ${PWD}/${USER_CONFIG_PATH}/users_config.yaml:/mounted/users_config.yaml
       - ${PWD}/${SUBMISSION_SAVE_PATH}:/mounted/saved_submissions
 
     environment:
