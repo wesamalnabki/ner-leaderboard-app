@@ -10,17 +10,17 @@ services:
       - "9999:8501"
 
     volumes:
-      - ${PWD}/${TESTSETS_PATH}:/mounted/testsets
-      - ${PWD}/${DB_PATH}/submissions.db:/mounted/submissions.db
-      - ${PWD}/${USER_CONFIG_PATH}/users_config.yaml:/mounted/users_config.yaml
-      - ${PWD}/${SUBMISSION_SAVE_PATH}:/mounted/saved_submissions
+      - ${PWD}/DATA/testsets:/mounted/testsets
+      - ${PWD}/DATA/submissions.db:/mounted/submissions.db
+      - ${PWD}/DATA/users_config.yaml:/mounted/users_config.yaml
+      - ${PWD}/DATA/saved_submissions:/mounted/saved_submissions
 
     environment:
       TESTSETS_PATH: /mounted/testsets
       DB_PATH: /mounted/submissions.db
       USER_CONFIG_PATH: /mounted/users_config.yaml
       SUBMISSION_SAVE_PATH: /mounted/saved_submissions
-      PWD: ${PWD}  # Explicitly set PWD
+      PWD: ${PWD}
 
     restart: unless-stopped
 
