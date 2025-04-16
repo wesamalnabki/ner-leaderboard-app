@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8501:8501"
+      - "9999:8501"
 
     volumes:
       - ${PWD}/DATA/testsets:/mounted/testsets
