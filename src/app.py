@@ -108,8 +108,18 @@ if st.session_state.get("authentication_status"):
             delete_col, reeval_col, download_col = cols[7].columns([1, 1, 1])
 
             if delete_col.button("🗑️", key=f"del_{sub.id}"):
+                # Delete submission from DB
                 session.delete(sub)
                 session.commit()
+
+                # Delete corresponding CSV file
+                csv_file_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.csv")
+                try:
+                    if os.path.exists(csv_file_path):
+                        os.remove(csv_file_path)
+                except Exception as e:
+                    st.warning(f"CSV file could not be deleted: {e}")
+
                 st.success(f"Deleted: {sub.submission_name}")
                 st.rerun()
 
