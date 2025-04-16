@@ -20,7 +20,7 @@ services:
       DB_PATH: /mounted/submissions.db
       USER_CONFIG_PATH: /mounted/users_config.yaml
       SUBMISSION_SAVE_PATH: /mounted/saved_submissions
-      PWD: ${PWD}
+      PWD: ${PWD}  # Explicitly set PWD
 
     restart: unless-stopped
 
