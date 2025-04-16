@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   ner-leaderboard:
     image: ner-leaderboard
@@ -10,14 +8,13 @@ services:
       - "9999:8501"
 
     volumes:
-      - ${PWD}:/mounted
+      - /projects/ner-leaderboard-app/DATA/:/mounted
 
     environment:
       TESTSETS_PATH: /mounted/testsets
       DB_PATH: /mounted/submissions.db
       USER_CONFIG_PATH: /mounted/users_config.yaml
       SUBMISSION_SAVE_PATH: /mounted/saved_submissions
-      PWD: ${PWD}  # Explicitly set PWD
 
     restart: unless-stopped
 

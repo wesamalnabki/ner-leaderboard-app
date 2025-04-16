@@ -1,15 +1,14 @@
 import os
+from datetime import datetime
+
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
-from yaml.loader import SafeLoader
 from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
-from datetime import datetime
-from evaluation_ner import parse_tsv_file, calculate_metrics
-from dotenv import find_dotenv, load_dotenv
+from yaml.loader import SafeLoader
 
-print(load_dotenv(find_dotenv()))
+from evaluation_ner import parse_tsv_file, calculate_metrics
 
 # --- Set Page Config (must be first Streamlit call) ---
 st.set_page_config(page_title="NER Benchmarking Leaderboard", layout="wide")
@@ -46,6 +45,7 @@ if st.session_state.get("authentication_status"):
     # --- Database Setup ---
     Base = declarative_base()
 
+
     class Submission(Base):
         __tablename__ = 'submissions'
         id = Column(Integer, primary_key=True)
@@ -58,10 +58,12 @@ if st.session_state.get("authentication_status"):
         f1 = Column(Float)
         submission_date = Column(DateTime, default=datetime.utcnow)
 
+
     engine = create_engine(db_path)
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
+
 
     # --- Load NER Testsets ---
     def load_testsets(path):
@@ -69,13 +71,17 @@ if st.session_state.get("authentication_status"):
         for ds in os.listdir(path):
             if ds.endswith(".tsv"):
                 df = parse_tsv_file(os.path.join(path, ds), entities_to_evaluate=[])
-                df.drop(columns=[col for col in ['note', 'mark', 'ann_id'] if col in df.columns], inplace=True, errors='ignore')
+                df.drop(columns=[col for col in ['note', 'mark', 'ann_id'] if col in df.columns], inplace=True,
+                        errors='ignore')
                 df.reset_index(drop=True, inplace=True)
                 datasets[ds.replace(".tsv", "")] = df
         return datasets
 
+
     def get_submissions(dataset):
-        return session.query(Submission).filter_by(dataset_name=dataset).order_by(Submission.submission_date.desc()).all()
+        return session.query(Submission).filter_by(dataset_name=dataset).order_by(
+            Submission.submission_date.desc()).all()
+
 
     def exe_new_eval(df_gs, pred):
         tags = df_gs.label.unique().tolist()
@@ -83,6 +89,7 @@ if st.session_state.get("authentication_status"):
         total_metrics = calculate_metrics(df_gs, pred)[1:6:2]
         metrics['Total'] = total_metrics
         return {k: {"Precision": v[0], "Recall": v[1], "F1": v[2]} for k, v in metrics.items()}
+
 
     def display_leaderboard(dataset_name, dataset_dict):
         st.subheader("Leaderboard")
@@ -140,6 +147,7 @@ if st.session_state.get("authentication_status"):
                 with open(file_path, "rb") as f:
                     download_col.download_button("⬇️", f, file_name=os.path.basename(file_path))
 
+
     def submit_section(dataset_name, dataset_dict):
         st.subheader("Submit Your Model Prediction")
         with st.form("submission_form"):
@@ -162,7 +170,8 @@ if st.session_state.get("authentication_status"):
                     file.seek(0)
                     pred_df = parse_tsv_file(file, [])
                     tags = gs_df.label.unique().tolist()
-                    metrics = {tag: calculate_metrics(gs_df[gs_df.label == tag], pred_df[pred_df.label == tag])[1:6:2] for tag in tags}
+                    metrics = {tag: calculate_metrics(gs_df[gs_df.label == tag], pred_df[pred_df.label == tag])[1:6:2]
+                               for tag in tags}
                     total = calculate_metrics(gs_df, pred_df)[1:6:2]
                     metrics['Total'] = total
 
@@ -171,11 +180,13 @@ if st.session_state.get("authentication_status"):
                                          person_name=person, precision=total[0], recall=total[1], f1=total[2])
                     session.add(new_sub)
                     session.commit()
-                    st.session_state['last_metrics'] = {k: {"Precision": v[0], "Recall": v[1], "F1": v[2]} for k, v in metrics.items()}
+                    st.session_state['last_metrics'] = {k: {"Precision": v[0], "Recall": v[1], "F1": v[2]} for k, v in
+                                                        metrics.items()}
                     st.success("Submitted and evaluated!")
                     st.rerun()
                 except Exception as e:
                     st.error(f"Submission failed: {e}")
+
 
     def main():
         dataset_dict = load_testsets(testsets_root_path)
@@ -190,6 +201,7 @@ if st.session_state.get("authentication_status"):
         if 'last_metrics' in st.session_state:
             st.subheader("Last Evaluation")
             st.json(st.session_state.pop('last_metrics'))
+
 
     if __name__ == '__main__':
         main()
