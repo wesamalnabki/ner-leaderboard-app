@@ -175,9 +175,27 @@ if st.session_state.get("authentication_status"):
                     total = calculate_metrics(gs_df, pred_df)[1:6:2]
                     metrics['Total'] = total
 
-                    session.query(Submission).filter_by(dataset_name=dataset_name, submission_name=name).delete()
-                    new_sub = Submission(dataset_name=dataset_name, submission_name=name, model_link=link,
-                                         person_name=person, precision=total[0], recall=total[1], f1=total[2])
+                    # Check for existing submission name or model link
+                    existing = session.query(Submission).filter(
+                        Submission.dataset_name == dataset_name,
+                        (Submission.submission_name == name) | (Submission.model_link == link)
+                    ).first()
+
+                    if existing:
+                        st.error(
+                            "A submission with this name or model link already exists. Please use a different name or link.")
+                        return
+
+                    # Proceed to save the new submission
+                    new_sub = Submission(
+                        dataset_name=dataset_name,
+                        submission_name=name,
+                        model_link=link,
+                        person_name=person,
+                        precision=total[0],
+                        recall=total[1],
+                        f1=total[2]
+                    )
                     session.add(new_sub)
                     session.commit()
                     st.session_state['last_metrics'] = {k: {"Precision": v[0], "Recall": v[1], "F1": v[2]} for k, v in
