@@ -119,13 +119,13 @@ if st.session_state.get("authentication_status"):
                 session.delete(sub)
                 session.commit()
 
-                # Delete corresponding CSV file
-                csv_file_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.csv")
+                # Delete corresponding TSV file
+                tsv_file_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.tsv")
                 try:
-                    if os.path.exists(csv_file_path):
-                        os.remove(csv_file_path)
+                    if os.path.exists(tsv_file_path):
+                        os.remove(tsv_file_path)
                 except Exception as e:
-                    st.warning(f"CSV file could not be deleted: {e}")
+                    st.warning(f"TSV file could not be deleted: {e}")
 
                 st.success(f"Deleted: {sub.submission_name}")
                 st.rerun()
