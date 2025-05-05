@@ -108,7 +108,7 @@ if st.session_state.get("authentication_status"):
             return
 
         cols = st.columns([2, 2, 2, 1, 1, 1, 2, 2])
-        headers = ["Submission Name", "Model Link", "Person Name", "Precision", "Recall", "F1 Score", "Date", "Actions"]
+        headers = ["Submission Name/ HF Revision", "Model Link", "Person Name", "Precision", "Recall", "F1 Score", "Date", "Actions"]
         for col, header in zip(cols, headers):
             col.markdown(f"**{header}**")
 
@@ -165,7 +165,7 @@ if st.session_state.get("authentication_status"):
         st.subheader("Submit Your Model Prediction")
         with st.form("submission_form"):
             file = st.file_uploader("Upload TSV", type=["tsv"])
-            name = st.text_input("Submission Name/ HF Revision)")
+            name = st.text_input("Submission Name/ HF Revision")
             link = st.text_input("Model Link")
             person = st.text_input("Your Name")
             submit = st.form_submit_button("Submit")
