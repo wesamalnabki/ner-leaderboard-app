@@ -4,11 +4,19 @@ from datetime import datetime
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
-from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime
+from sqlalchemy import and_, create_engine, Column, Integer, String, Float, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
 from yaml.loader import SafeLoader
+import hashlib
 
 from evaluation_ner import parse_tsv_file, calculate_metrics
+
+def get_submission_hash(dataset_name, submission_name, model_link):
+    """Generate a consistent hash based on dataset name, submission name, and model link."""
+    to_hash = f"{dataset_name}:{submission_name}:{model_link}"
+    return hashlib.sha256(to_hash.encode()).hexdigest()
+
+
 
 # --- Set Page Config (must be first Streamlit call) ---
 st.set_page_config(page_title="NER Benchmarking Leaderboard", layout="wide")
@@ -94,16 +102,20 @@ if st.session_state.get("authentication_status"):
     def display_leaderboard(dataset_name, dataset_dict):
         st.subheader("Leaderboard")
         submissions = get_submissions(dataset_name)
+
         if not submissions:
             st.info("No submissions yet.")
             return
 
         cols = st.columns([2, 2, 2, 1, 1, 1, 2, 2])
         headers = ["Submission Name", "Model Link", "Person Name", "Precision", "Recall", "F1 Score", "Date", "Actions"]
-        for col, header in zip(cols, headers): col.markdown(f"**{header}**")
+        for col, header in zip(cols, headers):
+            col.markdown(f"**{header}**")
 
         for sub in submissions:
             cols = st.columns([2, 2, 2, 1, 1, 1, 2, 2])
+
+            # Display submission info
             cols[0].markdown(f"**{sub.submission_name}**")
             cols[1].markdown(sub.model_link)
             cols[2].markdown(sub.person_name)
@@ -112,37 +124,38 @@ if st.session_state.get("authentication_status"):
             cols[5].markdown(f"{sub.f1:.2f}")
             cols[6].markdown(sub.submission_date.strftime("%Y-%m-%d %H:%M:%S"))
 
+            # New hash-based filename
+            file_hash = get_submission_hash(sub.dataset_name, sub.submission_name, sub.model_link)
+            file_path = os.path.join(submission_save_path, f"{file_hash}.tsv")
+
+            # Action buttons
             delete_col, reeval_col, download_col = cols[7].columns([1, 1, 1])
 
-            if delete_col.button("🗑️", key=f"del_{sub.id}"):
-                # Delete submission from DB
+            # Delete
+            if delete_col.button("🗑️", key=f"delete_{sub.id}"):
                 session.delete(sub)
                 session.commit()
-
-                # Delete corresponding TSV file
-                tsv_file_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.tsv")
-                try:
-                    if os.path.exists(tsv_file_path):
-                        os.remove(tsv_file_path)
-                except Exception as e:
-                    st.warning(f"TSV file could not be deleted: {e}")
-
+                if os.path.exists(file_path):
+                    try:
+                        os.remove(file_path)
+                    except Exception as e:
+                        st.warning(f"Could not delete TSV file: {e}")
                 st.success(f"Deleted: {sub.submission_name}")
                 st.rerun()
 
+            # Re-evaluate
             if reeval_col.button("🔁", key=f"reeval_{sub.id}"):
-                path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.tsv")
-                if not os.path.exists(path):
-                    st.error("File not found.")
+                if not os.path.exists(file_path):
+                    st.error("Submission file not found.")
                 else:
-                    gs = dataset_dict.get(sub.dataset_name)
-                    pred = parse_tsv_file(path, [])
-                    result = exe_new_eval(gs, pred)
+                    gold = dataset_dict.get(sub.dataset_name)
+                    pred = parse_tsv_file(file_path, [])
+                    result = exe_new_eval(gold, pred)
                     st.subheader("Re-evaluation Results")
                     st.json(result)
                     st.success("Re-evaluated.")
 
-            file_path = os.path.join(submission_save_path, f"{sub.dataset_name}__{sub.submission_name}.tsv")
+            # Download
             if os.path.exists(file_path):
                 with open(file_path, "rb") as f:
                     download_col.download_button("⬇️", f, file_name=os.path.basename(file_path))
@@ -152,7 +165,7 @@ if st.session_state.get("authentication_status"):
         st.subheader("Submit Your Model Prediction")
         with st.form("submission_form"):
             file = st.file_uploader("Upload TSV", type=["tsv"])
-            name = st.text_input("Submission Name")
+            name = st.text_input("Submission Name/ HF Revision)")
             link = st.text_input("Model Link")
             person = st.text_input("Your Name")
             submit = st.form_submit_button("Submit")
@@ -163,8 +176,8 @@ if st.session_state.get("authentication_status"):
                     return
                 try:
                     gs_df = dataset_dict.get(dataset_name)
-                    save_name = f"{dataset_name}__{name}.tsv"
-                    save_path = os.path.join(submission_save_path, save_name)
+                    file_hash = get_submission_hash(dataset_name, name, link)
+                    save_path = os.path.join(submission_save_path, f"{file_hash}.tsv")
                     with open(save_path, "wb") as f:
                         f.write(file.getbuffer())
                     file.seek(0)
@@ -177,8 +190,11 @@ if st.session_state.get("authentication_status"):
 
                     # Check for existing submission name or model link
                     existing = session.query(Submission).filter(
-                        Submission.dataset_name == dataset_name,
-                        (Submission.submission_name == name) | (Submission.model_link == link)
+                        and_(
+                            Submission.dataset_name == dataset_name,
+                            Submission.submission_name == name,
+                            Submission.model_link == link
+                        )
                     ).first()
 
                     if existing:
