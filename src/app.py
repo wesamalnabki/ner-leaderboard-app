@@ -9,7 +9,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 from yaml.loader import SafeLoader
 import hashlib
 
-from evaluation_ner import parse_tsv_file, calculate_metrics
+from evaluation_ner import parse_tsv_file, calculate_metrics_strict
 
 def get_submission_hash(dataset_name, submission_name, model_link):
     """Generate a consistent hash based on dataset name, submission name, and model link."""
@@ -93,8 +93,8 @@ if st.session_state.get("authentication_status"):
 
     def exe_new_eval(df_gs, pred):
         tags = df_gs.label.unique().tolist()
-        metrics = {tag: calculate_metrics(df_gs[df_gs.label == tag], pred[pred.label == tag])[1:6:2] for tag in tags}
-        total_metrics = calculate_metrics(df_gs, pred)[1:6:2]
+        metrics = {tag: calculate_metrics_strict(df_gs[df_gs.label == tag], pred[pred.label == tag]) for tag in tags}
+        total_metrics = calculate_metrics_strict(df_gs, pred)
         metrics['Total'] = total_metrics
         return {k: {"Precision": v[0], "Recall": v[1], "F1": v[2]} for k, v in metrics.items()}
 
@@ -183,9 +183,9 @@ if st.session_state.get("authentication_status"):
                     file.seek(0)
                     pred_df = parse_tsv_file(file, [])
                     tags = gs_df.label.unique().tolist()
-                    metrics = {tag: calculate_metrics(gs_df[gs_df.label == tag], pred_df[pred_df.label == tag])[1:6:2]
+                    metrics = {tag: calculate_metrics_strict(gs_df[gs_df.label == tag], pred_df[pred_df.label == tag])
                                for tag in tags}
-                    total = calculate_metrics(gs_df, pred_df)[1:6:2]
+                    total = calculate_metrics_strict(gs_df, pred_df)
                     metrics['Total'] = total
 
                     # Check for existing submission name or model link
