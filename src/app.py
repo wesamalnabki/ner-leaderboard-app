@@ -1,3 +1,4 @@
+import hashlib
 import os
 from datetime import datetime
 
@@ -7,15 +8,14 @@ import yaml
 from sqlalchemy import and_, create_engine, Column, Integer, String, Float, DateTime
 from sqlalchemy.orm import declarative_base, sessionmaker
 from yaml.loader import SafeLoader
-import hashlib
 
-from evaluation_ner import parse_tsv_file, calculate_metrics_strict
+from evaluation_ner import parse_tsv_file, calculate_metrics_strict, calculate_metrics_relaxed
+
 
 def get_submission_hash(dataset_name, submission_name, model_link):
     """Generate a consistent hash based on dataset name, submission name, and model link."""
     to_hash = f"{dataset_name}:{submission_name}:{model_link}"
     return hashlib.sha256(to_hash.encode()).hexdigest()
-
 
 
 # --- Set Page Config (must be first Streamlit call) ---
@@ -91,16 +91,26 @@ if st.session_state.get("authentication_status"):
             Submission.submission_date.desc()).all()
 
 
-    def exe_new_eval(df_gs, pred):
-        tags = df_gs.label.unique().tolist()
-        metrics = {tag: calculate_metrics_strict(df_gs[df_gs.label == tag], pred[pred.label == tag]) for tag in tags}
-        total_metrics = calculate_metrics_strict(df_gs, pred)
-        metrics['Total'] = total_metrics
-        return {k: {"Precision": v[0], "Recall": v[1], "F1": v[2]} for k, v in metrics.items()}
+    def exe_new_eval(df_gs, df_pred, metric_type="micro_strict"):
+
+        if "strict" in metric_type:
+            _result_by_cat_strict, _micro_strict, _macro_strict = calculate_metrics_strict(df_gs, df_pred)
+            if "macro" in metric_type:
+                return {**_result_by_cat_strict, 'Total': _macro_strict}
+            if "micro" in metric_type:
+                return {**_result_by_cat_strict, 'Total': _micro_strict}
+
+        if "relaxed" in metric_type:
+            _result_by_cat_relaxed, _micro_relaxed, _macro_relaxed = calculate_metrics_relaxed(df_gs, df_pred)
+            if "macro" in metric_type:
+                return {**_result_by_cat_relaxed, 'Total': _macro_relaxed}
+            if "micro" in metric_type:
+                return {**_result_by_cat_relaxed, 'Total': _micro_relaxed}
 
 
     def display_leaderboard(dataset_name, dataset_dict):
         st.subheader("Leaderboard")
+        st.text("**👉👉👀The default metric is: Micro strict👀**")
         submissions = get_submissions(dataset_name)
 
         if not submissions:
@@ -108,7 +118,8 @@ if st.session_state.get("authentication_status"):
             return
 
         cols = st.columns([2, 2, 2, 1, 1, 1, 2, 2])
-        headers = ["Submission Name/ HF Revision", "Model Link", "Person Name", "Precision", "Recall", "F1 Score", "Date", "Actions"]
+        headers = ["Submission Name/ HF Revision", "Model Link", "Person Name", "Precision", "Recall", "F1 Score",
+                   "Date", "Actions"]
         for col, header in zip(cols, headers):
             col.markdown(f"**{header}**")
 
@@ -144,16 +155,44 @@ if st.session_state.get("authentication_status"):
                 st.rerun()
 
             # Re-evaluate
+            # if reeval_col.button("🔁", key=f"reeval_{sub.id}"):
+            #     if not os.path.exists(file_path):
+            #         st.error("Submission file not found.")
+            #     else:
+            #         gold = dataset_dict.get(sub.dataset_name)
+            #         pred = parse_tsv_file(file_path, [])
+            #         result = exe_new_eval(gold, pred, metric_type="micro_strict")
+            #         st.subheader("Re-evaluation Results")
+            #         st.json(result)
+            #         st.success("Re-evaluated.")
+
+            # Track re-evaluation state in session
             if reeval_col.button("🔁", key=f"reeval_{sub.id}"):
+                st.session_state['reeval_id'] = sub.id
+                st.session_state['reeval_metric'] = 'micro_strict'  # default metric
+
+            # If this submission is selected for re-evaluation
+            if st.session_state.get("reeval_id") == sub.id:
                 if not os.path.exists(file_path):
                     st.error("Submission file not found.")
                 else:
                     gold = dataset_dict.get(sub.dataset_name)
                     pred = parse_tsv_file(file_path, [])
-                    result = exe_new_eval(gold, pred)
+
+                    # Show dropdown and trigger re-eval on change
+                    selected_metric = st.selectbox(
+                        "Select Evaluation Metric",
+                        ["micro_strict", "macro_strict", "micro_relaxed", "macro_relaxed"],
+                        index=["micro_strict", "macro_strict", "micro_relaxed", "macro_relaxed"].index(
+                            st.session_state.get('reeval_metric', 'micro_strict')),
+                        key=f"metric_select_{sub.id}",
+                        on_change=lambda: st.session_state.update(
+                            {'reeval_metric': st.session_state[f"metric_select_{sub.id}"]})
+                    )
+
+                    result = exe_new_eval(gold, pred, metric_type=selected_metric)
                     st.subheader("Re-evaluation Results")
                     st.json(result)
-                    st.success("Re-evaluated.")
 
             # Download
             if os.path.exists(file_path):
@@ -182,11 +221,7 @@ if st.session_state.get("authentication_status"):
                         f.write(file.getbuffer())
                     file.seek(0)
                     pred_df = parse_tsv_file(file, [])
-                    tags = gs_df.label.unique().tolist()
-                    metrics = {tag: calculate_metrics_strict(gs_df[gs_df.label == tag], pred_df[pred_df.label == tag])
-                               for tag in tags}
-                    total = calculate_metrics_strict(gs_df, pred_df)
-                    metrics['Total'] = total
+                    total = exe_new_eval(gs_df, pred_df, metric_type="micro_strict")
 
                     # Check for existing submission name or model link
                     existing = session.query(Submission).filter(
@@ -208,14 +243,13 @@ if st.session_state.get("authentication_status"):
                         submission_name=name,
                         model_link=link,
                         person_name=person,
-                        precision=total[0],
-                        recall=total[1],
-                        f1=total[2]
+                        precision=total['Total']["Precision"],
+                        recall=total['Total']["Recall"],
+                        f1=total["Total"]["F1"]
                     )
                     session.add(new_sub)
                     session.commit()
-                    st.session_state['last_metrics'] = {k: {"Precision": v[0], "Recall": v[1], "F1": v[2]} for k, v in
-                                                        metrics.items()}
+                    st.session_state['last_metrics'] = total
                     st.success("Submitted and evaluated!")
                     st.rerun()
                 except Exception as e:

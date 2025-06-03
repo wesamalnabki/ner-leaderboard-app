@@ -1,7 +1,8 @@
 import csv
 import logging
+from typing import Dict
 from typing import Tuple
-
+import re 
 import pandas as pd
 
 # Configure logging
@@ -41,6 +42,7 @@ def parse_tsv_file(datapath: str, entities_to_evaluate: list) -> pd.DataFrame:
 
         # Format DataFrame
         df['offset'] = df[START_SPAN_TAG].astype(str) + ' ' + df[END_SPAN_TAG].astype(str)
+        df = df[~df["label"].isna() & (df["label"].str.strip() != "")]
 
         # Check for duplicated entries
         if df.duplicated(subset=[FILE_NAME, LABEL_TAG, 'offset']).any():
@@ -54,39 +56,213 @@ def parse_tsv_file(datapath: str, entities_to_evaluate: list) -> pd.DataFrame:
         raise
 
 
-def calculate_metrics_strict(gs: pd.DataFrame, pred: pd.DataFrame) -> Tuple[float, float, float]:
+def calculate_metrics_strict(gs: pd.DataFrame, pred: pd.DataFrame) -> Tuple[Dict[str, Dict[str, float]], Dict[str, float], Dict[str, float]]:
     """
-    Calculate Precision, Recall, and F1 score per clinical case and micro-average.
+    Calculates strict matching metrics (exact span and label match) including precision, recall, and F1-score
+    for each label, along with micro and macro-averaged scores.
 
-    Parameters:
-    -----------
-    gs : pd.DataFrame
-        Gold Standard DataFrame.
-    pred : pd.DataFrame
-        Predictions DataFrame.
+    This function assumes the input dataframes contain an `offset` field, a `label` field, and a `filename` column.
+    Strict evaluation considers a prediction correct only if the filename, offset, and label all match.
+
+    Args:
+        gs (pd.DataFrame): Ground truth mentions with columns ['filename', 'offset', 'label'].
+        pred (pd.DataFrame): Predicted mentions with the same required columns.
 
     Returns:
-    --------
-    Tuple[float,float, float]
-    Micro-average Precision,
-    Micro-average Recall,
-    Micro-average F1 score.
+        Tuple containing:
+            - Dict[str, Dict[str, float]]: Per-label metrics with precision, recall, and F1-score.
+            - Dict[str, float]: Micro-averaged precision, recall, and F1-score.
+            - Dict[str, float]: Macro-averaged precision, recall, and F1-score.
     """
 
-    Pred_Pos = pred.drop_duplicates(subset=[FILE_NAME, "offset"]).shape[0]
+    gs = gs.drop_duplicates(subset=[FILE_NAME, "offset", LABEL_TAG])
+    pred = pred.drop_duplicates(subset=[FILE_NAME, "offset", LABEL_TAG])
 
-    # Gold Standard Positives
-    GS_Pos = gs.drop_duplicates(subset=[FILE_NAME, "offset"]).shape[0]
+    labels = sorted(set(gs[LABEL_TAG].unique()) | set(pred[LABEL_TAG].unique()))
+    result_by_cat = {}
 
-    # True Positives
-    df_sel = pd.merge(pred, gs, how="right", on=[FILE_NAME, "offset", LABEL_TAG])
-    is_valid = ~df_sel.isnull().any(axis=1)
-    df_sel['is_valid'] = is_valid
-    TP = df_sel[df_sel["is_valid"]].shape[0]
+    total_tp = total_fp = total_fn = 0
+    precision_list = []
+    recall_list = []
+    f1_list = []
 
-    # Calculate Micro-average Precision, Recall, and F1
-    P = TP / Pred_Pos if Pred_Pos > 0 else 0
-    R = TP / GS_Pos if GS_Pos > 0 else 0
-    F1 = (2 * P * R) / (P + R) if (P + R) > 0 else 0
+    for label in labels:
+        gs_label = gs[gs[LABEL_TAG] == label]
+        pred_label = pred[pred[LABEL_TAG] == label]
 
-    return round(P, 4), round(R, 4), round(F1, 4)
+        GS_Pos = gs_label.shape[0]
+        Pred_Pos = pred_label.shape[0]
+
+        merged = pd.merge(pred_label, gs_label, how="inner", on=[FILE_NAME, "offset", LABEL_TAG])
+        TP = merged.shape[0]
+        FP = Pred_Pos - TP
+        FN = GS_Pos - TP
+
+        precision = TP / (TP + FP) if (TP + FP) else 0.0
+        recall = TP / (TP + FN) if (TP + FN) else 0.0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+
+        result_by_cat[label] = {
+            "Precision": round(precision, 2),
+            "Recall": round(recall, 2),
+            "F1": round(f1, 2),
+        }
+
+        precision_list.append(precision)
+        recall_list.append(recall)
+        f1_list.append(f1)
+
+        total_tp += TP
+        total_fp += FP
+        total_fn += FN
+
+    # Micro-averaged scores
+    micro_precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) else 0.0
+    micro_recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) else 0.0
+    micro_f1 = 2 * micro_precision * micro_recall / (micro_precision + micro_recall) if (micro_precision + micro_recall) else 0.0
+
+    # Macro-averaged scores
+    macro_precision = sum(precision_list) / len(precision_list) if precision_list else 0.0
+    macro_recall = sum(recall_list) / len(recall_list) if recall_list else 0.0
+    macro_f1 = sum(f1_list) / len(f1_list) if f1_list else 0.0
+
+    summary_micro = {
+        "Precision": round(micro_precision, 2),
+        "Recall": round(micro_recall, 2),
+        "F1": round(micro_f1, 2),
+    }
+
+    summary_macro = {
+        "Precision": round(macro_precision, 2),
+        "Recall": round(macro_recall, 2),
+        "F1": round(macro_f1, 2),
+    }
+
+    return result_by_cat, summary_micro, summary_macro
+
+
+def calculate_metrics_relaxed(gs: pd.DataFrame, pred: pd.DataFrame) -> (
+        Tuple)[Dict[str, Dict[str, float]], Dict[str, float], Dict[str, float]]:
+    """
+    Compute relaxed precision, recall, and F1-score for entity recognition.
+
+    This function compares predicted and ground truth entity spans using a relaxed (interval overlap) strategy,
+    where a match is valid if the spans overlap and the labels match. Each prediction can match at most one gold entity.
+
+    Args:
+        gs (pd.DataFrame): Ground truth mentions. Must contain columns ['filename', 'start_span', 'end_span', 'label'].
+        pred (pd.DataFrame): Predicted mentions with the same column structure.
+
+    Returns:
+        Tuple containing:
+            - result_by_cat (Dict[str, Dict[str, float]]): Per-label scores with precision, recall, and F1.
+            - summary_micro (Dict[str, float]): Micro-averaged precision, recall, and F1.
+            - summary_macro (Dict[str, float]): Macro-averaged precision, recall, and F1.
+
+    Notes:
+        - Intervals with missing 'start_span' or 'end_span' are ignored.
+        - Micro scores are calculated by summing true positives, false positives, and false negatives.
+        - Macro scores are calculated by averaging the per-label scores.
+        - All scores are rounded to 4 decimal places.
+    """
+
+    # Clean and prepare intervals
+    for df in [gs, pred]:
+        df["start_span"] = pd.to_numeric(df["start_span"], errors="coerce")
+        df["end_span"] = pd.to_numeric(df["end_span"], errors="coerce")
+
+    gs_mentions = gs.dropna(subset=["start_span", "end_span"]).copy()
+    preds_mentions = pred.dropna(subset=["start_span", "end_span"]).copy()
+
+    gs_mentions["interval"] = pd.arrays.IntervalArray.from_arrays(
+        gs_mentions["start_span"], gs_mentions["end_span"], closed="both"
+    )
+    preds_mentions["interval"] = pd.arrays.IntervalArray.from_arrays(
+        preds_mentions["start_span"], preds_mentions["end_span"], closed="both"
+    )
+
+    labels = sorted(gs_mentions["label"].unique())
+    result_by_cat = {}
+
+    relaxed_TP_total = relaxed_FP_total = relaxed_FN_total = 0
+    precision_list = []
+    recall_list = []
+    f1_list = []
+
+    gs_grouped = gs_mentions.groupby(["label", "filename"])
+    preds_grouped = preds_mentions.groupby(["label", "filename"])
+
+    for label in labels:
+        tp = fp = fn = 0
+        filenames = set(gs_mentions[gs_mentions["label"] == label]["filename"]) | \
+                    set(preds_mentions[preds_mentions["label"] == label]["filename"])
+
+        for filename in filenames:
+            gs_filtered = gs_grouped.get_group((label, filename)) if (label,
+                                                                      filename) in gs_grouped.groups else pd.DataFrame()
+            preds_filtered = preds_grouped.get_group((label, filename)) if (label,
+                                                                            filename) in preds_grouped.groups else pd.DataFrame()
+
+            gs_rows = list(gs_filtered.itertuples())
+            pred_rows = list(preds_filtered.itertuples())
+
+            gs_used = set()
+            preds_used = set()
+
+            for gs_idx, gs_row in enumerate(gs_rows):
+                for pred_idx, pred_row in enumerate(pred_rows):
+                    if pred_idx in preds_used:
+                        continue
+                    if gs_row.interval.overlaps(pred_row.interval):
+                        tp += 1
+                        gs_used.add(gs_idx)
+                        preds_used.add(pred_idx)
+                        break
+
+            fp += len(pred_rows) - len(preds_used)
+            fn += len(gs_rows) - len(gs_used)
+
+        precision = tp / (tp + fp) if (tp + fp) else 0.0
+        recall = tp / (tp + fn) if (tp + fn) else 0.0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+
+        result_by_cat[label] = {
+            "Precision": round(precision, 2),
+            "Recall": round(recall, 2),
+            "F1": round(f1, 2),
+        }
+
+        precision_list.append(precision)
+        recall_list.append(recall)
+        f1_list.append(f1)
+
+        relaxed_TP_total += tp
+        relaxed_FP_total += fp
+        relaxed_FN_total += fn
+
+    # Micro scores
+    micro_precision = relaxed_TP_total / (relaxed_TP_total + relaxed_FP_total) if (
+                relaxed_TP_total + relaxed_FP_total) else 0.0
+    micro_recall = relaxed_TP_total / (relaxed_TP_total + relaxed_FN_total) if (
+                relaxed_TP_total + relaxed_FN_total) else 0.0
+    micro_f1 = 2 * micro_precision * micro_recall / (micro_precision + micro_recall) if (
+                micro_precision + micro_recall) else 0.0
+
+    # Macro scores
+    macro_precision = sum(precision_list) / len(precision_list) if precision_list else 0.0
+    macro_recall = sum(recall_list) / len(recall_list) if recall_list else 0.0
+    macro_f1 = sum(f1_list) / len(f1_list) if f1_list else 0.0
+
+    summary_micro = {
+        "Precision": round(micro_precision, 2),
+        "Recall": round(micro_recall, 2),
+        "F1": round(micro_f1, 2)
+    }
+
+    summary_macro = {
+        "Precision": round(macro_precision, 2),
+        "Recall": round(macro_recall, 2),
+        "F1": round(macro_f1, 2)
+    }
+
+    return result_by_cat, summary_micro, summary_macro
