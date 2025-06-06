@@ -42,7 +42,8 @@ def parse_tsv_file(datapath: str, entities_to_evaluate: list) -> pd.DataFrame:
 
         # Format DataFrame
         df['offset'] = df[START_SPAN_TAG].astype(str) + ' ' + df[END_SPAN_TAG].astype(str)
-        df = df[~df["label"].isna() & (df["label"].str.strip() != "")]
+        df = df[~df[LABEL_TAG].isna() & (df[LABEL_TAG].str.strip() != "")]
+        df[LABEL_TAG] = df[LABEL_TAG].str.upper()
 
         # Check for duplicated entries
         if df.duplicated(subset=[FILE_NAME, LABEL_TAG, 'offset']).any():
